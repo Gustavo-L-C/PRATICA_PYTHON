@@ -5,7 +5,7 @@ n = str(input('Qual seu nome? '))
 s = input('Digite a senha: ')
 
 
-if n == 'Gustavo' and s == 'glc1234570':
+if n == 'Gustavo' and s == '1234567':
     print(f'\nSeja Bem-Vindo de volta {n} :)')
     print('ACESSO PERMITIDO')
 
