@@ -19,32 +19,32 @@ oqt2 = str(input('Em que iremos transformar (horas, minutos, segundos)? '))
 
 
 if oqt1 == 'horas' and oqt2 == 'minutos': #1-horas em minutos
-    qh1= int(input('Digite a quantidade de horas: '))
+    qh1= float(input('Digite a quantidade de horas: '))
 
     hm = qh1 * t
 
-    print(f'{qh1: .0f} horas são {hm: .3f} minutos')
+    print(f'{qh1: .2f} horas são {hm: .3f} minutos')
 
 elif oqt1 == 'minutos' and oqt2 == 'segundos': #2-minutos em segundos
-    qh2= int(input('Digite a quantidade de minutos: '))
+    qh2= float(input('Digite a quantidade de minutos: '))
 
     hs = qh2 * s
 
-    print(f'{qh2: .0f} minutos são {hs: .3f} segundos')
+    print(f'{qh2: .2f} minutos são {hs: .3f} segundos')
 
 if oqt1 == 'segundos' and oqt2 == 'minutos': #3-segundos em minutos
-    qh3= int(input('Digite a quantidade de segundos: '))
+    qh3= float(input('Digite a quantidade de segundos: '))
 
     sm= qh3 / t
 
-    print(f'{qh3: .0f} segundos são {sm: .3f} minutos')
+    print(f'{qh3: .2f} segundos são {sm: .3f} minutos')
 
 elif oqt1 == 'minutos' and oqt2 == 'horas': #4-minutos em horas
-    qh4= int(input('Digite a quantidade de minutos: '))
+    qh4= float(input('Digite a quantidade de minutos: '))
 
     mh = qh4 / t
 
-    print(f'{qh4: .0f} minutos são {mh: .3f} horas')
+    print(f'{qh4: .2f} minutos são {mh: .3f} horas')
 
 
 
