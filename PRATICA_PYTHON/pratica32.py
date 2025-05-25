@@ -23,28 +23,28 @@ if oqt1 == 'horas' and oqt2 == 'minutos': #1-horas em minutos
 
     hm = qh1 * t
 
-    print(f'{qh1: .0f} horas são {hm: .0f} minutos')
+    print(f'{qh1: .0f} horas são {hm: .3f} minutos')
 
 elif oqt1 == 'minutos' and oqt2 == 'segundos': #2-minutos em segundos
     qh2= int(input('Digite a quantidade de minutos: '))
 
     hs = qh2 * s
 
-    print(f'{qh2: .0f} minutos são {hs: .0f} segundos')
+    print(f'{qh2: .0f} minutos são {hs: .3f} segundos')
 
 if oqt1 == 'segundos' and oqt2 == 'minutos': #3-segundos em minutos
     qh3= int(input('Digite a quantidade de segundos: '))
 
     sm= qh3 / t
 
-    print(f'{qh3: .0f} segundos são {sm: .0f} minutos')
+    print(f'{qh3: .0f} segundos são {sm: .3f} minutos')
 
 elif oqt1 == 'minutos' and oqt2 == 'horas': #4-minutos em horas
     qh4= int(input('Digite a quantidade de minutos: '))
 
     mh = qh4 / t
 
-    print(f'{qh4: .0f} minutos são {mh: .0f} horas')
+    print(f'{qh4: .0f} minutos são {mh: .3f} horas')
 
 
 
