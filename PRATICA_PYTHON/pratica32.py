@@ -55,7 +55,7 @@ elif oqt1 == 'minutos' and oqt2 == 'horas': #4-minutos para horas
     print(f'\nR: {qh4: .2f} minutos são {mh: .2f} horas') #imprimindo o resultado
 
 #erro...................................................................................................................
-else:
-    print('\nErro tente novamente...')
+#else:
+    #print('Erro tente novamente...')
 
 
