@@ -1,51 +1,56 @@
 #25.05.2025
 #MÃO LIVRE - 00
 
-#leia dois valoras entre horas, minutos e segundos e transforme
+# leia duas medidas de tempo entre horas, minutos e segundos e transforme
 # 1- horas em minutos
 # 2- minutos em segundos
 # 3- segundos em minutos
-# 4- minutos em horas:
+# 4- minutos em horas
 # depois imprima o resultado
 
 # 01 horas = 60 minutos = 3600 segundos
 
-t = 60
-s = 3600
+
+t = 60 #tempo
+s = 3600 #60 minutos em segundos
+
+#ler as duas medidas de tempo entre horas, minutos e segundos
+
 
 oqt1 = str(input('o que vamos transformar (horas, minutos, segundos)? '))
 oqt2 = str(input('Em que iremos transformar (horas, minutos, segundos)? '))
 
 
 
-if oqt1 == 'horas' and oqt2 == 'minutos': #1-horas em minutos
+if oqt1 == 'horas' and oqt2 == 'minutos': #1-horas para minutos
     qh1= float(input('Digite a quantidade de horas: '))
 
-    hm = qh1 * t
+    hm = qh1 * t # horas para minutos = horas * 60
 
-    print(f'{qh1: .2f} horas são {hm: .3f} minutos')
+    print(f'\nR: {qh1: .2f} horas são {hm: .2f} minutos') #imprimindo o resultado
 
-elif oqt1 == 'minutos' and oqt2 == 'segundos': #2-minutos em segundos
+elif oqt1 == 'minutos' and oqt2 == 'segundos': #2-minutos para segundos
     qh2= float(input('Digite a quantidade de minutos: '))
 
-    hs = qh2 * s
+    ms = qh2 * s # minutos para segundos = minutos * 3600
 
-    print(f'{qh2: .2f} minutos são {hs: .3f} segundos')
+    print(f'\nR: {qh2: .2f} minutos são {ms: .2f} segundos') #imprimindo o resultado
 
-if oqt1 == 'segundos' and oqt2 == 'minutos': #3-segundos em minutos
+if oqt1 == 'segundos' and oqt2 == 'minutos': #3-segundos para minutos
     qh3= float(input('Digite a quantidade de segundos: '))
 
-    sm= qh3 / t
+    sm= qh3 / t # segundos para minutos = segundos / 60
 
-    print(f'{qh3: .2f} segundos são {sm: .3f} minutos')
+    print(f'\nR: {qh3: .2f} segundos são {sm: .2f} minutos') #imprimindo o resultado
 
-elif oqt1 == 'minutos' and oqt2 == 'horas': #4-minutos em horas
+elif oqt1 == 'minutos' and oqt2 == 'horas': #4-minutos para horas
     qh4= float(input('Digite a quantidade de minutos: '))
 
-    mh = qh4 / t
+    mh = qh4 / t # minutos para horas = minutos / 60
 
-    print(f'{qh4: .2f} minutos são {mh: .3f} horas')
+    print(f'\nR: {qh4: .2f} minutos são {mh: .2f} horas') #imprimindo o resultado
 
-
+else:
+    print('\nErro tente novamente...')
 
 
