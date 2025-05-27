@@ -30,6 +30,13 @@ def JA():
                 print(f'\nBoa {nome} você acertou o número {n} em {t} tentativas.\n')
                 print(f'Tome seu prêmio {nome}.{premio}\n')
 
+                ap = str(input('Quer abrir seu prêmio(S/N)? '))
+                if ap == 'S':
+                    print('\n⚔️⚔️Toma Elden Ring Night Rein⚔️⚔️')
+
+                else:
+                    print('\nOK.')
+
         except ValueError:
             print('Número Inválido...')
 
