@@ -4,8 +4,10 @@
 from random import randint
 
 def JA():
-    print('Olá Bem-Vindo ao JOGO DA ADIVINHAÇÂO!!!\n')
-    print('Tente Adivinhar o número correto entre 1 e 20')
+    print('Olá Bem-Vindo ao JOGO DA ADIVINHAÇÂO!!!\n__________________________________________________')
+    nome = str(input('Qual seu nome jogador? '))
+    print('__________________________________________________')
+    print(f'Tente Adivinhar o número {nome} correto entre 1 e 20\n')
 
     n = randint(1, 20)
 
@@ -15,19 +17,18 @@ def JA():
     while p != n:
 
         try:
-            p = int(input('Qual seu palpite jogador(entre 1 e 20)? '))
+            p = int(input(f'Qual seu palpite {nome}(entre 1 e 20)? '))
             t += 1
 
             if p < n:
-                print('Tente um número maior.')
-
+                print(f'Tente um número maior {nome}.\n')
             elif p > n:
-                print('Tente um número menor.')
-
+                print(f'Tente um número menor {nome}.\n')
             else:
-                print(f'Boa jogador você acertou o número {n} em {t} tentativas.')
-        except ValueError:
-            print('Número Inválido.')
+                print(f'\nBoa {nome} você acertou o número {n} em {t} tentativas.\n')
 
-    print('Obrigado por jogar!')
+        except ValueError:
+            print('Número Inválido...')
+
+    print(f'Obrigado por jogar {nome}!')
 JA()
