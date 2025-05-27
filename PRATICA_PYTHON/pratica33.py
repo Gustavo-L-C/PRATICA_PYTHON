@@ -22,20 +22,23 @@ def JA():
             p = int(input(f'Qual seu palpite {nome}(entre 1 e 20)? '))
             t += 1
 
+
             if p < n:
                 print(f'Tente um número maior {nome}.')
+
             elif p > n:
                 print(f'Tente um número menor {nome}.')
+
             else:
                 print(f'\nBoa {nome} você acertou o número {n} em {t} tentativas.\n')
                 print(f'Tome seu prêmio {nome}.{premio}\n')
 
                 ap = str(input('Quer abrir seu prêmio(S/N)? '))
-                if ap == 'S':
+                if ap == 'S' or 's':
                     print('\n⚔️⚔️Toma Elden Ring Night Rein⚔️⚔️')
-
                 else:
                     print('\nOK.')
+
 
         except ValueError:
             print('Número Inválido...')
