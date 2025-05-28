@@ -10,41 +10,42 @@ qm = str(input('Qual a Moeda (dolar/iene/euro)? '))
 #rs = float(input('\nReal BR: R$ '))
 print(' ')
 
-#dl = rs / 5.65
-#ie = rs / 0.040
-#eu = rs / 6.42
+data = '28/05/205'
+dl = 5.69
+ie = 0.039
+eu = 6.43
 
 
 
 if qm == 'dolar':
     print('-' * 44)
-    print('\033[34mCOTAÇÂO DO DOLAR R$ 5,65 (data: 24/05/2025)')
+    print(f'\033[34mCOTAÇÂO DO DOLAR R$ {dl} (data: {data})')
     rsd = float(input('Real BR: R$ '))
-    dl = rsd / 5.65
-    print(f'Dolar USA: {dl:.2f} USD')
-    print(f'R$ \033[32m{rsd:.2f}\033[34m ta valendo \033[32m{dl:.2f}\033[34m USD\n')
-    print('\033[mReal ta valendo é nada...')
-    print('-' * 44)
+    cdl = rsd / dl
+    print(f'Dolar USA: {cdl:.2f} USD')
+    print(f'R$ \033[32m{rsd:.2f}\033[34m ta valendo \033[32m{cdl:.2f}\033[34m USD')
+    print('\033[m-' * 44)
+    print('\n\033[mReal ta valendo é nada...')
 
 elif qm == 'iene':
     print('-' * 44)
-    print('\033[31mCOTAÇÂO DO IENE R$ 0,040 (data: 24/05/2025)\n')
+    print(f'\033[31mCOTAÇÂO DO IENE R$ {ie} (data: {data})\n')
     rsi = float(input('Real BR: R$ '))
-    ie = rsi / 0.040
-    print(f'Iene JP: {ie:.2f} JPY')
-    print(f'R$ \033[32m{rsi:.2f}\033[31m ta valendo \033[32m{ie:.2f}\033[31m JPY\n')
-    print('\033[mReal ta valendo é nada...')
-    print('-' * 44)
+    cie = rsi / ie
+    print(f'Iene JP: {cie:.2f} JPY')
+    print(f'R$ \033[32m{rsi:.2f}\033[31m ta valendo \033[32m{cie:.2f}\033[31m JPY')
+    print('\033[m-' * 44)
+    print('\n\033[mReal ta valendo é nada...')
 
 elif qm == 'euro':
     print('-' * 44)
-    print('\033[33mCOTAÇÂO DO EURO R$ 6,42 (data: 24/05/25)')
+    print(f'\033[33mCOTAÇÂO DO EURO R$ {eu} (data: {data})')
     rse = float(input('Real BR: R$ '))
-    eu = rse / 6.42
-    print(f'Euro UE: {eu:.2f} EU')
-    print(f'R$ \033[32m{rse:.2f}\033[33m ta valendo \033[32m{eu:.2f}\033[33m EU\n')
-    print('\033[mReal ta valendo é nada...')
-    print('-' * 44)
+    ceu = rse / eu
+    print(f'Euro UE: {ceu:.2f} EU')
+    print(f'R$ \033[32m{rse:.2f}\033[33m ta valendo \033[32m{ceu:.2f}\033[33m EU')
+    print('\033[m-' * 44)
+    print('\n\033[mReal ta valendo é nada...')
 
 else:
     print('\033[31mMoeda Invalida!')
