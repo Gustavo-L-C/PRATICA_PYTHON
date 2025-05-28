@@ -1,6 +1,5 @@
 #26.05.25
 #jogo da Adivinhação com random.randint.
-import random
 from random import randint
 
 def JA():
