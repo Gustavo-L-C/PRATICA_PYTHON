@@ -18,30 +18,35 @@ print(' ')
 
 if qm == 'dolar':
     print('-' * 44)
-    print('COTAÇÂO DO DOLAR R$ 5,65 (data: 24/05/2025)\n')
-    rsd = float(input('\nReal BR: R$ '))
+    print('\033[34mCOTAÇÂO DO DOLAR R$ 5,65 (data: 24/05/2025)')
+    rsd = float(input('Real BR: R$ '))
     dl = rsd / 5.65
     print(f'Dolar USA: {dl:.2f} USD')
-    print(f'R$ {rsd:.2f} ta valendo {dl:.2f} USD\n')
+    print(f'R$ \033[32m{rsd:.2f}\033[34m ta valendo \033[32m{dl:.2f}\033[34m USD\n')
+    print('\033[mReal ta valendo é nada...')
+    print('-' * 44)
 
 elif qm == 'iene':
     print('-' * 44)
-    print('COTAÇÂO DO IENE R$ 0,040 (data: 24/05/2025)\n')
-    rsi = float(input('\nReal BR: R$ '))
+    print('\033[31mCOTAÇÂO DO IENE R$ 0,040 (data: 24/05/2025)\n')
+    rsi = float(input('Real BR: R$ '))
     ie = rsi / 0.040
     print(f'Iene JP: {ie:.2f} JPY')
-    print(f'R$ {rsi:.2f} ta valendo {ie:.2f} JPY\n')
+    print(f'R$ \033[32m{rsi:.2f}\033[31m ta valendo \033[32m{ie:.2f}\033[31m JPY\n')
+    print('\033[mReal ta valendo é nada...')
+    print('-' * 44)
 
 elif qm == 'euro':
     print('-' * 44)
-    print('COTAÇÂO DO EURO R$ 6,42 (data: 24/05/25)')
-    rse = float(input('\nReal BR: R$ '))
+    print('\033[33mCOTAÇÂO DO EURO R$ 6,42 (data: 24/05/25)')
+    rse = float(input('Real BR: R$ '))
     eu = rse / 6.42
     print(f'Euro UE: {eu:.2f} EU')
-    print(f'R$ {rse:.2f} ta valendo {eu:.2f} EU\n')
+    print(f'R$ \033[32m{rse:.2f}\033[33m ta valendo \033[32m{eu:.2f}\033[33m EU\n')
+    print('\033[mReal ta valendo é nada...')
     print('-' * 44)
 
 else:
-    print('Moeda Invalida!')
+    print('\033[31mMoeda Invalida!')
 
-print('\nReal ta valendo é nada...')
+
