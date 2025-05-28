@@ -39,7 +39,7 @@ elif oqt1 == 'minutos' and oqt2 == 'segundos': #2-minutos para segundos
     print(f'\nR: {qh2: .2f} minutos são {ms: .2f} segundos') #imprimindo o resultado
 
 #3......................................................................................................................
-if oqt1 == 'segundos' and oqt2 == 'minutos': #3-segundos para minutos
+elif oqt1 == 'segundos' and oqt2 == 'minutos': #3-segundos para minutos
     qh3= float(input('Digite a quantidade de segundos: '))
 
     sm= qh3 / t # segundos para minutos = segundos / 60
@@ -56,7 +56,7 @@ elif oqt1 == 'minutos' and oqt2 == 'horas': #4-minutos para horas
 
 #extra1.................................................................................................................
 
-if oqt1 == 'horas' and oqt2 == 'segundos': #extra-horas para segundos
+elif oqt1 == 'horas' and oqt2 == 'segundos': #extra-horas para segundos
     qh5= float(input('Digite a quantidade de horas: '))
 
     hs = qh5 * s # horas para segundos = horas * 3600
@@ -70,3 +70,6 @@ elif oqt1 == 'segundos' and oqt2 == 'horas': #extra-segundos para horas
     sh = qh6 / s # segundos para horas = segundos / 3600
 
     print(f'R: {qh6: .2f} segundos são {sh: .4f} horas') #imprimindo o resultado
+
+else:
+    print('Erro')
