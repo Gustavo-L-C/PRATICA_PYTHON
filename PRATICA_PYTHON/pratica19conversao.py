@@ -1,10 +1,9 @@
 #28.05.25
 
-print(f'\n{" CONVERÇÂO DO DOLAR / IENE / EURO ":*^40}\n')
+print(f'\n{" CONVERSÂO DO DOLAR / IENE / EURO ":*^40}\n')
 
 qm = str(input('Qual a Moeda (dolar/iene/euro)? '))
-#print('Digite abaixo sua quantidade de R$.')
-#rs = float(input('\nReal BR: R$ '))
+
 print(' ')
 
 data = '28/05/205'
@@ -16,7 +15,7 @@ eu = 6.43
 
 if qm == 'dolar':
     print('-' * 44)
-    print(f'\033[34mCONVERÇÂO DO DOLAR (data: {data})')
+    print(f'\033[34mCONVERSÂO DO DOLAR (data: {data})')
     rsd = float(input('Dólar: \033[32m USD '))
     cdl = rsd * dl
     print(f'\033[34mCotação do Dolar USA: \033[32m{dl} USD\033[33m')
@@ -26,7 +25,7 @@ if qm == 'dolar':
 
 elif qm == 'iene':
     print('-' * 44)
-    print(f'\033[31mCONVERÇÂO DO IENE (data: {data})\n')
+    print(f'\033[31mCONVERSÂO DO IENE (data: {data})\n')
     rsi = float(input('Iene: \033[32mR$JPY '))
     cie = rsi * ie
     print(f'\033[31mCotação do Iene JP: \033[32m{ie} JPY\033[33m')
@@ -36,7 +35,7 @@ elif qm == 'iene':
 
 elif qm == 'euro':
     print('-' * 44)
-    print(f'\033[33mCONVERÇÂO DO EURO (data: {data})')
+    print(f'\033[33mCONVERSÂO DO EURO (data: {data})')
     rse = float(input('Euro: \033[32mR$€ '))
     ceu = rse * eu
     print(f'\033[33mCotação do Euro UE: \033[32m{eu} €\033[33m')
