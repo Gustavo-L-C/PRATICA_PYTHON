@@ -22,9 +22,5 @@ if n == 'Gustavo' or 'gustavo' or 'GUSTAVO':
     print(f'\nBem-vindo de volta {n} :)')
     print('A senha do dia é ...', se1,se2,se3,se4,se5,se6)
 
-elif n == 'nome':
-    print(f'\nBem-vinda de volta {n} :)')
-    print('A senha do dia é ...', se1,se2,se3,se4,se5,se6)
-
 else:
     print(f'\nOlá, {n}')
