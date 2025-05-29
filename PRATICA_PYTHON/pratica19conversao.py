@@ -16,7 +16,7 @@ eu = 6.43
 if qm == 'dolar':
     print('-' * 44)
     print(f'\033[34mCONVERSÂO DO DOLAR (data: {data})')
-    rsd = float(input('Dólar: \033[32m USD '))
+    rsd = float(input('Dólar: \033[32mUSD '))
     cdl = rsd * dl
     print(f'\033[34mCotação do Dolar USA: \033[32m{dl} USD\033[33m')
     print(f'\033[32m{rsd:.2f} USD\033[34m são \033[32mR$ {cdl:.2f}\033[34m')
@@ -36,7 +36,7 @@ elif qm == 'iene':
 elif qm == 'euro':
     print('-' * 44)
     print(f'\033[33mCONVERSÂO DO EURO (data: {data})')
-    rse = float(input('Euro: \033[32mR$€ '))
+    rse = float(input('Euro: \033[32m€ '))
     ceu = rse * eu
     print(f'\033[33mCotação do Euro UE: \033[32m{eu} €\033[33m')
     print(f'\033[32m{rse:.2f} €\033[33m são \033[32mR$ {ceu:.2f}\033[33m')
