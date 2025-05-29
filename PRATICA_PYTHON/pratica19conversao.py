@@ -13,7 +13,7 @@ eu = 6.43
 
 
 
-if qm == 'dolar':
+if qm in ['dolar', 'Dolar', 'DOLAR']:
     print('-' * 44)
     print(f'\033[34mCONVERSÂO DO DOLAR (data: {data})')
     rsd = float(input('Dólar: \033[32mUSD '))
@@ -23,7 +23,7 @@ if qm == 'dolar':
     print('\033[m-' * 44)
     print('\n\033[mReal ta valendo é nada...')
 
-elif qm == 'iene':
+elif qm in ['iene', 'Iene', 'IENE']:
     print('-' * 44)
     print(f'\033[31mCONVERSÂO DO IENE (data: {data})\n')
     rsi = float(input('Iene: \033[32mR$JPY '))
@@ -33,7 +33,7 @@ elif qm == 'iene':
     print('\033[m-' * 44)
     print('\n\033[mReal ta valendo é nada...')
 
-elif qm == 'euro':
+elif qm in ['euro', 'Euro', 'EURO']:
     print('-' * 44)
     print(f'\033[33mCONVERSÂO DO EURO (data: {data})')
     rse = float(input('Euro: \033[32m€ '))
