@@ -13,10 +13,14 @@ valores = [v1, v2, v3] # Os valores foram agrupados em uma lsita
 
 total_de_impostos = 0
 
-for item in valores: # Para cada item/valor dentro da lista de valores
+for item in valores: # Para cada item dentro da lista de valores
 
-    if item >= 500: # Se o valor do item for maior ou igual a 500 a taxa é de 20%
-       taxa = 0.2
+    if item >= 1000: # Se o valor do item for maior ou igual a 1000 a taxa é de 50%
+       taxa = 0.5
+
+    elif item >= 500: # Se o valor do item for maior ou igual a 500 a taxa é de 20%
+        taxa = 0.2
+
     else: # Se não  a taxa é de 10%
         taxa = 0.1
 
@@ -33,4 +37,4 @@ for item in valores: # Para cada item/valor dentro da lista de valores
     # calcular o total de imposto dos três itens isolados e somados
 
 
-print(f'O total de impostos \033[31mR${total_de_impostos:.2f}\033[m')
+print(f'O total de impostos de todos os itens é de \033[31mR${total_de_impostos:.2f}\033[m')
