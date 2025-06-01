@@ -7,7 +7,7 @@
 v1 = float(input("Insira o valor: R$ "))
 v2 = float(input("Insira o valor: R$ "))
 v3 = float(input("Insira o valor: R$ "))
-# Leu três valores
+# Lê três valores
 
 valores = [v1, v2, v3] # Os valores foram agrupados em uma lsita
 
