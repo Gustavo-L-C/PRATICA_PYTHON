@@ -30,3 +30,19 @@ for numero in lst:
         print(cl)
 
 print('\n.................................................................................................................\n')
+
+lst2 = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000]
+
+tttx = 0
+
+for numero2 in lst2:
+    if numero2 >= 870:
+        tx = 0.2
+    else:
+        tx = 0.1
+
+    txc = numero2 * tx
+    tttx = tttx + txc # ou tttx += txc
+    print(f'\nValor da taxa: {tx * 100}%\nValor: {numero2}\nTaxa: {txc}')
+
+print(f'\nTaxa Total: {tttx}')
