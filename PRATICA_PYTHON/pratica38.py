@@ -33,4 +33,4 @@ for item in valores: # Para cada item/valor dentro da lista de valores
     # calcular o total de imposto dos três itens isolados e somados
 
 
-print(f'O total de imposto R${total_de_impostos:.2f}')
+print(f'O total de impostos \033[31mR${total_de_impostos:.2f}\033[m')
