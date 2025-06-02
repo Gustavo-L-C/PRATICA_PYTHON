@@ -41,6 +41,6 @@ if nome in nomes:
         print(f'{repetir}- A senha do dia é: {senha}\n')
 
 else:
-    print('Tchau!')
+    print(f'\nTchau {nome}!')
 
 print('_________________________________________________________________________________________________________________')
