@@ -16,8 +16,8 @@ print('_________________________________________________________________________
 print('\033[32mValor do Item\033[m / \033[33mTaxa\033[m / \033[34mValor Total\033[m / \033[31mImposto\033[m') # Só para organizar os valores
 valores = [v1, v2, v3] # Os valores foram agrupados em uma lista
 
-total_de_impostos = 0
-n = 0
+total_de_impostos = 0 # para o calculo do valor total dos impostos
+n = 0 # Adicionado uma numeração para cada repetição
 
 for item in valores: # Para cada item dentro da lista de valores
 
