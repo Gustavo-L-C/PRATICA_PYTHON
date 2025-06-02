@@ -14,7 +14,7 @@ v3 = float(input("3- Insira o valor: R$ "))
 
 print('_________________________________________________________________________________________________________________')
 print('\033[32mValor do Item\033[m / \033[33mTaxa\033[m / \033[34mValor Total\033[m / \033[31mImposto\033[m') # Só para organizar os valores
-valores = [v1, v2, v3] # Os valores foram agrupados em uma lsita
+valores = [v1, v2, v3] # Os valores foram agrupados em uma lista
 
 total_de_impostos = 0
 n = 0
