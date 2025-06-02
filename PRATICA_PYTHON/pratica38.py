@@ -50,4 +50,5 @@ for item in valores: # Para cada item dentro da lista de valores
 
 print(f'\nO total de impostos de todos os itens é de \033[31mR${total_de_impostos:.2f}\033[m')
 # Imprimindo o valor total, exclusivamente, dos impostos
+
 print('_________________________________________________________________________________________________________________')
