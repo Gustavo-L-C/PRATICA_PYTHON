@@ -14,11 +14,18 @@ v3 = float(input("3- Insira o valor: R$ "))
 # Lê três valores
 
 print('_________________________________________________________________________________________________________________')
-print('\033[32mValor do Item\033[m / \033[33mTaxa\033[m / \033[34mValor Total\033[m / \033[31mImposto\033[m') # Só para organizar os valores
-valores = [v1, v2, v3] # Os valores foram agrupados em uma lista
 
-total_de_impostos = 0 # para o calculo do valor total dos impostos
-n = 0 # Adicionado uma numeração para cada repetição
+print('\033[32mValor do Item\033[m / \033[33mTaxa\033[m / \033[34mValor Total\033[m / \033[31mImposto\033[m')
+# Só para organizar os valores
+
+valores = [v1, v2, v3]
+# Os valores foram agrupados em uma lista
+
+total_de_impostos = 0
+# para o calculo do valor total dos impostos
+
+n = 0
+# Adicionado uma numeração para cada repetição
 
 for item in valores: # Para cada item dentro da lista de valores
 
@@ -46,7 +53,6 @@ for item in valores: # Para cada item dentro da lista de valores
 
     total_de_impostos += imposto
     # Calcular o total de imposto dos três itens isolados e somados
-
 
 print(f'\nO total de impostos de todos os itens é de \033[31mR${total_de_impostos:.2f}\033[m')
 # Imprimindo o valor total, exclusivamente, dos impostos
