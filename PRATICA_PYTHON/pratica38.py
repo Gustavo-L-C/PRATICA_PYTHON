@@ -41,10 +41,12 @@ for item in valores: # Para cada item dentro da lista de valores
 
     print(f'\n{n}- O item no valor de \033[32mR${item:.2f}\033[m, recebeu uma taxa de \033[33m{taxa * 100:.0f}%\033[m, ficando \033[34mR${valor_completo:.2f}\033[m')
     print(f'Sendo o valor do item \033[32mR${item:.2f}\033[m + o valor do imposto \033[31mR${imposto:.2f}\033[m = \033[34mR${valor_completo:.2f}\033[m')
+    # Imprimindo o resultado do calculo de impostos, valor da taxa e o valor total do item mais impostos
 
     total_de_impostos += imposto
     # Calcular o total de imposto dos três itens isolados e somados
 
 
 print(f'\nO total de impostos de todos os itens é de \033[31mR${total_de_impostos:.2f}\033[m')
+# Imprimindo o valor total, exclusivamente, dos impostos
 print('_________________________________________________________________________________________________________________')
