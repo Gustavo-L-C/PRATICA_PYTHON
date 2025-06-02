@@ -6,6 +6,7 @@
 from random import randint
 
 repetir = 0
+
 s1 = 1
 s2 = 60
 
