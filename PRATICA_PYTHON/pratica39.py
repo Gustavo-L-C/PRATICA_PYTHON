@@ -7,7 +7,7 @@
 print('_________________________________________________________________________________________________________________')
 print('Índice de Estados')
 print('_________________________________________________________________________________________________________________')
-print('0- Acre\n1- AlagoasPiauí\n3- Rio Grande do Norte\n4- Amapá\n5- Amazonas\n6- Maranhão\n7- Bahia\n8- Ceará\n9- Distrito Federal\n10- Espírito Santo\n11- Goiás\n'
+print('0- Acre\n1- Alagoas\n2- Piauí\n3- Rio Grande do Norte\n4- Amapá\n5- Amazonas\n6- Maranhão\n7- Bahia\n8- Ceará\n9- Distrito Federal\n10- Espírito Santo\n11- Goiás\n'
       '12- Mato Grosso\n13- Mato Grosso do Sul\n14- Minas Gerais\n15- Pará\n16- Paraíba\n17- Paraná\n18- Pernambuco\n19- Rio de Janeiro\n20- Rio Grande do Sul\n'
       '21- Rondônia\n22- Roraima\n23- Santa Catarina\n24- São Paulo\n25- Sergipe\n26- Tocantins')
 print('_________________________________________________________________________________________________________________\n')
@@ -68,18 +68,19 @@ SE = 0.2
 TO = 0.2
 
 lista_de_E = [AC, AL, PI, RN, AP, AM, MR, BH, CE, DF, ES, GO, MT, MS, MG, PR, PB, PN, PE, RJ, RS, RN, RM, SC, SP, SE, TO]
-
+Estados = ['Acre', 'Alagoas', 'Piauí', 'Rio Grande do Norte', 'Amapá', 'Amazonas', 'Maranhão', 'Bahia', 'Ceará', 'Distrito Federal', 'Espírito Santo', 'Goiás', 'Mato Grosso', 'Mato Grosso do Sul', 'Minas Gerais', 'Pará', 'Paraíba', 'Paraná', 'Pernambuco',' Rio de Janeiro', 'Rio Grande do Sul', 'Rondônia', 'Roraima', 'Santa Catarina', 'São Paulo', 'Sergipe', 'Tocantins']
 
 ICMS_E = int(input(f'Qual seu Estado (de acordo com a numeração no índice de estados)? '))
 
 if 0 <= ICMS_E < len(lista_de_E):
-
     valor_ICMS = float(lista_de_E[ICMS_E])
-    print(f'O valor do ICMS do estado é de{valor_ICMS * 100: .0f}%')
+
+    estado = str(Estados[ICMS_E])
+
+    print(f'O valor do ICMS do estado {estado} é de{valor_ICMS * 100: .0f}%')
 
 else:
     print('ERRO')
-
 
 print('\n_________________________________________________________________________________________________________________')
 
