@@ -8,9 +8,9 @@
 
 print('_________________________________________________________________________________________________________________')
 
-v1 = float(input("1- Insira o valor: R$ "))
-v2 = float(input("2- Insira o valor: R$ "))
-v3 = float(input("3- Insira o valor: R$ "))
+v1 = float(input('1- Insira o valor: R$ '))
+v2 = float(input('2- Insira o valor: R$ '))
+v3 = float(input('3- Insira o valor: R$ '))
 # Lê três valores
 
 print('_________________________________________________________________________________________________________________')
