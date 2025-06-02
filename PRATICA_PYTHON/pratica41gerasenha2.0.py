@@ -3,31 +3,31 @@
 
 #gerador de senhas 2.0
 
-from random import randint
+from random import randint # importando o radint
 
-repetir = 0
+repetir = 0 # numerção na repetição
 
-s1 = 1
-s2 = 60
+s1 = 1 # numero minimo
+s2 = 60 # numero maximo
 
-print('_________________________________________________________________________________________________________________')
+print('_________________________________________________________________________________________________________________') # só decoração
 
-print('\n\033[34m--Gerador de senhas--\033[m\n')
+print('\n\033[34m--Gerador de senhas--\033[m\n') # só decoração
 
-nome = str(input('Qual seu nome? '))
+nome = str(input('Qual seu nome? ')) # Recebe um nome
 
-nomes = ['Gustavo', 'GUSTAVO', 'gustavo']
+nomes = ['Gustavo', 'GUSTAVO', 'gustavo'] # lista de nomes que possuem acesso
 
-print('_________________________________________________________________________________________________________________')
+print('_________________________________________________________________________________________________________________') # só decoração
 
-if nome in nomes:
-    print(f'\nSeja bem vindo {nome}!')
+if nome in nomes: # se o nome recebido está dentro da lista de nomes
+    print(f'\nSeja bem vindo {nome}!') # será bem vindo
 
-    quantidade = int(input('De quantos senhas precisará? '))
+    quantidade = int(input('De quantos senhas precisará? ')) # pergunta a quantidade de senhas a serem geradas
 
-    for numero in range(quantidade):
+    for numero in range(quantidade): # para cada numero de repetições recebidas de quantidade
 
-        repetir += 1
+        repetir += 1 # numerção na repetição
 
         se1 = randint(s1, s2)
         se2 = randint(s1, s2)
@@ -35,12 +35,13 @@ if nome in nomes:
         se4 = randint(s1, s2)
         se5 = randint(s1, s2)
         se6 = randint(s1, s2)
+        # numero aleatorio dentro do "range" pre estabelecido
 
-        senha = [se1, se2, se3, se4, se5, se6]
+        senha = [se1, se2, se3, se4, se5, se6] # senha gerada de 6 numeros aleatorios para cada repetição
 
-        print(f'{repetir}- A senha do dia é: {senha}\n')
+        print(f'{repetir}- A senha do dia é: {senha}\n') # imprimi a/as senhas geradas
 
-else:
-    print(f'\nTchau {nome}!')
+else: # caso nome não esteja na lista
+    print(f'\nTchau {nome}!') # tchau
 
-print('_________________________________________________________________________________________________________________')
+print('_________________________________________________________________________________________________________________') # só decoração
