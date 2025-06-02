@@ -32,11 +32,7 @@ if tt >= 50:
     ctx60 = (tx60 + tx2050) * vdl #valor da taxa total convertida
     vtdctx60 = vp + ft + ctx60
     print(f'O valor da sua taxa será de aproximadamente {tx60 + tx2050:.2f} dólares, que é dividido em 20% do valor de 50 dólares mais 60% do valor excedente aos 50 dólares, ou seja, R$ {ctx60:.2f}, dando um total de R$ {vtdctx60:.2f}...')
-    print(
-        '\nPS. Não tem como fujir da taxação...\nE essa é só a taxa de importação... A taxa de ICMS não foi contabilizada.')
-
-
-
+    print('\nPS. Não tem como fujir da taxação...\nE essa é só a taxa de importação....')
 
 else:
     print(f'Sua compra na {ql} deu um total de {tt:.2f} dólares e você foi taxado em 20%...')
@@ -45,7 +41,4 @@ else:
     vtdctx20 = vp + ft + ctx20
     print(f'O valor da sua taxa será de aproximadamente {tx20:.2f} dólares, ou seja, R$ {ctx20:.2f}, dando um total de R$ {vtdctx20:.2f}...')
     print(
-        '\nPS. Não tem como fujir da taxação...\nE essa é só a taxa de importação... A taxa de ICMS não foi contabilizada.')
-
-
-
+        '\nPS. Não tem como fujir da taxação...\nE essa é só a taxa de importação....')
