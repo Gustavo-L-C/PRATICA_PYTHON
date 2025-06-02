@@ -1,60 +1,50 @@
-#01.06.25
-#ESTRUTURAS DE REPETIÇÃO - 04
-
-
-#FOR - 03
-
+#02.06.25
 # PRÁTICA
 
 print('_________________________________________________________________________________________________________________')
 
-v1 = float(input('1- Insira o valor: R$ '))
-v2 = float(input('2- Insira o valor: R$ '))
-v3 = float(input('3- Insira o valor: R$ '))
-# Lê três valores
+v1 = float(input('1- Insira o valor do produto: R$ '))
+v2 = float(input('2- Insira o valor do frete (caso seja grátis 0): R$ '))
+# Lê dois valores
 
 print('_________________________________________________________________________________________________________________')
 
-print('\033[32mValor do Item\033[m / \033[33mTaxa\033[m / \033[34mValor Total\033[m / \033[31mImposto\033[m')
-# UM índice só para organizar os valores
+if v2 in [0.0, 0]: # caso frete gratis
+    frete = 'com frete grátis'
+else: # se não
+    frete = f'mais o frete de R$ {v2:.2f}'
 
-valores = [v1, v2, v3]
+dolar = 5.68 # valor do dolar data 02.06.2025
+produto_frete = v1 + v2 # somamos o valor do produto mais o frete
+real_dolar = produto_frete / dolar # convertemos o valor do produto mais frete para dólares
+
+valores = [real_dolar]
 # Os valores foram agrupados em uma lista
 
 total_de_impostos = 0
 # para o calculo do valor total dos impostos
 
-n = 0
-# Adicionado uma numeração para cada repetição
-
 for item in valores: # Para cada item dentro da lista de valores
 
-    if item >= 1000: # Se o valor do item for maior ou igual a 1000 a taxa é de 50%
-       taxa = 0.5
+    if item >= 50.01: # Se o valor do item for maior ou igual a USD 50.01 a taxa é de 60%
+       taxa = 0.6
 
-    elif item >= 500: # Se o valor do item for maior ou igual a 500 a taxa é de 20%
+    elif item >= 3000: # Se o valor do item for maior ou igual a USD 3000 a taxa é de 60%
+        taxa = 0.6
+
+    else: # Se não for a taxa é de 20%
         taxa = 0.2
 
-    else: # Se não  a taxa é de 10%
-        taxa = 0.1
-
     imposto = item * taxa
-    # Calculo do imposto que é o item multiplicado pela taxa
-
     valor_completo = imposto + item
-    # Calculo total do item + imposto
 
-    n += 1
-    # Adicionado uma numeração para cada repetição
-
-    print(f'\n{n}- O item no valor de \033[32mR${item:.2f}\033[m, recebeu uma taxa de \033[33m{taxa * 100:.0f}%\033[m, ficando \033[34mR${valor_completo:.2f}\033[m')
-    print(f'Sendo o valor do item \033[32mR${item:.2f}\033[m + o valor do imposto \033[31mR${imposto:.2f}\033[m = \033[34mR${valor_completo:.2f}\033[m')
-    # Imprimindo o resultado do calculo de impostos, valor da taxa e o valor total do item mais impostos
+    print(f'\nO item de valor R$ {v1:.2f} {frete}, convertendo ao dólar hoje temos um total de USD {real_dolar:.2f}.')
+    print(f'Então o seu produto deve ser taxado em {taxa * 100:.2f}% de seu valor.')
+    print(f'Dando um total de USD {imposto:.2f} ou R$ {imposto * dolar:.2f} em impostos.')
+    print(f'O valor do produto com os impostos de R$ {imposto * dolar:.2f} da um total de R$ {valor_completo * dolar:.2f}.')
 
     total_de_impostos += imposto
-    # Calcular o total de imposto dos três itens isolados e somados
 
-print(f'\nO total de impostos de todos os itens é de \033[31mR${total_de_impostos:.2f}\033[m')
-# Imprimindo o valor total, exclusivamente, dos impostos
+print(f'\nO total de impostos de todos os itens é de \033[31mR$ {total_de_impostos * dolar:.2f}\033[m')
 
 print('_________________________________________________________________________________________________________________')
