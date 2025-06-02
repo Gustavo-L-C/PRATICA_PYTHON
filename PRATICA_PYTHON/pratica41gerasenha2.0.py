@@ -1,11 +1,9 @@
 #02.06.25
-#PRATICA - 07#
+#Atualizando
 
-#gerador de senhas
+#gerador de senhas 2.0
 
 from random import randint
-
-#n = str(input('Qual seu nome? '))
 
 s1 = 1
 s2 = 60
@@ -17,14 +15,7 @@ se4 = randint(s1, s2)
 se5 = randint(s1, s2)
 se6 = randint(s1, s2)
 
-senha = [s1, s2, se1, se2, se3, se4, se5, se6]
-
-#if n == 'Gustavo' or 'gustavo' or 'GUSTAVO':
-    #print(f'\nBem-vindo de volta {n} :)')
-    #print('A senha do dia é ...', se1,se2,se3,se4,se5,se6)
-
-#else:
-    #print(f'\nOlá, {n}')
+senha = [se1, se2, se3, se4, se5, se6]
 
 print('_________________________________________________________________________________________________________________')
 print('\n\033[34m--Gerador de senhas--\033[m\n')
