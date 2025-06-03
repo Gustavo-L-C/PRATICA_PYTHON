@@ -7,7 +7,7 @@ n1 = int(input('digite um numero: ')) # escolhe a quantidade de repetições
 
 n = 0
 
-while n < n1: # o while só parará quando igual a n1
+while n < n1: # o while só parará quando menor que n1
 
     n += 1
 
