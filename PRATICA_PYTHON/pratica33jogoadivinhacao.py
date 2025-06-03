@@ -23,7 +23,7 @@ def JA(): # inicio da "janela"
 
     p = 0 # numero de palpites
 
-    premio1 = ['⚔️⚔️\033[34mElden Ring Night Rein\033[m⚔️⚔️', '🦖🦖\033[36mMonster Hunter Wilds\033[m🦖🦖', '🔫🔫\033[35mHellDivers 2\033[m🔫🔫', '☠️☠️\033[33mWarhammer 40,000: Space Marine 2\033[m☠️☠️', '💨💨\033[31mNada\033[m💨💨'] # lista de premios
+    premio1 = ['⚔️⚔️\033[34mELDEN RING NIGHTREIGN\033[m⚔️⚔️', '🦖🦖\033[36mMonster Hunter Wilds\033[m🦖🦖', '🔫🔫\033[35mHellDivers 2\033[m🔫🔫', '☠️☠️\033[33mWarhammer 40,000: Space Marine 2\033[m☠️☠️', '💨💨\033[31mNada\033[m💨💨'] # lista de premios
 
     print(f'\n Vamos começar {nome}!!') # start
 
