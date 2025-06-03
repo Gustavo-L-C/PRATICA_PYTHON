@@ -56,7 +56,7 @@ def JA(): # inicio da "janela"
                 else:
                     print('\nOK.')
 
-        except ValueError: 
+        except ValueError:
 
             print('\033[31mNúmero Inválido..\033[m')
 
