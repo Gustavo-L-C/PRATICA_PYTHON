@@ -23,7 +23,7 @@ def JA(): # inicio da "janela"
 
     p = 0 # numero de palpites
 
-    premio1 = ['Elden Ring Night Rein', 'Monster Hunter Wilds', 'Hell Divers', 'Space Marine 2'] # lista de premios
+    premio1 = ['⚔️⚔️\033[34mElden Ring Night Rein\033[m⚔️⚔️', '🦖🦖\033[36mMonster Hunter Wilds\033[m🦖🦖', '🔫🔫\033[34mHellDivers 2\033[m🔫🔫', '☠️☠️\033[33mWarhammer 40,000: Space Marine 2\033[m☠️☠️', '💨💨\033[31mNada\033[m💨💨'] # lista de premios
 
     print(f'\n Vamos começar {nome}!!') # start
 
@@ -51,7 +51,7 @@ def JA(): # inicio da "janela"
                 ap = str(input('Quer abrir seu prêmio(S/N)? ')) # para abrir o premio ou não
 
                 if ap in ['S', 's', 'sim', 'Sim', 'SIM']: # recebe o premio aleatorio
-                    print(f'\n⚔️⚔️Toma \033[34m{premiacao}\033[m⚔️⚔️')
+                    print(f'\nToma {premiacao}')
 
                 else:
                     print('\nOK.')
