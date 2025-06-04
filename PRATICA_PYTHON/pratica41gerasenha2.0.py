@@ -15,7 +15,7 @@ nome = str(input('Qual seu nome? ')) # Recebe um nome
 
 se2 = int(input(f'{nome} escolha até que número sera usado para a senha (de 1 a \033[34msua escolha\033[m, sempre será partindo de 1): ')) # escolher o "range" numérico que será utilizado para a senha
 
-nomes = ['Gustavo', 'GUSTAVO', 'gustavo'] # lista de nomes que possuem acesso
+nomes = ['Gustavo', 'GUSTAVO', 'gustavo'] # lista de nomes que possuem acesso para gerar senhas
 
 print('_________________________________________________________________________________________________________________') # só decoração
 
@@ -48,7 +48,10 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
         print(f'{repetir}- A senha do dia é: {senha}\n') # mostra a/as senhas geradas
         # print(f'{repetir}- A senha do dia é: {se1, se2, se3, se4, se5, se6}\n') # outro jeito de mostrar a/as senha/as geradas
 
+        print(f'\nTchau {nome}!')
+
 else: # caso nome não esteja na lista
-    print(f'\nTchau {nome}!') # tchau
+    uma_senha = '123456' # para quem não possui acesso
+    print(f'\nSua senha : {uma_senha}\nTchau {nome}!') # tchau
 
 print('_________________________________________________________________________________________________________________') # só decoração
