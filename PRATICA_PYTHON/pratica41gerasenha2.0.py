@@ -5,7 +5,7 @@
 
 from random import randint # importando o radint
 
-repetir = 0 # numerção na repetição
+repetir = 0 # numeração na repetição
 
 print('_________________________________________________________________________________________________________________') # só decoração
 
@@ -22,18 +22,18 @@ print('_________________________________________________________________________
 s1 = 1 # numero minimo
 s2 = se2 # numero maximo
 
-print(f'A senha será de {s1} a {s2}.') # mostra o "range" numerico da senha
+print(f'A senha será de {s1} a {s2}.') # mostra o "range" numérico da senha
 
 print('_________________________________________________________________________________________________________________') # só decoração
 
 if nome in nomes: # se o nome recebido está dentro da lista de nomes
-    print(f'\nSeja bem vindo {nome}!') # será bem vindo
+    print(f'\nSeja bem vindo {nome}!') # será bem-vindo
 
     quantidade = int(input('De quantos senhas precisará? ')) # pergunta a quantidade de senhas a serem geradas
 
-    for numero in range(quantidade): # para cada numero de repetições recebidas de quantidade
+    for numero in range(quantidade): # para cada número de repetições recebidas de quantidade
 
-        repetir += 1 # numerção na repetição
+        repetir += 1 # numeração na repetição
 
         se1 = randint(s1, se2)
         se2 = randint(s1, s2)
@@ -43,7 +43,7 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
         se6 = randint(s1, s2)
         # numero aleatorio dentro do "range" pre estabelecido
 
-        senha = [se1, se2, se3, se4, se5, se6] # senha gerada de 6 numeros aleatorios para cada repetição
+        senha = [se1, se2, se3, se4, se5, se6] # senha gerada de 6 números aleatórios para cada repetição
 
         print(f'{repetir}- A senha do dia é: {senha}\n') # mostra a/as senhas geradas
         # print(f'{repetir}- A senha do dia é: {se1, se2, se3, se4, se5, se6}\n') # outro jeito de mostrar
