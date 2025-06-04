@@ -31,7 +31,7 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
 
     quantidade = int(input('De quantos senhas precisará? ')) # pergunta a quantidade de senhas a serem geradas
 
-    for numero in range(quantidade): # para cada número dentro do range(quantidade de repetições escolhidas na var. 'quantidade')
+    for numero in range(quantidade): # para cada número dentro do range(quantidade de repetições escolhidas na variável 'quantidade')
 
         repetir += 1 # numeração na repetição
 
