@@ -19,8 +19,8 @@ nomes = ['Gustavo', 'GUSTAVO', 'gustavo'] # lista de nomes que possuem acesso
 
 print('_________________________________________________________________________________________________________________') # só decoração
 
-s1 = 1 # numero minimo
-s2 = se2 # numero maximo
+s1 = 1 # número minimo
+s2 = se2 # número maximo
 
 print(f'A senha será de {s1} a {s2}.') # mostra o "range" numérico da senha
 
@@ -33,7 +33,7 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
 
     for numero in range(quantidade): # para cada número dentro do range(quantidade de repetições escolhidas na variável 'quantidade')
 
-        repetir += 1 # numeração na repetição
+        repetir += 1 # numeração na repetição, só decoração
 
         se1 = randint(s1, se2)
         se2 = randint(s1, s2)
@@ -41,12 +41,12 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
         se4 = randint(s1, s2)
         se5 = randint(s1, se2)
         se6 = randint(s1, s2)
-        # numero aleatorio dentro do "range" pre estabelecido
+        # número aleatorio dentro do "range" pre estabelecido(em 'se2')
 
         senha = [se1, se2, se3, se4, se5, se6] # senha gerada de 6 números aleatórios para cada repetição
 
         print(f'{repetir}- A senha do dia é: {senha}\n') # mostra a/as senhas geradas
-        # print(f'{repetir}- A senha do dia é: {se1, se2, se3, se4, se5, se6}\n') # outro jeito de mostrar
+        # print(f'{repetir}- A senha do dia é: {se1, se2, se3, se4, se5, se6}\n') # outro jeito de mostrar a/as senha/as geradas
 
 else: # caso nome não esteja na lista
     print(f'\nTchau {nome}!') # tchau
