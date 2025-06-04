@@ -13,7 +13,7 @@ print('\n\033[34m--Gerador de senhas--\033[m\n') # só decoração
 
 nome = str(input('Qual seu nome? ')) # Recebe um nome
 
-se2 = int(input(f'{nome} escolha até que número sera usado para a senha (de 1 a \033[34msua escolha\033[m, sempre será partindo de 1): ')) # escolher o "range" numerico que será utilizado para a senha
+se2 = int(input(f'{nome} escolha até que número sera usado para a senha (de 1 a \033[34msua escolha\033[m, sempre será partindo de 1): ')) # escolher o "range" numérico que será utilizado para a senha
 
 nomes = ['Gustavo', 'GUSTAVO', 'gustavo'] # lista de nomes que possuem acesso
 
@@ -31,7 +31,7 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
 
     quantidade = int(input('De quantos senhas precisará? ')) # pergunta a quantidade de senhas a serem geradas
 
-    for numero in range(quantidade): # para cada número de repetições recebidas de quantidade
+    for numero in range(quantidade): # para cada número dentro do range(quantidade de repetições escolhidas na var. 'quantidade')
 
         repetir += 1 # numeração na repetição
 
