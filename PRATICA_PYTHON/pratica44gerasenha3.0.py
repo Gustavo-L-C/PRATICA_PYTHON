@@ -21,9 +21,9 @@ nome = str(input('Qual seu nome? ')) # recebe um nome
 
 nomes = bancos_nomes # lista de nomes que possuem acesso para gerar senhas
 
-pergunta_q = f'{nome}, quantas senhas precisará? '
+pergunta_q = f'{nome}, quantas senhas precisará? ' # facilitando perguntas repetidas
 
-pergunta_c = f'{nome}, quantos caracteres a senha precisa? '
+pergunta_c = f'{nome}, quantos caracteres a senha precisa? ' # facilitando perguntas repetidas
 
 print('_________________________________________________________________________________________________________________') # só decoração
 
