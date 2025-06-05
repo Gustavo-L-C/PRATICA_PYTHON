@@ -19,7 +19,7 @@ print('\n\033[34m--Gerador de senhas 3.0--\033[m\n') # titulo / só decoração
 
 nome = str(input('Qual seu nome? ')) # recebe um nome
 
-nomes = bancos_nomes # lista de nomes que possuem acesso para gerar senhas 
+nomes = bancos_nomes # lista de nomes que possuem acesso para gerar senhas
 
 print('_________________________________________________________________________________________________________________') # só decoração
 
@@ -57,7 +57,7 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
 
             senha = [se1, se2, se3, se4, se5, se6] # senha gerada de 6 números aleatórios para cada repetição
 
-            print(f'\n{numeracao}- A senha do dia é: {senha}') # mostra a/as senhas geradas
+            print(f'\n{numeracao}- Sua senha simples: {senha}') # mostra a/as senhas geradas
     # _________________________________________________________________________________________________________________if_senha_simples
 
     #_________________________________________________________________________________________________________________elif_senha_segura
@@ -75,7 +75,7 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
 
                 numeracao += 1  # numeração na repetição, só decoração
 
-                print(f'{numeracao}- Sua senha segura {tipo_senha} segura:','\033[32m',secrets.token_bytes(caracteres),'\033[m') # mostra a/as senhas geradas
+                print(f'{numeracao}- Sua senha segura de {tipo_senha} segurança:','\033[32m',secrets.token_bytes(caracteres),'\033[m') # mostra a/as senhas geradas
         # _________________________________________________________________________________________________________________if_senha_ultra
 
         # ___________________________________________________________________________________________________________________elif_senha_muito
@@ -85,7 +85,7 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
 
                 numeracao += 1  # numeração na repetição, só decoração
 
-                print(f'{numeracao}- Sua senha segura {tipo_senha} segura:','\033[33m',secrets.token_urlsafe(caracteres),'\033[m') # mostra a/as senhas geradas
+                print(f'{numeracao}- Sua senha segura de {tipo_senha} segurança:','\033[33m',secrets.token_urlsafe(caracteres),'\033[m') # mostra a/as senhas geradas
         # _________________________________________________________________________________________________________________elif_senha_muito
 
         # _________________________________________________________________________________________________________________elif_senha_media
