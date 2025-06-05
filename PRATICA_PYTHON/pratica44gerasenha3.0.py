@@ -26,7 +26,7 @@ print('_________________________________________________________________________
 #_________________________________________________________________________________________________________________if_nome_escolha
 if nome in nomes: # se o nome recebido está dentro da lista de nomes
 
-    print(f'\nSeja bem vindo {nome}!\n')  # será bem-vindo
+    print(f'\nSeja bem vindo {nome}!\n')  # bem-vindo
 
     segura_simples = str(input('Que tipo de senha você precisa(\033[36msegura\033[m ou \033[35msimples\033[m)? ')) # pergunta se você precisa de uma senha segura ou simples
 
