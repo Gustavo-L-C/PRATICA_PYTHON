@@ -21,16 +21,16 @@ nomes = ['Gustavo', 'GUSTAVO', 'gustavo'] # lista de nomes que possuem acesso pa
 
 print('_________________________________________________________________________________________________________________') # só decoração
 
-#_________________________________________________________________________________________________________________if_nome
+#_________________________________________________________________________________________________________________if_nome_escolha
 if nome in nomes: # se o nome recebido está dentro da lista de nomes
 
     print(f'\nSeja bem vindo {nome}!\n')  # será bem-vindo
 
-    questao = str(input('Que tipo de senha você precisa(segura ou simples)? '))
-# _________________________________________________________________________________________________________________if_nome
+    segura_simples = str(input('Que tipo de senha você precisa(segura ou simples)? '))
+# _________________________________________________________________________________________________________________if_nome_escolha
 
 #_________________________________________________________________________________________________________________if_senha_simples
-    if questao in ['simples', 'Simples', 'SIMPLES']:
+    if segura_simples in ['simples', 'Simples', 'SIMPLES']:
 
         se2 = int(input(f'\n{nome} escolha até que número sera usado para a senha (de 1 a \033[34msua escolha\033[m, sempre será partindo de 1): '))  # escolher o "range" numérico que será utilizado para a senha
 
@@ -60,7 +60,7 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
     # _________________________________________________________________________________________________________________if_senha_simples
 
     #_________________________________________________________________________________________________________________elif_senha_segura
-    elif questao in ['segura', 'Segura', 'SEGURA']:
+    elif segura_simples in ['segura', 'Segura', 'SEGURA']:
 
         tipo_senha = str(input('\nDigite o tipo de senha (ultra, muito, média): ')) # pergunta o tipo de senha ultra segura, muito segura e de média segurança
         quantidade = int(input(f'{nome}, quantas senhas precisará? '))  # pergunta a quantidade de senhas a serem geradas
