@@ -4,13 +4,13 @@
 # gera senhas 3.0
 # gerar senhas seguras/complexas
 # gerar senhas numéricas simples
-# utilizando variáveis, if/elif/else, for
+# utilizando randint, secrets, variáveis, if/elif/else e for
 
 from random import randint
 import secrets
 
 #variáveis
-numeracao = 0
+numeracao = 0 # numeração na repetição
 
 print('_________________________________________________________________________________________________________________') # só decoração
 
@@ -27,7 +27,7 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
     print(f'\nSeja bem vindo {nome}!\n')  # será bem-vindo
 
     questao = str(input('Que tipo de senha você precisa(segura ou simples)? '))
-    
+
 #_________________________________________________________________________________________________________________
     if questao in ['simples', 'Simples', 'SIMPLES']:
 
@@ -70,15 +70,15 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
 
                 numeracao += 1  # numeração na repetição, só decoração
 
-                print(f'{numeracao}- Sua senha segura {tipo_senha} segura:',secrets.token_bytes(caracteres))
+                print(f'{numeracao}- Sua senha segura {tipo_senha} segura:','\033[32m',secrets.token_bytes(caracteres),'\033[m')
 
-        elif tipo_senha in ['muto', 'Muito', 'MUITO']:
+        elif tipo_senha in ['muito', 'Muito', 'MUITO']:
 
             for numero in range(quantidade):  # para cada número dentro do range(quantidade de repetições escolhidas na variável 'quantidade')
 
                 numeracao += 1  # numeração na repetição, só decoração
 
-                print(f'{numeracao}- Sua senha segura {tipo_senha} segura:',secrets.token_urlsafe(caracteres))
+                print(f'{numeracao}- Sua senha segura {tipo_senha} segura:','\033[33m',secrets.token_urlsafe(caracteres),'\033[m')
 
         else:
 
@@ -86,7 +86,7 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
 
                 numeracao += 1 # numeração na repetição, só decoração
 
-                print(f'{numeracao}- Sua senha segura {tipo_senha} segura:',secrets.token_hex(caracteres))
+                print(f'{numeracao}- Sua senha segura de {tipo_senha} segurança:','\033[31m', secrets.token_hex(caracteres),'\033[m')
 
 #_________________________________________________________________________________________________________________
     else: # caso nome não esteja na lista
