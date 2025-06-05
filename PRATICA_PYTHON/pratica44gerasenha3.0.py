@@ -9,14 +9,13 @@
 from random import randint
 import secrets
 
-#variáveis
 numeracao = 0 # numeração na repetição
 
 print('_________________________________________________________________________________________________________________') # só decoração
 
-print('\n\033[34m--Gerador de senhas 3.0--\033[m\n') # só decoração
+print('\n\033[34m--Gerador de senhas 3.0--\033[m\n') # titulo / só decoração
 
-nome = str(input('Qual seu nome? ')) # Recebe um nome
+nome = str(input('Qual seu nome? ')) # recebe um nome
 
 nomes = ['Gustavo', 'GUSTAVO', 'gustavo'] # lista de nomes que possuem acesso para gerar senhas
 
