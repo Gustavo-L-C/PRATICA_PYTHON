@@ -29,7 +29,7 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
 
     questao = str(input('Que tipo de senha você precisa(segura ou simples)? '))
 # _________________________________________________________________________________________________________________if_nome
-    
+
 #_________________________________________________________________________________________________________________if_senha_simples
     if questao in ['simples', 'Simples', 'SIMPLES']:
 
@@ -111,18 +111,18 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
 #_________________________________________________________________________________________________________________else_tipo_de_senha
     else: # caso nome não esteja na lista
 
-        uma_senha1 = '123456' # para quem possui acesso
+        uma_senha2 = '123456' # para quem possui acesso
 
-        print(f'\nSua senha : {uma_senha1}\n') # mostra a senha fraca "gerada"
+        print(f'\nSua senha : {uma_senha2}\n') # mostra a senha fraca "gerada"
 
 #_________________________________________________________________________________________________________________else_tipo_de_senha
 
 #_________________________________________________________________________________________________________________else_nome
 else:  # caso nome não esteja na lista
 
-    uma_senha2 = '123456'  # para quem não possui acesso
+    uma_senha3 = '123456'  # para quem não possui acesso
 
-    print(f'\nSua senha : {uma_senha2}\n')  # mostra a senha fraca "gerada"
+    print(f'\nSua senha : {uma_senha3}\n')  # mostra a senha fraca "gerada"
 
 #_________________________________________________________________________________________________________________else_nome
 
