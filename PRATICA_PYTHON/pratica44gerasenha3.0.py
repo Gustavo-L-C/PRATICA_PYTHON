@@ -1,5 +1,4 @@
 #05.06.25
-
 #MÃO LIVRE - 02
 
 # gera senhas 3.0
