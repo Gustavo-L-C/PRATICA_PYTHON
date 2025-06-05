@@ -29,7 +29,7 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
     segura_simples = str(input('Que tipo de senha você precisa(segura ou simples)? ')) # pergunta se você precisa de uma senha segura ou simples
 # _________________________________________________________________________________________________________________if_nome_escolha
 
-#_________________________________________________________________________________________________________________if_senha_simples
+    #_________________________________________________________________________________________________________________if_senha_simples
     if segura_simples in ['simples', 'Simples', 'SIMPLES']: # para senhas simples
 
         se2 = int(input(f'\n{nome} escolha até que número sera usado para a senha (de 1 a \033[34msua escolha\033[m, sempre será partindo de 1): '))  # escolher o "range" numérico que será utilizado para a senha
@@ -66,7 +66,6 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
         quantidade = int(input(f'{nome}, quantas senhas precisará? '))  # pergunta a quantidade de senhas a serem geradas
         caracteres = int(input(f'{nome}, quantos caracteres a senha precisa? ')) # pergunta a quantidade de caracteres que serão utilizados na senha
         print(' ') # pula linha
-    # _________________________________________________________________________________________________________________elif_senha_segura
 
         # _________________________________________________________________________________________________________________if_senha_ultra
         if tipo_senha in ['ultra', 'Ultra', 'ULTRA']: # ultra segura
@@ -102,7 +101,8 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
             uma_senha1 = '123456'  # para quem possui acesso
 
             print(f'\nSua senha : {uma_senha1}\n')  # mostra a senha fraca "gerada"
-    # _________________________________________________________________________________________________________________elif_senha_media
+        # _________________________________________________________________________________________________________________elif_senha_media
+    # _________________________________________________________________________________________________________________elif_senha_segura
 
 #_________________________________________________________________________________________________________________else_tipo_de_senha
     else: # caso nome não esteja na lista
