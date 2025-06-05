@@ -65,7 +65,7 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
         tipo_senha = str(input('\nDigite o tipo de senha (ultra, muito, média): ')) # pergunta o tipo de senha ultra segura, muito segura e de média segurança
         quantidade = int(input(f'{nome}, quantas senhas precisará? '))  # pergunta a quantidade de senhas a serem geradas
         caracteres = int(input(f'{nome}, quantos caracteres a senha precisa? ')) # pergunta a quantidade de caracteres que serão utilizados na senha
-        print(' ')
+        print(' ') # pula linha
 
     # _________________________________________________________________________________________________________________elif_senha_segura
 
