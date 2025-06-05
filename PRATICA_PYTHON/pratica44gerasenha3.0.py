@@ -27,7 +27,6 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
     print(f'\nSeja bem vindo {nome}!\n')  # será bem-vindo
 
     segura_simples = str(input('Que tipo de senha você precisa(segura ou simples)? ')) # pergunta se você precisa de uma senha segura ou simples
-# _________________________________________________________________________________________________________________if_nome_escolha
 
     #_________________________________________________________________________________________________________________if_senha_simples
     if segura_simples in ['simples', 'Simples', 'SIMPLES']: # para senhas simples
@@ -111,6 +110,7 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
 
         print(f'\nSua senha : {uma_senha2}\n') # mostra a senha fraca "gerada"
     #_________________________________________________________________________________________________________________else_tipo_de_senha
+# _________________________________________________________________________________________________________________if_nome_escolha
 
 #_________________________________________________________________________________________________________________else_nome
 else:  # caso nome não esteja na lista
