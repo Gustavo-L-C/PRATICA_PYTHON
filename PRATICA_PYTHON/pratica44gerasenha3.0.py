@@ -34,29 +34,29 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
 
         se2 = int(input(f'\n{nome} escolha até que número sera usado para a senha (de 1 a \033[34msua escolha\033[m, sempre será partindo de 1): '))  # escolher o "range" numérico que será utilizado para a senha
 
-        s1 = 1  # número minimo
-        s2 = se2  # número maximo
+        sr1 = 1  # número minimo
+        sr2 = se2  # número maximo
+        # senha range
 
-        print(f'\nA senha será de {s1} a {s2}.\n')  # mostra o "range" numérico da senha
+        print(f'\nA senha será de {sr1} a {sr2}.\n')  # mostra o "range" numérico da senha
 
         quantidade = int(input('De quantos senhas precisará? ')) # pergunta a quantidade de senhas a serem geradas
 
         for numero in range(quantidade): # para cada número dentro do range(quantidade de repetições escolhidas na variável 'quantidade')
 
-            numeracao += 1 # numeração na repetição, só decoração
+            numeracao += 1 # numeração para as repetições, só decoração
 
-            se1 = randint(s1, se2)
-            se2 = randint(s1, s2)
-            se3 = randint(s1, se2)
-            se4 = randint(s1, s2)
-            se5 = randint(s1, se2)
-            se6 = randint(s1, s2)
-            # número aleatorio dentro do "range" pre estabelecido(em 'se2')
+            se1 = randint(sr1, se2)
+            se2 = randint(sr1, sr2)
+            se3 = randint(sr1, se2)
+            se4 = randint(sr1, sr2)
+            se5 = randint(sr1, se2)
+            se6 = randint(sr1, sr2)
+            # número aleatorio dentro do "range" pré-estabelecido(em 'se2')
 
             senha = [se1, se2, se3, se4, se5, se6] # senha gerada de 6 números aleatórios para cada repetição
 
             print(f'\n{numeracao}- A senha do dia é: {senha}') # mostra a/as senhas geradas
-
     # _________________________________________________________________________________________________________________if_senha_simples
 
     #_________________________________________________________________________________________________________________elif_senha_segura
