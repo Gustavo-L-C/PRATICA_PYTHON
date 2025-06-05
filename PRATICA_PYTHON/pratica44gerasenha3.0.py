@@ -9,7 +9,7 @@
 
 from random import randint # importando radint
 import secrets # importando secrets
-from bancodenomes import bancos_nomes
+from bancodenomes import bancos_nomes # importando o banco de nomes "cadastrados"
 
 numeracao = 0 # numeração na repetição
 
@@ -19,7 +19,7 @@ print('\n\033[34m--Gerador de senhas 3.0--\033[m\n') # titulo / só decoração
 
 nome = str(input('Qual seu nome? ')) # recebe um nome
 
-nomes = bancos_nomes # lista de nomes que possuem acesso para gerar senhas
+nomes = bancos_nomes # lista de nomes que possuem acesso para gerar senhas 
 
 print('_________________________________________________________________________________________________________________') # só decoração
 
