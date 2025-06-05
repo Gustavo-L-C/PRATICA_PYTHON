@@ -21,6 +21,8 @@ nome = str(input('Qual seu nome? ')) # recebe um nome
 
 nomes = bancos_nomes # lista de nomes que possuem acesso para gerar senhas
 
+perungta_q = f'{nome}, quantas senhas precisará? '
+
 print('_________________________________________________________________________________________________________________') # só decoração
 
 #_________________________________________________________________________________________________________________if_nome_escolha
@@ -70,9 +72,10 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
         # _________________________________________________________________________________________________________________if_senha_ultra
         if tipo_senha in ['ultra', 'Ultra', 'ULTRA']: # ultra segura
 
-            quantidade = int(input(f'{nome}, quantas senhas precisará? '))  # pergunta a quantidade de senhas a serem geradas
+            quantidade = int(input(perungta_q))  # pergunta a quantidade de senhas a serem geradas
 
             caracteres = int(input(f'{nome}, quantos caracteres a senha precisa? '))  # pergunta a quantidade de caracteres que serão utilizados na senha
+            print(' ')
 
             for numero in range(quantidade):  # para cada número dentro do range(quantidade de repetições escolhidas na variável 'quantidade')
 
@@ -84,9 +87,10 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
         # ___________________________________________________________________________________________________________________elif_senha_muito
         elif tipo_senha in ['muito', 'Muito', 'MUITO']: # muito segura
 
-            quantidade = int(input(f'{nome}, quantas senhas precisará? '))  # pergunta a quantidade de senhas a serem geradas
+            quantidade = int(input(perungta_q))  # pergunta a quantidade de senhas a serem geradas
 
             caracteres = int(input(f'{nome}, quantos caracteres a senha precisa? '))  # pergunta a quantidade de caracteres que serão utilizados na senha
+            print(' ')
 
             for numero in range(quantidade):  # para cada número dentro do range(quantidade de repetições escolhidas na variável 'quantidade')
 
@@ -98,9 +102,10 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
         # _________________________________________________________________________________________________________________elif_senha_media
         elif tipo_senha in ['média', 'media', 'Média', 'Media', 'MÉDIA', 'MEDIA']: # média segurança
 
-            quantidade = int(input(f'{nome}, quantas senhas precisará? '))  # pergunta a quantidade de senhas a serem geradas
+            quantidade = int(input(perungta_q))  # pergunta a quantidade de senhas a serem geradas
 
             caracteres = int(input(f'{nome}, quantos caracteres a senha precisa? '))  # pergunta a quantidade de caracteres que serão utilizados na senha
+            print(' ')
 
             for numero in range(quantidade): # para cada número dentro do range(quantidade de repetições escolhidas na variável 'quantidade')
 
