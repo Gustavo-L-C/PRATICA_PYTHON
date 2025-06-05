@@ -123,3 +123,5 @@ else:  # caso nome não esteja na lista
 print(f'\nTchau {nome}!') # tchau
 
 print('_________________________________________________________________________________________________________________') # só decoração
+
+#OBS. quantidade de caracteres das senhas seguras estão "estranhas" dar uma olhada depois
