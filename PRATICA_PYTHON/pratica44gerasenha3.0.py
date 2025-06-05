@@ -77,21 +77,25 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
                 numeracao += 1  # numeração na repetição, só decoração
 
                 print(f'{numeracao}- Sua senha segura {tipo_senha} segura:',secrets.token_urlsafe(caracteres))
+
         else:
 
             for numero in range(quantidade):
 
-                numeracao += 1
+                numeracao += 1 # numeração na repetição, só decoração
 
                 print(f'{numeracao}- Sua senha segura {tipo_senha} segura:',secrets.token_hex(caracteres))
+
 #_________________________________________________________________________________________________________________
     else: # caso nome não esteja na lista
         uma_senha1 = '123456' # para quem não possui acesso
         print(f'\nSua senha : {uma_senha1}\nTchau {nome}!') # tchau
+
 #_________________________________________________________________________________________________________________
 else:  # caso nome não esteja na lista
     uma_senha2 = '123456'  # para quem não possui acesso
     print(f'\nSua senha : {uma_senha2}\nTchau {nome}!')  # tchau
+    
 #_________________________________________________________________________________________________________________
 
 print(f'\nTchau {nome}!')
