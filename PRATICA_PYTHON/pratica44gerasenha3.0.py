@@ -27,6 +27,7 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
     print(f'\nSeja bem vindo {nome}!\n')  # será bem-vindo
 
     questao = str(input('Que tipo de senha você precisa(segura ou simples)? '))
+    
 #_________________________________________________________________________________________________________________
     if questao in ['simples', 'Simples', 'SIMPLES']:
 
@@ -54,6 +55,7 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
             senha = [se1, se2, se3, se4, se5, se6] # senha gerada de 6 números aleatórios para cada repetição
 
             print(f'\n{numeracao}- A senha do dia é: {senha}') # mostra a/as senhas geradas
+
 #_________________________________________________________________________________________________________________
     elif questao in ['segura', 'Segura', 'SEGURA']:
 
@@ -95,7 +97,7 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
 else:  # caso nome não esteja na lista
     uma_senha2 = '123456'  # para quem não possui acesso
     print(f'\nSua senha : {uma_senha2}\nTchau {nome}!')  # tchau
-    
+
 #_________________________________________________________________________________________________________________
 
 print(f'\nTchau {nome}!')
