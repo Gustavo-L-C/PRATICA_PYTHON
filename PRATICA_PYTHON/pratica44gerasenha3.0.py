@@ -66,7 +66,6 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
         quantidade = int(input(f'{nome}, quantas senhas precisará? '))  # pergunta a quantidade de senhas a serem geradas
         caracteres = int(input(f'{nome}, quantos caracteres a senha precisa? ')) # pergunta a quantidade de caracteres que serão utilizados na senha
         print(' ') # pula linha
-
     # _________________________________________________________________________________________________________________elif_senha_segura
 
         # _________________________________________________________________________________________________________________if_senha_ultra
@@ -77,7 +76,6 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
                 numeracao += 1  # numeração na repetição, só decoração
 
                 print(f'{numeracao}- Sua senha segura {tipo_senha} segura:','\033[32m',secrets.token_bytes(caracteres),'\033[m') # mostra a/as senhas geradas
-
         # _________________________________________________________________________________________________________________if_senha_ultra
 
         # ___________________________________________________________________________________________________________________elif_senha_muito
@@ -88,7 +86,6 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
                 numeracao += 1  # numeração na repetição, só decoração
 
                 print(f'{numeracao}- Sua senha segura {tipo_senha} segura:','\033[33m',secrets.token_urlsafe(caracteres),'\033[m') # mostra a/as senhas geradas
-
         # _________________________________________________________________________________________________________________elif_senha_muito
 
         # _________________________________________________________________________________________________________________elif_senha_media
@@ -113,7 +110,6 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
         uma_senha2 = '123456' # para quem possui acesso
 
         print(f'\nSua senha : {uma_senha2}\n') # mostra a senha fraca "gerada"
-
 #_________________________________________________________________________________________________________________else_tipo_de_senha
 
 #_________________________________________________________________________________________________________________else_nome
@@ -122,7 +118,6 @@ else:  # caso nome não esteja na lista
     uma_senha3 = '123456'  # para quem não possui acesso
 
     print(f'\nSua senha : {uma_senha3}\n')  # mostra a senha fraca "gerada"
-
 #_________________________________________________________________________________________________________________else_nome
 
 print(f'\nTchau {nome}!') # tchau
