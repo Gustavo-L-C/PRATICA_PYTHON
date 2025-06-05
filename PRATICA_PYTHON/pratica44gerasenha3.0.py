@@ -28,7 +28,7 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
 
     print(f'\nSeja bem vindo {nome}!\n')  # será bem-vindo
 
-    segura_simples = str(input('Que tipo de senha você precisa(segura ou simples)? ')) # pergunta se você precisa de uma senha segura ou simples
+    segura_simples = str(input('Que tipo de senha você precisa(\033[36msegura\033[m ou \033[35msimples\033[m)? ')) # pergunta se você precisa de uma senha segura ou simples
 
     #_________________________________________________________________________________________________________________if_senha_simples
     if segura_simples in ['simples', 'Simples', 'SIMPLES']: # para senhas simples
@@ -63,13 +63,17 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
     #_________________________________________________________________________________________________________________elif_senha_segura
     elif segura_simples in ['segura', 'Segura', 'SEGURA']: # para senhas seguras
 
-        tipo_senha = str(input('\nDigite o tipo de senha (ultra, muito, média): ')) # pergunta o tipo de senha segura, sendo elas, ultra segura, muito segura e de média segurança
-        quantidade = int(input(f'{nome}, quantas senhas precisará? '))  # pergunta a quantidade de senhas a serem geradas
-        caracteres = int(input(f'{nome}, quantos caracteres a senha precisa? ')) # pergunta a quantidade de caracteres que serão utilizados na senha
+        tipo_senha = str(input('\nDigite o tipo de senha (\033[32multra\033[m, \033[33mmuito\033[m, \033[31mmédia\033[m): ')) # pergunta o tipo de senha segura, sendo elas, ultra segura, muito segura e de média segurança
+       # quantidade = int(input(f'{nome}, quantas senhas precisará? ')) # pergunta a quantidade de senhas a serem geradas
+       # caracteres = int(input(f'{nome}, quantos caracteres a senha precisa? ')) # pergunta a quantidade de caracteres que serão utilizados na senha
         print(' ') # pula linha
 
         # _________________________________________________________________________________________________________________if_senha_ultra
         if tipo_senha in ['ultra', 'Ultra', 'ULTRA']: # ultra segura
+
+            quantidade = int(input(f'{nome}, quantas senhas precisará? '))  # pergunta a quantidade de senhas a serem geradas
+
+            caracteres = int(input(f'{nome}, quantos caracteres a senha precisa? '))  # pergunta a quantidade de caracteres que serão utilizados na senha
 
             for numero in range(quantidade):  # para cada número dentro do range(quantidade de repetições escolhidas na variável 'quantidade')
 
@@ -81,6 +85,10 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
         # ___________________________________________________________________________________________________________________elif_senha_muito
         elif tipo_senha in ['muito', 'Muito', 'MUITO']: # muito segura
 
+            quantidade = int(input(f'{nome}, quantas senhas precisará? '))  # pergunta a quantidade de senhas a serem geradas
+
+            caracteres = int(input(f'{nome}, quantos caracteres a senha precisa? '))  # pergunta a quantidade de caracteres que serão utilizados na senha
+
             for numero in range(quantidade):  # para cada número dentro do range(quantidade de repetições escolhidas na variável 'quantidade')
 
                 numeracao += 1  # numeração na repetição, só decoração
@@ -90,6 +98,10 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
 
         # _________________________________________________________________________________________________________________elif_senha_media
         elif tipo_senha in ['média', 'media', 'Média', 'Media', 'MÉDIA', 'MEDIA']: # média segurança
+
+            quantidade = int(input(f'{nome}, quantas senhas precisará? '))  # pergunta a quantidade de senhas a serem geradas
+
+            caracteres = int(input(f'{nome}, quantos caracteres a senha precisa? '))  # pergunta a quantidade de caracteres que serão utilizados na senha
 
             for numero in range(quantidade): # para cada número dentro do range(quantidade de repetições escolhidas na variável 'quantidade')
 
@@ -111,7 +123,7 @@ if nome in nomes: # se o nome recebido está dentro da lista de nomes
 
         uma_senha2 = '123456' # para quem possui acesso
 
-        print(f'\nSua senha : {uma_senha2}\n') # mostra a senha fraca "gerada"
+        print(f'Sua senha : {uma_senha2}') # mostra a senha fraca "gerada"
     #_________________________________________________________________________________________________________________else_tipo_de_senha
 
 # _________________________________________________________________________________________________________________if_nome_escolha
@@ -121,7 +133,7 @@ else:  # caso nome não esteja na lista
 
     uma_senha3 = '123456'  # para quem não possui acesso
 
-    print(f'\nSua senha : {uma_senha3}\n')  # mostra a senha fraca "gerada"
+    print(f'\nSua senha : {uma_senha3}')  # mostra a senha fraca "gerada"
 #_________________________________________________________________________________________________________________else_nome
 
 print(f'\nTchau {nome}!') # tchau
