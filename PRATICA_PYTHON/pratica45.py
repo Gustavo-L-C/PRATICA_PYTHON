@@ -47,7 +47,7 @@ cores = {'white': (255,255,255),
 
 fim_jogo = False
 pontuacao = 0
-movimento_bola = [1,1]
+movimento_bola = [1,-1]
 
 # desenhar coisas na tela
 
@@ -69,11 +69,11 @@ def movimentar_jogador(event):
     if event.type == pygame.KEYDOWN:
         if event.key == pygame.K_RIGHT:
             if (jogador.x + tamanho_jogador) < tamanho[0]:
-             jogador.x = jogador.x + 20
+             jogador.x = jogador.x + 1
 
         if event.key == pygame.K_LEFT:
             if jogador.x > 0:
-                jogador.x = jogador.x - 20
+                jogador.x = jogador.x - 1
 
 def movimentar_bola(bola):
 
@@ -94,7 +94,7 @@ def movimentar_bola(bola):
 
         movimento[1] = - movimento[1]
 
-    for bloco in blocos:
+    for bloco in iniciar_blocos:
 
         if bloco.collidepoint(bola.x, bola.y):
 
@@ -117,7 +117,7 @@ while not fim_jogo:
 
             fim_jogo = True
 
-        movimentar_jogador(event)
+    movimentar_jogador(event)
 
     movimentar_bola(bola)
     pygame.time.wait(1)
