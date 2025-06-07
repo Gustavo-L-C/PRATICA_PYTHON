@@ -62,8 +62,6 @@ def desenhar_blocos(blocos):
     for bloco in blocos:
         pygame.draw.rect(tela, cores['red'], bloco)
 
-iniciar_blocos = criar_blocos(qt_total_blocos, qtd_linhas_blocos)
-
 # funções do jogo
 
 def movimentar_jogador(event):
@@ -92,13 +90,19 @@ def movimentar_bola(bola):
     if bola.y >= tamanho[1]:
         movimento[1] = - movimento[1]
 
-    if jogador.colliderect(bola.x, bola.y):
+    if jogador.collidepoint(bola.x, bola.y):
+
         movimento[1] = - movimento[1]
+
     for bloco in blocos:
-        if bloco.colliderect(bola.x, bola.y):
+
+        if bloco.collidepoint(bola.x, bola.y):
+
             movimento[1] = - movimento[1]
 
     return bola
+
+iniciar_blocos = criar_blocos(qt_total_blocos, qtd_linhas_blocos)
 
 # loop infinito até o jogo ser "fechado"
 
