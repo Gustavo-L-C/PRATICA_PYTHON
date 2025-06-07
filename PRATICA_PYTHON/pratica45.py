@@ -15,7 +15,6 @@ bola = pygame.Rect(100, 500, tamanho_bola, tamanho_bola)
 tamanho_jogador = 100
 jogador = pygame.Rect(0, 750, tamanho_jogador, 15)
 
-
 qt_blocos_linha = 8
 qtd_linhas_blocos = 5
 qt_total_blocos = qt_blocos_linha * qtd_linhas_blocos
@@ -62,11 +61,8 @@ def movimentar_jogador(event):
             if jogador.x > 0:
                 jogador.x = jogador.x - 20
 
-
-
 def movinetar_bola():
     pass
-
 
 # desenhar coisas na tela
 def desenhar_jogo():
@@ -78,15 +74,15 @@ def desenhar_blocos(blocos):
     for bloco in blocos:
         pygame.draw.rect(tela, cores['red'], bloco)
 
-
 iniciar_blocos = criar_blocos(qt_total_blocos, qtd_linhas_blocos)
-
 
 # loop infinito até o jogo ser "fechado"
 
 while not fim_jogo:
+
     desenhar_jogo()
     desenhar_blocos(iniciar_blocos)
+
     for event in pygame.event.get():
 
         if event.type == pygame.QUIT:
@@ -95,9 +91,7 @@ while not fim_jogo:
 
         movimentar_jogador(event)
 
-
     pygame.time.wait(1)
     pygame.display.flip()
-
 
 pygame.quit()
