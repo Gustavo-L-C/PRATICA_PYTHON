@@ -98,6 +98,7 @@ def movimentar_bola(bola):
 
         if bloco.collidepoint(bola.x, bola.y):
 
+            iniciar_blocos.remove(bloco)
             movimento[1] = - movimento[1]
 
     return bola
