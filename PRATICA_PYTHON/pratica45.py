@@ -144,3 +144,5 @@ while not fim_jogo:
     pygame.display.flip()
 
 pygame.quit()
+
+# estudo do código completo 08.06.25 hj to ocupado pelo menos terminei ele
