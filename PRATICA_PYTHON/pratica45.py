@@ -85,10 +85,10 @@ def movimentar_bola(bola):
         movimento[0] = - movimento[0]
     if bola.y <= 0:
         movimento[1] = - movimento[1]
-    if bola.x >= tamanho[0]:
+    if bola.x + tamanho_bola >= tamanho[0]:
         movimento[0] = - movimento[0]
-    if bola.y >= tamanho[1]:
-        movimento[1] = - movimento[1]
+    if bola.y + tamanho_bola >= tamanho[1]:
+        movimento = None
 
     if jogador.collidepoint(bola.x, bola.y):
 
@@ -121,6 +121,8 @@ while not fim_jogo:
     movimentar_jogador(event)
 
     movimentar_bola(bola)
+    if not movimento_bola:
+        fim_jogo = True
     pygame.time.wait(1)
     pygame.display.flip()
 
