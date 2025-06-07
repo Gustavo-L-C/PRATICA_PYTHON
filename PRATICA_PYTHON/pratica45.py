@@ -31,6 +31,7 @@ def criar_blocos(qt_blocos_linha, qtd_linhas_blocos):
     blocos = []
 
     for j in range(qtd_linhas_blocos):
+        
         for i in range(qt_blocos_linha):
 
             bloco = pygame.Rect(i * (largura_blocos + distancia), j * distancia_entre_linhas, largura_blocos, altura_blocos)
@@ -62,18 +63,20 @@ def movimentar_jogador(event):
                 jogador.x = jogador.x - 20
 
 def movinetar_bola(bola):
+
     bola.x = bola.x + movimento_bola[0]
     bola.y = bola.y + movimento_bola[1]
 
-    
-
 # desenhar coisas na tela
+
 def desenhar_jogo():
+
     tela.fill(cores['black'])
     pygame.draw.rect(tela, cores['white'], jogador)
     pygame.draw.rect(tela, cores['yellow'], bola)
 
 def desenhar_blocos(blocos):
+
     for bloco in blocos:
         pygame.draw.rect(tela, cores['red'], bloco)
 
