@@ -31,7 +31,7 @@ def criar_blocos(qt_blocos_linha, qtd_linhas_blocos):
     blocos = []
 
     for j in range(qtd_linhas_blocos):
-        
+
         for i in range(qt_blocos_linha):
 
             bloco = pygame.Rect(i * (largura_blocos + distancia), j * distancia_entre_linhas, largura_blocos, altura_blocos)
@@ -49,24 +49,6 @@ fim_jogo = False
 pontuacao = 0
 movimento_bola = [1,1]
 
-# funções do jogo
-
-def movimentar_jogador(event):
-
-    if event.type == pygame.KEYDOWN:
-        if event.key == pygame.K_RIGHT:
-            if (jogador.x + tamanho_jogador) < tamanho[0]:
-             jogador.x = jogador.x + 20
-
-        if event.key == pygame.K_LEFT:
-            if jogador.x > 0:
-                jogador.x = jogador.x - 20
-
-def movinetar_bola(bola):
-
-    bola.x = bola.x + movimento_bola[0]
-    bola.y = bola.y + movimento_bola[1]
-
 # desenhar coisas na tela
 
 def desenhar_jogo():
@@ -81,6 +63,42 @@ def desenhar_blocos(blocos):
         pygame.draw.rect(tela, cores['red'], bloco)
 
 iniciar_blocos = criar_blocos(qt_total_blocos, qtd_linhas_blocos)
+
+# funções do jogo
+
+def movimentar_jogador(event):
+
+    if event.type == pygame.KEYDOWN:
+        if event.key == pygame.K_RIGHT:
+            if (jogador.x + tamanho_jogador) < tamanho[0]:
+             jogador.x = jogador.x + 20
+
+        if event.key == pygame.K_LEFT:
+            if jogador.x > 0:
+                jogador.x = jogador.x - 20
+
+def movimentar_bola(bola):
+
+    movimento = movimento_bola
+    bola.x = bola.x + movimento[0]
+    bola.y = bola.y + movimento[1]
+
+    if bola.x <= 0:
+        movimento[0] = - movimento[0]
+    if bola.y <= 0:
+        movimento[1] = - movimento[1]
+    if bola.x >= tamanho[0]:
+        movimento[0] = - movimento[0]
+    if bola.y >= tamanho[1]:
+        movimento[1] = - movimento[1]
+
+    if jogador.colliderect(bola.x, bola.y):
+        movimento[1] = - movimento[1]
+    for bloco in blocos:
+        if bloco.colliderect(bola.x, bola.y):
+            movimento[1] = - movimento[1]
+
+    return bola
 
 # loop infinito até o jogo ser "fechado"
 
@@ -97,7 +115,7 @@ while not fim_jogo:
 
         movimentar_jogador(event)
 
-    movinetar_bola(bola)
+    movimentar_bola(bola)
     pygame.time.wait(1)
     pygame.display.flip()
 
