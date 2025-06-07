@@ -4,6 +4,7 @@
 import pygame
 
 # inicializar o jogo
+
 pygame.init()
 
 tamanho = (800, 800)
@@ -104,12 +105,14 @@ def movimentar_bola(bola):
     return bola
 
 def atualizar_pontuacao(pontuacao):
+
     fonte = pygame.font.Font(None, 30)
     texto = fonte.render(f'Pontuação: {pontuacao}', 1, cores['blue'])
     tela.blit(texto, (0, 780))
 
     if pontuacao >= qt_total_blocos:
         return True
+
     else:
         return False
 
