@@ -1,5 +1,6 @@
 #07.06.25
 #PYGAME - 01
+#ESTUDO PYGAME - 01
 
 import pygame
 
