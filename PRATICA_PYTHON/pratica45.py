@@ -41,11 +41,7 @@ def criar_blocos(qt_blocos_linha, qtd_linhas_blocos):
 
     return blocos
 
-cores = {'white': (255,255,255),
-         'black': (0,0,0),
-         'red': (255,0,0),
-         'yellow': (255,255,0),
-         'blue': (0,0,255)}
+cores = {'white': (255,255,255),'black': (0,0,0),'red': (255,0,0),'yellow': (255,255,0),'blue': (0,0,255)}
 
 fim_jogo = False
 pontuacao = 0
@@ -85,10 +81,13 @@ def movimentar_bola(bola):
 
     if bola.x <= 0:
         movimento[0] = - movimento[0]
+
     if bola.y <= 0:
         movimento[1] = - movimento[1]
+
     if bola.x + tamanho_bola >= tamanho[0]:
         movimento[0] = - movimento[0]
+
     if bola.y + tamanho_bola >= tamanho[1]:
         movimento = None
 
@@ -134,7 +133,6 @@ while not fim_jogo:
             fim_jogo = True
 
     movimentar_jogador(event)
-
     movimentar_bola(bola)
 
     if not movimento_bola:
