@@ -61,8 +61,11 @@ def movimentar_jogador(event):
             if jogador.x > 0:
                 jogador.x = jogador.x - 20
 
-def movinetar_bola():
-    pass
+def movinetar_bola(bola):
+    bola.x = bola.x + movimento_bola[0]
+    bola.y = bola.y + movimento_bola[1]
+
+    
 
 # desenhar coisas na tela
 def desenhar_jogo():
@@ -91,6 +94,7 @@ while not fim_jogo:
 
         movimentar_jogador(event)
 
+    movinetar_bola(bola)
     pygame.time.wait(1)
     pygame.display.flip()
 
