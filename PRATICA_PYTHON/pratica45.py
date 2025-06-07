@@ -5,22 +5,22 @@
 import pygame
 
 # inicializar o jogo
-
+# _________________________________________________________________________________________________________________
 pygame.init()
 
 tamanho = (800, 800)
 tela = pygame.display.set_mode(tamanho)
 pygame.display.set_caption('Quebrando_Blocos.py')
-
+# _________________________________________________________________________________________________________________
 tamanho_bola = 15
 bola = pygame.Rect(100, 500, tamanho_bola, tamanho_bola)
 tamanho_jogador = 100
 jogador = pygame.Rect(0, 750, tamanho_jogador, 15)
-
+# _________________________________________________________________________________________________________________
 qt_blocos_linha = 8
 qtd_linhas_blocos = 5
 qt_total_blocos = qt_blocos_linha * qtd_linhas_blocos
-
+# _________________________________________________________________________________________________________________
 def criar_blocos(qt_blocos_linha, qtd_linhas_blocos):
 
     distancia = 5
@@ -40,7 +40,7 @@ def criar_blocos(qt_blocos_linha, qtd_linhas_blocos):
             blocos.append(bloco)
 
     return blocos
-
+# _________________________________________________________________________________________________________________
 cores = {'white': (255,255,255),'black': (0,0,0),'red': (255,0,0),'yellow': (255,255,0),'blue': (0,0,255)}
 
 fim_jogo = False
@@ -48,20 +48,20 @@ pontuacao = 0
 movimento_bola = [1,-1]
 
 # desenhar coisas na tela
-
+# _________________________________________________________________________________________________________________
 def desenhar_jogo():
 
     tela.fill(cores['black'])
     pygame.draw.rect(tela, cores['white'], jogador)
     pygame.draw.rect(tela, cores['yellow'], bola)
-
+# _________________________________________________________________________________________________________________
 def desenhar_blocos(blocos):
 
     for bloco in blocos:
         pygame.draw.rect(tela, cores['red'], bloco)
 
 # funções do jogo
-
+# _________________________________________________________________________________________________________________
 def movimentar_jogador(event):
 
     if event.type == pygame.KEYDOWN:
@@ -72,7 +72,7 @@ def movimentar_jogador(event):
         if event.key == pygame.K_LEFT:
             if jogador.x > 0:
                 jogador.x = jogador.x - 1
-
+# _________________________________________________________________________________________________________________
 def movimentar_bola(bola):
 
     movimento = movimento_bola
@@ -103,7 +103,7 @@ def movimentar_bola(bola):
             movimento[1] = - movimento[1]
 
     return bola
-
+# _________________________________________________________________________________________________________________
 def atualizar_pontuacao(pontuacao):
 
     fonte = pygame.font.Font(None, 30)
@@ -119,7 +119,7 @@ def atualizar_pontuacao(pontuacao):
 iniciar_blocos = criar_blocos(qt_total_blocos, qtd_linhas_blocos)
 
 # loop infinito até o jogo ser "fechado"
-
+# _________________________________________________________________________________________________________________
 while not fim_jogo:
 
     desenhar_jogo()
@@ -140,7 +140,7 @@ while not fim_jogo:
 
     pygame.time.wait(1)
     pygame.display.flip()
-
+# _________________________________________________________________________________________________________________
 pygame.quit()
-
+# finalizar do jogo
 # estudo do código completo 08.06.25 hj to ocupado pelo menos terminei ele :)
