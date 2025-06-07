@@ -106,7 +106,7 @@ def movimentar_bola(bola):
 def atualizar_pontuacao(pontuacao):
     fonte = pygame.font.Font(None, 30)
     texto = fonte.render(f'Pontuação: {pontuacao}', 1, cores['blue'])
-    texto.blit(tela, (0, 780))
+    tela.blit(texto, (0, 780))
 
     if pontuacao >= qt_total_blocos:
         return True
@@ -121,7 +121,7 @@ while not fim_jogo:
 
     desenhar_jogo()
     desenhar_blocos(iniciar_blocos)
-    fim_jogo = atualizar_pontuacao(pontuacao)
+    fim_jogo = atualizar_pontuacao(qt_total_blocos - len(iniciar_blocos))
 
     for event in pygame.event.get():
 
