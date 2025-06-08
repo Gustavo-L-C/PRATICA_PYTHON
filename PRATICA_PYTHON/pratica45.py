@@ -35,41 +35,51 @@ qt_total_blocos = qt_blocos_linha * qtd_linhas_blocos # quantidade total de bloc
 
 # _________________________________________________________________________________________________________________
 
-def criar_blocos(qt_blocos_linha, qtd_linhas_blocos):
+def criar_blocos(qt_blocos_linha, qtd_linhas_blocos): # criando os blocos dentro do game # fun
 
-    distancia = 5
-    largura_tela = tamanho[0]
-    altura_tela = tamanho[1]
-    largura_blocos = largura_tela / 8 - distancia
-    altura_blocos = 15
-    distancia_entre_linhas = altura_blocos + 10
+    distancia = 5 # distancia entre cada bloco # var
 
-    blocos = []
+    largura_tela = tamanho[0] # posição dos blocos # var
 
-    for j in range(qtd_linhas_blocos):
+    altura_tela = tamanho[1] # posição dos blocos # var
 
-        for i in range(qt_blocos_linha):
+    largura_blocos = largura_tela / 8 - distancia # largura de cada bloco # var
 
-            bloco = pygame.Rect(i * (largura_blocos + distancia), j * distancia_entre_linhas, largura_blocos, altura_blocos)
-            blocos.append(bloco)
+    altura_blocos = 15 # altura de cada bloco # var
+
+    distancia_entre_linhas = altura_blocos + 10 # distancia entre cada linha de blocos # var
+
+    blocos = [] # quantidade de blocos do game preenchida "automáticamente"
+
+    for j in range(qtd_linhas_blocos): # para cada bloco nas linhas de blocos # loop
+
+        for i in range(qt_blocos_linha): # para cada bloco por linha # loop
+
+            bloco = pygame.Rect(i * (largura_blocos + distancia), j * distancia_entre_linhas, largura_blocos, altura_blocos) # dita a quantidade de blocos baseado na largura, distancia, altura
+            blocos.append(bloco) # adiciona os blocos a lista
 
     return blocos
 # _________________________________________________________________________________________________________________
 
-cores = {'white': (255,255,255),'black': (0,0,0),'red': (255,0,0),'yellow': (255,255,0),'blue': (0,0,255)}
+cores = {'white': (255,255,255),'black': (0,0,0),'red': (255,0,0),'yellow': (255,255,0),'blue': (0,0,255)} # cores que serão utilizadas no game # var
 
-fim_jogo = False
-pontuacao = 0
-movimento_bola = [1,-1]
+fim_jogo = False # determina quando o jogo acaba # var
+
+pontuacao = 0 # pontuação # var
+
+movimento_bola = [1,-1] # movimento da bola em pixels # var
 
 # desenhar coisas na tela
 # _________________________________________________________________________________________________________________
 
-def desenhar_jogo():
+def desenhar_jogo(): # criando os elementos dentro do jogo # fun
 
-    tela.fill(cores['black'])
-    pygame.draw.rect(tela, cores['white'], jogador)
-    pygame.draw.rect(tela, cores['yellow'], bola)
+    tela.fill(cores['black']) # definindo/criando a tela e a cor da tela
+
+    pygame.draw.rect(tela, cores['white'], jogador) # definindo/criando o jogador e a cor do jogador
+
+    pygame.draw.rect(tela, cores['yellow'], bola) # definindo/criando a bola e a cor da bola
+    
 # _________________________________________________________________________________________________________________
 
 def desenhar_blocos(blocos):
