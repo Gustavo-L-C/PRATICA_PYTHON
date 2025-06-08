@@ -125,6 +125,7 @@ def movimentar_bola(bola): # criando o movimento da bola # para a bola não sair
 
     if bola.y + tamanho_bola >= tamanho[1]: # se bola no eixo y + tamanho da bola for maior ou igual a tela # para a bola não sair da tela
         movimento = None # movimenta 1 pixel
+        #movimento[1] = - movimento[1]
 
     if jogador.collidepoint(bola.x, bola.y): # se jogador colidir com a bola
 
@@ -161,11 +162,11 @@ iniciar_blocos = criar_blocos(qt_total_blocos, qtd_linhas_blocos)
 
 while not fim_jogo: # loop do jogo tudo declarado deve estar dentro do loop
 
-    desenhar_jogo()
+    desenhar_jogo() # criação dos objetos do jogo (jogador e bola)
 
-    desenhar_blocos(iniciar_blocos)
-    
-    fim_jogo = atualizar_pontuacao(qt_total_blocos - len(iniciar_blocos))
+    desenhar_blocos(iniciar_blocos) # criação dos objetos do jogo (blocos)
+
+    fim_jogo = atualizar_pontuacao(qt_total_blocos - len(iniciar_blocos)) #
 
     for event in pygame.event.get():
 
@@ -174,6 +175,7 @@ while not fim_jogo: # loop do jogo tudo declarado deve estar dentro do loop
             fim_jogo = True
 
     movimentar_jogador(event)
+
     movimentar_bola(bola)
 
     if not movimento_bola:
