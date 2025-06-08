@@ -27,9 +27,12 @@ jogador = pygame.Rect(0, 750, tamanho_jogador, 15) # criando o jogador dentro do
 
 # _________________________________________________________________________________________________________________
 
-qt_blocos_linha = 8
-qtd_linhas_blocos = 5
-qt_total_blocos = qt_blocos_linha * qtd_linhas_blocos
+qt_blocos_linha = 8 # definindo a quantidade de blocos por linhas # var
+
+qtd_linhas_blocos = 5 # definindo a quantidade de linhas por blocos # var
+
+qt_total_blocos = qt_blocos_linha * qtd_linhas_blocos # quantidade total de blocos no game # var
+
 # _________________________________________________________________________________________________________________
 
 def criar_blocos(qt_blocos_linha, qtd_linhas_blocos):
