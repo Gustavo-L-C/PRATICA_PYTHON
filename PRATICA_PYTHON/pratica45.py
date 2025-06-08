@@ -166,7 +166,7 @@ while not fim_jogo: # loop do jogo tudo declarado deve estar dentro do loop
 
     desenhar_blocos(iniciar_blocos) # criação dos objetos do jogo (blocos)
 
-    fim_jogo = atualizar_pontuacao(qt_total_blocos - len(iniciar_blocos)) #
+    fim_jogo = atualizar_pontuacao(qt_total_blocos - len(iniciar_blocos)) # criação da pontuação
 
     for event in pygame.event.get():
 
@@ -174,14 +174,15 @@ while not fim_jogo: # loop do jogo tudo declarado deve estar dentro do loop
 
             fim_jogo = True
 
-    movimentar_jogador(event)
+    movimentar_jogador(event) # movimentação do jogador
 
-    movimentar_bola(bola)
+    movimentar_bola(bola) # movimentação da bola
 
-    if not movimento_bola:
+    if not movimentar_bola:
         fim_jogo = True
 
     pygame.time.wait(1)
+
     pygame.display.flip()
 
 # _________________________________________________________________________________________________________________
