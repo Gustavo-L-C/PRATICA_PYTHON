@@ -35,7 +35,7 @@ qt_total_blocos = qt_blocos_linha * qtd_linhas_blocos # quantidade total de bloc
 
 # _________________________________________________________________________________________________________________
 
-def criar_blocos(qt_blocos_linha, qtd_linhas_blocos): # criando os blocos dentro do game # fun
+def criar_blocos(qt_blocos_linha, qtd_linhas_blocos): # criando os blocos dentro do game
 
     distancia = 5 # distancia entre cada bloco # var
 
@@ -72,34 +72,40 @@ movimento_bola = [1,-1] # movimento da bola em pixels # var
 # desenhar coisas na tela
 # _________________________________________________________________________________________________________________
 
-def desenhar_jogo(): # criando os elementos dentro do jogo # fun
+def desenhar_jogo(): # criando os elementos dentro do jogo
 
     tela.fill(cores['black']) # definindo/criando a tela e a cor da tela
 
     pygame.draw.rect(tela, cores['white'], jogador) # definindo/criando o jogador e a cor do jogador
 
     pygame.draw.rect(tela, cores['yellow'], bola) # definindo/criando a bola e a cor da bola
-    
+
 # _________________________________________________________________________________________________________________
 
-def desenhar_blocos(blocos):
+def desenhar_blocos(blocos): # criando os blocos dentro do game
 
-    for bloco in blocos:
-        pygame.draw.rect(tela, cores['red'], bloco)
+    for bloco in blocos: # para cada bloco dentro da lista blocos
+        pygame.draw.rect(tela, cores['red'], bloco) # definindo/ criando os blocos e suas cores
 
 # funções do jogo
 # _________________________________________________________________________________________________________________
 
-def movimentar_jogador(event):
+def movimentar_jogador(event): # criando o movimento do jogador
 
-    if event.type == pygame.KEYDOWN:
-        if event.key == pygame.K_RIGHT:
-            if (jogador.x + tamanho_jogador) < tamanho[0]:
-             jogador.x = jogador.x + 1
+    if event.type == pygame.KEYDOWN: # se o "evento" é teclar
 
-        if event.key == pygame.K_LEFT:
-            if jogador.x > 0:
-                jogador.x = jogador.x - 1
+        if event.key == pygame.K_RIGHT: # se o "evento" é teclar a seta para direita
+
+            if (jogador.x + tamanho_jogador) < tamanho[0]: # se a posição do jogador + o tamanho do jogador for menor que a tela
+
+             jogador.x = jogador.x + 1 # o jogador se move no eixo x 1 pixel direita
+
+        if event.key == pygame.K_LEFT: # se o "evento" é teclar a seta para esquerda
+
+            if jogador.x > 0: # se a posição do jogador for maior que 0
+
+                jogador.x = jogador.x - 1 # o jogador se move no eixo x 1 pixel esquerda
+                
 # _________________________________________________________________________________________________________________
 
 def movimentar_bola(bola):
