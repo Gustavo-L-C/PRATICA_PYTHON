@@ -96,13 +96,13 @@ def movimentar_jogador(event): # criando o movimento do jogador # para o jogador
 
         if event.key == pygame.K_RIGHT: # se o "evento" é teclar a seta para direita
 
-            if (jogador.x + tamanho_jogador) < tamanho[0]: # se a posição do jogador + o tamanho do jogador for menor que a tela
+            if (jogador.x + tamanho_jogador) < tamanho[0]: # se a posição do jogador + o tamanho do jogador for menor que a tela # para o jogador não sair da tela
 
              jogador.x = jogador.x + 1 # o jogador se move no eixo x 1 pixel direita
 
         if event.key == pygame.K_LEFT: # se o "evento" é teclar a seta para esquerda
 
-            if jogador.x > 0: # se a posição do jogador for maior que 0 (o ponto inicial da tela)
+            if jogador.x > 0: # se a posição do jogador for maior que 0 (o ponto inicial da tela) # para o jogador não sair da tela
 
                 jogador.x = jogador.x - 1 # o jogador se move no eixo x 1 pixel esquerda
 
@@ -115,18 +115,18 @@ def movimentar_bola(bola): # criando o movimento da bola # para a bola não sair
     bola.y = bola.y + movimento[1] # bola no eixo y se move 1 pixel (direita / esquerda)
 
     if bola.x <= 0: # se bola no eixo x for menor ou igual a 0 (o ponto inicial da tela)
-        movimento[0] = - movimento[0]
+        movimento[0] = - movimento[0] # movimenta 1 pixel
 
-    if bola.y <= 0:
-        movimento[1] = - movimento[1]
+    if bola.y <= 0: # se bola no eixo y for menor ou igual a 0 (o ponto inicial da tela)
+        movimento[1] = - movimento[1] # movimenta 1 pixel
 
-    if bola.x + tamanho_bola >= tamanho[0]:
-        movimento[0] = - movimento[0]
+    if bola.x + tamanho_bola >= tamanho[0]: # se bola no eixo x + tamanho da bola for maior ou igual a tela # para a bola não sair da tela
+        movimento[0] = - movimento[0] # movimenta 1 pixel
 
-    if bola.y + tamanho_bola >= tamanho[1]:
-        movimento = None
+    if bola.y + tamanho_bola >= tamanho[1]: # se bola no eixo y + tamanho da bola for maior ou igual a tela # para a bola não sair da tela
+        movimento = None # movimenta 1 pixel
 
-    if jogador.collidepoint(bola.x, bola.y):
+    if jogador.collidepoint(bola.x, bola.y): # se jogador colidir com a bola
 
         movimento[1] = - movimento[1]
 
@@ -134,17 +134,19 @@ def movimentar_bola(bola): # criando o movimento da bola # para a bola não sair
 
         if bloco.collidepoint(bola.x, bola.y): # declarar a colisão da bola
 
-            iniciar_blocos.remove(bloco)
-            movimento[1] = - movimento[1]
+            iniciar_blocos.remove(bloco) # quando a bola colidi com um bloco ele será "removido"
+            movimento[1] = - movimento[1] # e a bola irá se movimentar após a colisão
 
     return bola
 # _________________________________________________________________________________________________________________
 
-def atualizar_pontuacao(pontuacao):
+def atualizar_pontuacao(pontuacao): # criando a pontuação
 
-    fonte = pygame.font.Font(None, 30)
-    texto = fonte.render(f'Pontuação: {pontuacao}', 1, cores['blue'])
-    tela.blit(texto, (0, 780))
+    fonte = pygame.font.Font(None, 30) # declarando a fonte e tamnho do texto
+
+    texto = fonte.render(f'Pontuação: {pontuacao}', 1, cores['blue']) # texto de pontuação a ser exibido
+
+    tela.blit(texto, (0, 780)) # posição onde o texto ficará dentro da tela
 
     if pontuacao >= qt_total_blocos:
         return True
