@@ -2,14 +2,14 @@
 #PYGAME - 01
 #ESTUDO PYGAME - 01
 
-import pygame
+import pygame # biblioteca pygame : jogos
 
 # inicializar o jogo
 # _________________________________________________________________________________________________________________
 
-pygame.init()
+pygame.init() # iniciar a janela
 
-tamanho = (800, 800)
+tamanho = (800, 800) # tamanho da janela
 tela = pygame.display.set_mode(tamanho)
 pygame.display.set_caption('Quebrando_Blocos.py')
 # _________________________________________________________________________________________________________________
@@ -154,8 +154,7 @@ while not fim_jogo:
 
 # _________________________________________________________________________________________________________________
 
-pygame.quit()
+pygame.quit() # fim da janela
 
 # _________________________________________________________________________________________________________________
 # finalizar do jogo
-# estudo do código completo 08.06.25 hj to ocupado pelo menos terminei ele :)
