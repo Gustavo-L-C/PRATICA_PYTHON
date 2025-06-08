@@ -9,15 +9,22 @@ import pygame # biblioteca pygame : jogos
 
 pygame.init() # iniciar a janela
 
-tamanho = (800, 800) # tamanho da janela
-tela = pygame.display.set_mode(tamanho)
-pygame.display.set_caption('Quebrando_Blocos.py')
+tamanho = (800, 800) # para o tamanho da janela/tela # var
+
+tela = pygame.display.set_mode(tamanho)  # janela/tela do game # var
+
+pygame.display.set_caption('Quebrando_Blocos.py') # titulo da janela/tela do game
+
 # _________________________________________________________________________________________________________________
 
-tamanho_bola = 15
-bola = pygame.Rect(100, 500, tamanho_bola, tamanho_bola)
-tamanho_jogador = 100
-jogador = pygame.Rect(0, 750, tamanho_jogador, 15)
+tamanho_bola = 15 # o tamanho da bola #var
+
+bola = pygame.Rect(100, 500, tamanho_bola, tamanho_bola) # criando a bola dentro do game
+
+tamanho_jogador = 100 # tamanho do jogador # var
+
+jogador = pygame.Rect(0, 750, tamanho_jogador, 15) # criando o jogador dentro do game
+
 # _________________________________________________________________________________________________________________
 
 qt_blocos_linha = 8
