@@ -148,21 +148,23 @@ def atualizar_pontuacao(pontuacao): # criando a pontuação
 
     tela.blit(texto, (0, 780)) # posição onde o texto ficará dentro da tela
 
-    if pontuacao >= qt_total_blocos:
-        return True
+    if pontuacao >= qt_total_blocos: # se pontuação for maior que a quantidade total de blocos
+        return True # retorna o valor da pontuação
 
-    else:
-        return False
+    else: # se não
+        return False # retorna o valor da pontuação
 
 iniciar_blocos = criar_blocos(qt_total_blocos, qtd_linhas_blocos)
 
 # loop infinito até o jogo ser "fechado"
 # _________________________________________________________________________________________________________________
 
-while not fim_jogo:
+while not fim_jogo: # loop do jogo tudo declarado deve estar dentro do loop
 
     desenhar_jogo()
+
     desenhar_blocos(iniciar_blocos)
+    
     fim_jogo = atualizar_pontuacao(qt_total_blocos - len(iniciar_blocos))
 
     for event in pygame.event.get():
