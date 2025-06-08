@@ -90,7 +90,7 @@ def desenhar_blocos(blocos): # criando os blocos dentro do game
 # funções do jogo
 # _________________________________________________________________________________________________________________
 
-def movimentar_jogador(event): # criando o movimento do jogador
+def movimentar_jogador(event): # criando o movimento do jogador # para o jogador não sair da tela
 
     if event.type == pygame.KEYDOWN: # se o "evento" é teclar
 
@@ -102,19 +102,19 @@ def movimentar_jogador(event): # criando o movimento do jogador
 
         if event.key == pygame.K_LEFT: # se o "evento" é teclar a seta para esquerda
 
-            if jogador.x > 0: # se a posição do jogador for maior que 0
+            if jogador.x > 0: # se a posição do jogador for maior que 0 (o ponto inicial da tela)
 
                 jogador.x = jogador.x - 1 # o jogador se move no eixo x 1 pixel esquerda
-                
+
 # _________________________________________________________________________________________________________________
 
-def movimentar_bola(bola):
+def movimentar_bola(bola): # criando o movimento da bola # para a bola não sair da tela
 
-    movimento = movimento_bola
-    bola.x = bola.x + movimento[0]
-    bola.y = bola.y + movimento[1]
+    movimento = movimento_bola # var
+    bola.x = bola.x + movimento[0] # bola no eixo x se move 1 pixel (direita / esquerda)
+    bola.y = bola.y + movimento[1] # bola no eixo y se move 1 pixel (direita / esquerda)
 
-    if bola.x <= 0:
+    if bola.x <= 0: # se bola no eixo x for menor ou igual a 0 (o ponto inicial da tela)
         movimento[0] = - movimento[0]
 
     if bola.y <= 0:
@@ -132,7 +132,7 @@ def movimentar_bola(bola):
 
     for bloco in iniciar_blocos:
 
-        if bloco.collidepoint(bola.x, bola.y):
+        if bloco.collidepoint(bola.x, bola.y): # declarar a colisão da bola
 
             iniciar_blocos.remove(bloco)
             movimento[1] = - movimento[1]
