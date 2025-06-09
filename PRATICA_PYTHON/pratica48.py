@@ -39,3 +39,11 @@ def media_turma(turma): # definimos a média da turma
 media_da_turma = media_turma(turma)
 
 print(f'A média de nota da turma é {media_da_turma}') # mostrando a média
+
+if media_da_turma >= 7:
+    print('Turma excelente')
+
+else:
+    print('Turma abaixo da média')
+
+# extra se a turma tem uma média de 7 o maior Turma excelente se não Turma abaixo da média
