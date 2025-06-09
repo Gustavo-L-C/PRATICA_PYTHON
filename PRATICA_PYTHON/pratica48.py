@@ -42,7 +42,7 @@ media_da_turma = media_turma(turma)
 
 print(f'A média de nota da turma é {media_da_turma:.1f}') # mostrando a média
 
-if media_da_turma >= 7: # se a media da turma for igual ou maior que 7
+if media_da_turma >= 7: # se a média da turma for igual ou maior que 7
     print('Turma excelente') # Turma excelente
     maior_valor = max(turma) # pegamos a maior nota
     print(f'E a maior nota da turma foi {maior_valor:.1f}') # A maior nota
