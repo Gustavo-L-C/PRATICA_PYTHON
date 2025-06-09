@@ -22,6 +22,8 @@ n10 = float(input('Digite a nota 10: '))
 turma = [n1, n2, n3, n4, n5, n6, n7, n8, n9, n10]
 # agrupamos as notas
 
+print()
+
 def media_turma(turma): # definimos a média da turma
 
     qtd = len(turma) # pegamos a quantidade de alunos
@@ -38,12 +40,16 @@ def media_turma(turma): # definimos a média da turma
 
 media_da_turma = media_turma(turma)
 
-print(f'A média de nota da turma é {media_da_turma}') # mostrando a média
+print(f'A média de nota da turma é {media_da_turma:.1f}') # mostrando a média
 
 if media_da_turma >= 7:
     print('Turma excelente')
+    maior_valor = max(turma)
+    print(f'E a maior nota da turma foi {maior_valor:.1f}')
 
 else:
     print('Turma abaixo da média')
+    maior_valor = max(turma)
+    print(f'Sendo a maior nota da turma {maior_valor:.1f}')
 
 # extra se a turma tem uma média de 7 o maior Turma excelente se não Turma abaixo da média
