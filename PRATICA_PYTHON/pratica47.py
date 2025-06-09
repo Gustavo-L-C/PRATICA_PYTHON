@@ -29,3 +29,14 @@ resultado = soma2(n1, n2)
 print(resultado)
 
 #---------------------------------------------------------------------------
+
+def par_impar(n1):
+    if n1 % 2 == 0:
+        return True
+    else:
+        return False
+
+if par_impar(n1):
+    print("Par")
+else:
+    print("Impar")
