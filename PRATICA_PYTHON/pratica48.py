@@ -38,4 +38,4 @@ def media_turma(turma): # definimos a media da turma
 
 media_da_turma = media_turma(turma)
 
-print(f'A média de nota da turma é {media_da_turma}') # mostrando a média 
+print(f'A média de nota da turma é {media_da_turma}') # mostrando a média
