@@ -25,19 +25,15 @@ turma = [n1, n2, n3, n4, n5, n6, n7, n8, n9, n10]
 def media_turma(turma): # definimos a média da turma
 
     qtd = len(turma) # pegamos a quantidade de alunos
-
     soma_notas = 0 # para a soma
 
     for notas in turma: # para cada nota na turma
-
         soma_notas += notas # somando as notas
 
     media_notas = soma_notas/qtd # calculando a média
-
     return media_notas
 
 media_da_turma = media_turma(turma)
-
 print(f'A média de nota da turma é {media_da_turma:.1f}') # mostrando a média
 
 if media_da_turma >= 7: # se a média da turma for igual ou maior que 7
