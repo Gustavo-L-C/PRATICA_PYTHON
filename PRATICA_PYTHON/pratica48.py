@@ -53,3 +53,4 @@ else:
     print(f'Sendo a maior nota da turma {maior_valor:.1f}')
 
 # extra se a turma tem uma média de 7 o maior Turma excelente se não Turma abaixo da média
+# extra exibi a maior nota da turma 
