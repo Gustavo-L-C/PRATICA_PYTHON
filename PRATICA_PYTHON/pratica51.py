@@ -11,15 +11,15 @@ def soma(): # SOMA
     somar = s1 + s2
     print(f'A {esc} entre {s1:.2f} e {s2:.2f} é igual a {somar:.2f}') # imprimi o resultado
 
-def subtracao(): # SUBTRAÇÃO
+def sub(): # SUBTRAÇÃO
     subtrair = s1 - s2
     print(f'A {esc} entre {s1:.2f} e {s2:.2f} é igual a {subtrair:.2f}') # imprimi o resultado
 
-def multiplicacao(): # MULTIPLICAÇÃO
+def multi(): # MULTIPLICAÇÃO
     multiplicar = s1 * s2
     print(f'A {esc} entre {s1:.2f} e {s2:.2f} é igual a {multiplicar:.2f}') # imprimi o resultado
 
-def divisao(): # DIVISÃO
+def divi(): # DIVISÃO
     dividir = s1 / s2
     print(f'A {esc} entre {s1:.2f} e {s2:.2f} é igual a {dividir:.2f}') # imprimi o resultado
 
@@ -32,7 +32,7 @@ esc = str(input('Qual tipo de calculo deseja executar? ')) # coleta o tipo de ca
 
 # listas facilitadoras
 som = ['soma','Soma','SOMA'] # soma
-sub = ['subtração','Subtração','SUBTRAÇÃO'] # subtração
+subt = ['subtração','Subtração','SUBTRAÇÃO'] # subtração
 mul = ['multiplicação','Multiplicação','MULTIPLICAÇÃO'] # multiplicação
 div = ['divisão','Divisão','DIVISÃO'] # divisão
 
@@ -40,13 +40,13 @@ if esc in som: # se for soma
     soma()
 
 if esc in sub: # se for subtração
-    subtracao()
+    sub()
 
 if esc in mul: # se for multiplicação
-    multiplicacao()
+    multi()
 
 if esc in div: # se for divisão
-    divisao()
+    divi()
 
 else: # para valores inválidos
     print('Invalido')
