@@ -23,8 +23,8 @@ def divisao():
 
 # calculos
 
-s1 = float(input('Digite um numero: '))
-s2 = float(input('Digite outro numero: '))
+s1 = float(input('Digite um numero: ')) # recebendo o primeiro valor
+s2 = float(input('Digite outro numero: ')) # recebendo o segundo valor
 
 esc = str(input('Qual tipo de calculo deseja executar? '))
 
