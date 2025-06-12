@@ -3,7 +3,7 @@
 
 # DEF - 03
 
-quantos = int(input('Digite um número para a contagem regressiva:'))
+quantos = int(input('Digite um número para a contagem regressiva: '))
 
 def contagem_regressiva(numero):
 
