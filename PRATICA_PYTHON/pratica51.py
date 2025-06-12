@@ -36,7 +36,6 @@ sub = ['subtração','Subtração','SUBTRAÇÃO']
 mul = ['multiplicação','Multiplicação','MULTIPLICAÇÃO']
 div = ['divisão','Divisão','DIVISÃO']
 
-
 if esc in som: # se for soma
     soma()
 
