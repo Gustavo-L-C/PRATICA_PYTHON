@@ -35,16 +35,16 @@ mul = ['multiplicação','Multiplicação','MULTIPLICAÇÃO']
 div = ['divisão','Divisão','DIVISÃO']
 
 
-if esc in som:
+if esc in som: # se for soma
     soma()
 
-if esc in sub:
+if esc in sub: # se for subtração
     subtracao()
 
-if esc in mul:
+if esc in mul: # se for multiplicação
     multiplicacao()
 
-if esc in div:
+if esc in div: # se for divisão
     divisao()
 
 else:
