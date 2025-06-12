@@ -26,13 +26,14 @@ def divisao():
 s1 = float(input('Digite um numero: ')) # recebendo o primeiro valor
 s2 = float(input('Digite outro numero: ')) # recebendo o segundo valor
 
-esc = str(input('Qual tipo de calculo deseja executar? '))
+esc = str(input('Qual tipo de calculo deseja executar? ')) # recebendo o tipo de calculo
 
 # listas facilitadoras
 som = ['soma','Soma','SOMA']
 sub = ['subtração','Subtração','SUBTRAÇÃO']
 mul = ['multiplicação','Multiplicação','MULTIPLICAÇÃO']
 div = ['divisão','Divisão','DIVISÃO']
+
 
 if esc in som:
     soma()
