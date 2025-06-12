@@ -21,7 +21,7 @@ def multiplicacao(): # MULTIPLICAÇÃO
 
 def divisao(): # DIVISÃO
     dividir = s1 / s2
-    print(f'A {esc} entre {s1:.2f} e {s2:.2f} é igual a {dividir:.2f}')
+    print(f'A {esc} entre {s1:.2f} e {s2:.2f} é igual a {dividir:.2f}') # imprimi o resultado
 
 # calculos
 
