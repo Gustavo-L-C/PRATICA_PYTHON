@@ -33,8 +33,8 @@ esc = str(input('Qual tipo de calculo deseja executar? ')) # recebendo o tipo de
 # listas facilitadoras
 som = ['soma','Soma','SOMA'] # soma
 sub = ['subtração','Subtração','SUBTRAÇÃO'] # subtração
-mul = ['multiplicação','Multiplicação','MULTIPLICAÇÃO']
-div = ['divisão','Divisão','DIVISÃO']
+mul = ['multiplicação','Multiplicação','MULTIPLICAÇÃO'] # multiplicação
+div = ['divisão','Divisão','DIVISÃO'] # divisão
 
 if esc in som: # se for soma
     soma()
