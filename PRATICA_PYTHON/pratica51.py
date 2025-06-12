@@ -25,10 +25,10 @@ def divisao(): # DIVISÃO
 
 # calculos
 
-s1 = float(input('Digite um numero: ')) # recebendo o primeiro valor
-s2 = float(input('Digite outro numero: ')) # recebendo o segundo valor
+s1 = float(input('Digite um numero: ')) # coleta o primeiro valor
+s2 = float(input('Digite outro numero: ')) # coleta o segundo valor
 
-esc = str(input('Qual tipo de calculo deseja executar? ')) # recebendo o tipo de calculo
+esc = str(input('Qual tipo de calculo deseja executar? ')) # coleta o tipo de calculo
 
 # listas facilitadoras
 som = ['soma','Soma','SOMA'] # soma
