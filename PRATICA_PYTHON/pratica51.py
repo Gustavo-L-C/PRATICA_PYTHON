@@ -3,6 +3,8 @@
 
 # DEF - 04
 
+# calculos
+
 def soma():
     somar = s1 + s2
     print(f'A {esc} entre {s1:.2f} e {s2:.2f} é igual a {somar:.2f}')
@@ -18,6 +20,8 @@ def multiplicacao():
 def divisao():
     dividir = s1 / s2
     print(f'A {esc} entre {s1:.2f} e {s2:.2f} é igual a {dividir:.2f}')
+
+# calculos
 
 s1 = float(input('Digite um numero: '))
 s2 = float(input('Digite outro numero: '))
