@@ -24,6 +24,7 @@ s2 = float(input('Digite outro numero: '))
 
 esc = str(input('Qual tipo de calculo deseja executar? '))
 
+# listas facilitadoras
 som = ['soma','Soma','SOMA']
 sub = ['subtração','Subtração','SUBTRAÇÃO']
 mul = ['multiplicação','Multiplicação','MULTIPLICAÇÃO']
