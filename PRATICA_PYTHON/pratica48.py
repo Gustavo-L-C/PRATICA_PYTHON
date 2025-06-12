@@ -30,7 +30,7 @@ def media_turma(turma): # definimos a média da turma
     for notas in turma: # para cada nota na turma
         soma_notas += notas # somando as notas
 
-    media_notas = soma_notas/qtd # calculando a média
+    media_notas = soma_notas / qtd # calculando a média
     return media_notas
 
 media_da_turma = media_turma(turma)
