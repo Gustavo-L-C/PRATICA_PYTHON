@@ -31,8 +31,8 @@ s2 = float(input('Digite outro numero: ')) # recebendo o segundo valor
 esc = str(input('Qual tipo de calculo deseja executar? ')) # recebendo o tipo de calculo
 
 # listas facilitadoras
-som = ['soma','Soma','SOMA']
-sub = ['subtração','Subtração','SUBTRAÇÃO']
+som = ['soma','Soma','SOMA'] # soma
+sub = ['subtração','Subtração','SUBTRAÇÃO'] # subtração
 mul = ['multiplicação','Multiplicação','MULTIPLICAÇÃO']
 div = ['divisão','Divisão','DIVISÃO']
 
