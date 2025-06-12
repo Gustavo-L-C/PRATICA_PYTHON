@@ -20,7 +20,7 @@ def multi(): # MULTIPLICAÇÃO
     print(f'A {esc} entre {s1:.2f} e {s2:.2f} é igual a {multiplicar:.2f}') # imprimi o resultado
 
 def divi(): # DIVISÃO
-    dividir = s1 / s2
+    dividir = s1 // s2
     print(f'A {esc} entre {s1:.2f} e {s2:.2f} é igual a {dividir:.2f}') # imprimi o resultado
 
 # calculos
@@ -39,7 +39,7 @@ div = ['divisão','Divisão','DIVISÃO'] # divisão
 if esc in som: # se for soma
     soma()
 
-if esc in sub: # se for subtração
+if esc in subt: # se for subtração
     sub()
 
 if esc in mul: # se for multiplicação
