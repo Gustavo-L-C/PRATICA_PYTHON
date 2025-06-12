@@ -13,7 +13,7 @@ def subtracao(): # SUBTRAÇÃO
     subtrair = s1 - s2
     print(f'A {esc} entre {s1:.2f} e {s2:.2f} é igual a {subtrair:.2f}')
 
-def multiplicacao():
+def multiplicacao(): # MULTIPLICAÇÃO
     multiplicar = s1 * s2
     print(f'A {esc} entre {s1:.2f} e {s2:.2f} é igual a {multiplicar:.2f}')
 
