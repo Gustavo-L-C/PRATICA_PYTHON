@@ -9,11 +9,11 @@
 
 def soma(): # SOMA
     somar = s1 + s2
-    print(f'A {esc} entre {s1:.2f} e {s2:.2f} é igual a {somar:.2f}')
+    print(f'A {esc} entre {s1:.2f} e {s2:.2f} é igual a {somar:.2f}') # imprimi o resultado
 
 def subtracao(): # SUBTRAÇÃO
     subtrair = s1 - s2
-    print(f'A {esc} entre {s1:.2f} e {s2:.2f} é igual a {subtrair:.2f}')
+    print(f'A {esc} entre {s1:.2f} e {s2:.2f} é igual a {subtrair:.2f}') # imprimi o resultado
 
 def multiplicacao(): # MULTIPLICAÇÃO
     multiplicar = s1 * s2
