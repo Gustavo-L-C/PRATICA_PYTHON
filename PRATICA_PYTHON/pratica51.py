@@ -47,7 +47,7 @@ if esc in mul: # se for multiplicação
 if esc in div: # se for divisão
     divisao()
 
-else:
+else: # para valores inválidos
     print('Invalido')
 
 
