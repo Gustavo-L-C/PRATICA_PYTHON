@@ -4,7 +4,6 @@
 #gerador de senhas 2.0
 
 from random import randint # importando radint
-import secrets # importando secrets
 from bancodenomes import bancos_nomes # importando o banco de nomes "cadastrados"
 
 def gerar_senha():
