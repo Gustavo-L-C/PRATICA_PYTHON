@@ -6,13 +6,13 @@ from bancodenomes import bancos_nomes # banco de nomes
 
 nome1 = str(input('Digite seu nome: ')) # coletar o nome
 
-if nome1 in bancos_nomes:
+if nome1 in bancos_nomes: # se o nome coletado estiver dentro do banco de nomes
 
-    salario1 = 2000
+    salario1 = 2000 # salario igual a 2000
 
-else:
+else: # se não
 
-    salario1 = 1500
+    salario1 = 1500 # salario igual a 1500
 
 class Emp:
     def __init__(self, nome, salario):
