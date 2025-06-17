@@ -6,6 +6,7 @@ from random import randint
 import secrets
 
 def uma_senha(senha):
+
     us1 = randint(0,20)
     us2 = randint(0, 20)
     us3 = randint(0, 20)
@@ -14,7 +15,9 @@ def uma_senha(senha):
     us6 = randint(0, 20)
     us7 = randint(0, 20)
     us8 = randint(0, 20)
+
     senha = [us1,us2,us3,us4,us5,us6,us7,us8]
+
     print('\n\033[35mSua senha:','\033[35m', senha)
 
 def uma_senha_segura(senha_segura):
