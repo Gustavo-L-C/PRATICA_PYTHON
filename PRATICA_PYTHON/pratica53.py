@@ -6,7 +6,6 @@ from bancodenomes import bancos_nomes
 
 nome1 = str(input('\nQual seu nome? '))
 
-
 class OLA:
 
     def ola(self, nome):
