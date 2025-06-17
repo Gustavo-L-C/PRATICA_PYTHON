@@ -4,7 +4,6 @@
 
 from bancodenomes import bancos_nomes # banco de nomes
 
-
 # _________________________________________________________________________________________________________________
 
 nome1 = str(input('Digite seu nome: ')) # coletar o nome
