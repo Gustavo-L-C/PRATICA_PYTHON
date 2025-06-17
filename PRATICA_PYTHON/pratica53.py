@@ -12,7 +12,6 @@ class OLA:
         self.nome = nome
 
     def imprimir(self):
-
         if nome1 in bancos_nomes:
             print('\033[33mOlá seja bem-vindo,', nome1, '\033[m')
         else:
