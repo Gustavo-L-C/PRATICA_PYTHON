@@ -14,14 +14,15 @@ else: # se não
 
     salario1 = 1500 # salario igual a 1500
 
-class Emp:
-    def __init__(self, nome, salario):
+class Emp: # classe Emp (empregado)
+
+    def __init__(self, nome, salario): # função inicial nome e salario
 
         self.nome = nome
 
         self.salario = salario
 
-    def imprime(self):
+    def imprime(self): # função para imprimir na tela
 
         print(f'{self.nome} tem um salário de R$ {self.salario:.2f}')
 
