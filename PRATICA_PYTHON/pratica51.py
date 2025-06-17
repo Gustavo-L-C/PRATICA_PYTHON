@@ -5,6 +5,12 @@
 
 # Calculador simples
 
+# listas facilitadoras
+som = ['soma','Soma','SOMA'] # soma
+subt = ['subtração','Subtração','SUBTRAÇÃO'] # subtração
+mul = ['multiplicação','Multiplicação','MULTIPLICAÇÃO'] # multiplicação
+div = ['divisão','Divisão','DIVISÃO'] # divisão
+
 # calculos
 
 def soma(): # SOMA
@@ -30,12 +36,6 @@ s2 = float(input('Digite outro numero: ')) # coleta o segundo valor
 
 esc = str(input('Qual tipo de calculo deseja executar? ')) # coleta o tipo de calculo
 
-# listas facilitadoras
-som = ['soma','Soma','SOMA'] # soma
-subt = ['subtração','Subtração','SUBTRAÇÃO'] # subtração
-mul = ['multiplicação','Multiplicação','MULTIPLICAÇÃO'] # multiplicação
-div = ['divisão','Divisão','DIVISÃO'] # divisão
-
 if esc in som: # se for soma
     soma()
 
@@ -48,7 +48,7 @@ if esc in mul: # se for multiplicação
 if esc in div: # se for divisão
     divi()
 
-else: # para valores inválidos
+else:# para valores inválidos
     print('Invalido')
 
 
