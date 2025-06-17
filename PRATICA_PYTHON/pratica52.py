@@ -33,16 +33,16 @@ def uma_senha_segura(senha_segura):
 # _________________________________________________________________________________________________________________
 
 
-q = input('Olá que tipo de senha você precisa (\033[36msegura\033[m ou \033[35msimples\033[m)? ')
+tipo = input('Olá que tipo de senha você precisa (\033[36msegura\033[m ou \033[35msimples\033[m)? ')
 
 # _________________________________________________________________________________________________________________
 
 
-if q in ['simples', 'Simples', 'SIMPLES']:
-   uma_senha(q)
+if tipo in ['simples', 'Simples', 'SIMPLES']:
+   uma_senha(tipo)
 
-if q in ['segura', 'Segura', 'SEGURA']:
-    uma_senha_segura(q)
+if tipo in ['segura', 'Segura', 'SEGURA']:
+    uma_senha_segura(tipo)
 
 else:
     print('erro!!!')
