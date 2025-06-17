@@ -33,4 +33,4 @@ if q in ['segura', 'Segura', 'SEGURA']:
     uma_senha_segura(q)
 
 else:
-    print('n')
+    print('erro!!!')
