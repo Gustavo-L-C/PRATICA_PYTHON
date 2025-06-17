@@ -2,9 +2,9 @@
 
 #PRATICA
 
-from bancodenomes import bancos_nomes
+from bancodenomes import bancos_nomes # banco de nomes
 
-nome1 = str(input('Digite seu nome: '))
+nome1 = str(input('Digite seu nome: ')) # coletar o nome
 
 if nome1 in bancos_nomes:
 
@@ -14,7 +14,7 @@ else:
 
     salario1 = 1500
 
-class Emp: 
+class Emp:
     def __init__(self, nome, salario):
 
         self.nome = nome
