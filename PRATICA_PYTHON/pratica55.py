@@ -1,8 +1,6 @@
 # CARA OU COROA
 from random import randint
 
-
-
 print('😐 Cara ou Coroa 👑\n')
 
 melhor = int(input('Quantas Vezes quer jogar: '))
