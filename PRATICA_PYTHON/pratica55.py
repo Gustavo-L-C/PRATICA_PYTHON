@@ -11,7 +11,7 @@ op1 = input('1- O que será Cara: ')
 op2 = input('2- O que será Coroa: ')
 
 
-print('girando..... \n')
+print('\ngirando..... \n')
 
 
 if cc == 1:
