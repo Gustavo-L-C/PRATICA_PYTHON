@@ -11,7 +11,7 @@ op1 = input('😐- O que será Cara: ')
 op2 = input('👑- O que será Coroa: ')
 
 
-print('\ngirando..... \n')
+print('\ngirando🪙🪙🪙\n')
 
 
 if cc == 1:
