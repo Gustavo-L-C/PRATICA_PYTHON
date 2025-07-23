@@ -20,4 +20,3 @@ for quantidade in range(melhor):
     elif cc == 2:
         print('\nGirando 🪙🪙🪙')
         print('👑 Coroa', op2)
-
