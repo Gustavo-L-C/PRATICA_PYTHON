@@ -1,6 +1,6 @@
 #28.05.25
 
-print(f'\n{" CONVERSÂO DO DOLAR / IENE / EURO ":*^40}\n')
+print(f'\n{" 💱 CONVERSÂO DO DOLAR / IENE / EURO 💱 ":*^40}\n')
 
 qm = str(input('Qual a Moeda (dolar/iene/euro)? '))
 
