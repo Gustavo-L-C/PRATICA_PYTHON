@@ -7,8 +7,8 @@ cc = randint(1,2)
 print('😐 Cara ou Coroa 👑\n')
 
 
-op1 = input('1- O que será Cara: ')
-op2 = input('2- O que será Coroa: ')
+op1 = input('😐- O que será Cara: ')
+op2 = input('👑- O que será Coroa: ')
 
 
 print('\ngirando..... \n')
