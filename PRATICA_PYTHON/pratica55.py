@@ -1,22 +1,20 @@
 # CARA OU COROA
 
 from random import randint
-
-cc = randint(1,2)
-
 print('😐 Cara ou Coroa 👑\n')
 
+melhor = int(input('Quantas Vezes quer jogar: '))
 
 op1 = input('😐- O que será Cara: ')
 op2 = input('👑- O que será Coroa: ')
 
+for quantidade in range(melhor):
 
-print('\nGirando 🪙🪙🪙\n')
+    cc = randint(1,2)
 
+    if cc == 1:
+        print('😐 Cara', op1)
 
-if cc == 1:
-    print('😐 Cara', op1)
-
-elif cc == 2:
-    print('👑 Coroa', op2)
+    elif cc == 2:
+        print('👑 Coroa', op2)
 
