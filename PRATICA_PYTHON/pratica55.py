@@ -4,13 +4,16 @@ from random import randint
 
 cc = randint(1,2)
 
+op1 = input('1- O que será Cara: ')
+op2 = input('2- O que será Coroa: ')
 
 print('🪙 Cara ou Coroa 🪙')
-print('girando..... ')
+print('girando..... \n')
 
 
 if cc == 1:
-    print('🪙 Cara')
+    print('🪙 Cara', op1)
 
 elif cc == 2:
-    print('🪙 Coroa')
+    print('🪙 Coroa', op2)
+
