@@ -14,7 +14,7 @@ ng = 0
 print(f'{dd} Jogo de Dados {dd}\n')
 
 tipo = int(input('Digite o tipo de dado (ex: digite 20 para dado D20): '))
-print(f'"Tipo escolhido: D{tipo}')
+print(f'Tipo de Dado escolhido: D{tipo}')
 
 giros = int(input('Digite a quantidade de giros: '))
 
