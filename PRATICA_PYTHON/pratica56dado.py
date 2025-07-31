@@ -7,13 +7,14 @@ from random import randint
 # receber quantas vezes o dado será lançado
 # por na tela os resultados do giro ou de cada giro do dado
 # 🎲
+
 dd = '🎲'
 ng = 0
 
 print(f'{dd} Jogo de Dados {dd}\n')
 
-tipo = int(input("Digite o tipo de dado (ex: digite 20 para dado D20): "))
-print(f"Tipo escolhido: D{tipo}")
+tipo = int(input('Digite o tipo de dado (ex: digite 20 para dado D20): '))
+print(f'"Tipo escolhido: D{tipo}')
 
 giros = int(input('Digite a quantidade de giros: '))
 
