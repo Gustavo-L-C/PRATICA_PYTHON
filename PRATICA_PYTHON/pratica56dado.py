@@ -8,16 +8,14 @@ from random import randint
 # por na tela os resultados do giro ou de cada giro do dado
 # 🎲
 dd = '🎲'
+ng = 0
 
 print(f'{dd} Jogo de Dados {dd}')
 
 tipo = int(input("Digite o tipo de dado (ex: digite 20 para dado D20): "))
-
 print(f"Tipo escolhido: D{tipo}")
 
 giros = int(input('Digite a quantidade de giros: '))
-
-ng = 0
 
 for giro in range(giros):
 
