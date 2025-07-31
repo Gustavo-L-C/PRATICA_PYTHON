@@ -1,6 +1,7 @@
 # DADO
 
 from random import randint
+from time import sleep
 
 # receba o tipo de dado d6, d20, d100, ...
 # gire o dado escolhido quantas vezes for decidido
@@ -21,6 +22,7 @@ print(' ')
 
 print(f'{dd} girando... {dd}')
 print(' ')
+sleep(5)
 
 for giro in range(giros):
 
