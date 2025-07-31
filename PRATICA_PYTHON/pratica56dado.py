@@ -11,3 +11,14 @@ from random import randint
 tipo = int(input("Digite o tipo de dado (ex: digite 20 para dado D20): "))
 
 print(f"Tipo escolhido: D{tipo}")
+
+giros = int(input('Digite a quantidade de giros: '))
+
+ng = 0
+
+for giro in range(giros):
+
+    re = randint(1,tipo)
+    ng += 1
+
+    print(f'{ng}- Resultado: {re}')
