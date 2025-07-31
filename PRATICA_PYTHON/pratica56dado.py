@@ -25,7 +25,7 @@ for giro in range(giros):
     re = randint(1,tipo)
     ng += 1
 
-    print(f'{dd}rolando os dados ...{dd}')
+    print(f'{dd}rolando o dado...{dd}')
     sleep(1.5)
     print(f'{ng}- Resultado: {re}')
     print(' ')
