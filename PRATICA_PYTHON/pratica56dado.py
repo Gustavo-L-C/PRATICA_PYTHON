@@ -19,6 +19,9 @@ print(f'Tipo de Dado escolhido: D{tipo}\n')
 giros = int(input('Digite a quantidade de giros: '))
 print(' ')
 
+print(f'{dd} girando... {dd}')
+print(' ')
+
 for giro in range(giros):
 
     re = randint(1,tipo)
