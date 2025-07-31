@@ -12,7 +12,7 @@ from time import sleep
 dd = '🎲'
 ng = 0
 
-print(f'{dd} Jogo de Dados {dd}\n')
+print(f'{dd} Rolando os Dados {dd}\n')
 
 tipo = int(input('Digite o tipo de dado (ex: digite 20 para dado D20): '))
 print(f'Tipo de Dado escolhido: D{tipo}\n')
@@ -25,7 +25,7 @@ for giro in range(giros):
     re = randint(1,tipo)
     ng += 1
 
-    print(f'{dd}Rolando os Dados ...{dd}')
+    print(f'{dd}rolando os dados ...{dd}')
     sleep(1.5)
     print(f'{ng}- Resultado: {re}')
     print(' ')
