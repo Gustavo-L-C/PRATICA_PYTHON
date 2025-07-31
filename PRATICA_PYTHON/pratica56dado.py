@@ -3,11 +3,11 @@
 from random import randint
 from time import sleep
 
-# receba o tipo de dado d6, d20, d100, ...
-# gire o dado escolhido quantas vezes for decidido
-# receber quantas vezes o dado será lançado
-# por na tela os resultados do giro ou de cada giro do dado
-# 🎲
+#Receber o tipo de dado d6, d20, d100, ...
+#Rolar o dado escolhido quantas vezes for decidido
+#Receber quantas vezes o dado será lançado
+#Por na tela os resultados do giro ou de cada giro do dado
+#🎲
 
 dd = '🎲'
 ng = 0
