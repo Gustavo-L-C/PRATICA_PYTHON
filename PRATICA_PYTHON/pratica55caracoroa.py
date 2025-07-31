@@ -1,4 +1,5 @@
-# CARA OU COROA
+# CARA OU COROA - 23/07/2025
+
 from random import randint
 
 print('😐 Cara ou Coroa 👑\n')
