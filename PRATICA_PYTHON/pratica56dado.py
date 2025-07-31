@@ -28,3 +28,4 @@ for giro in range(giros):
     print(f'{dd} girando ...{dd}')
     sleep(1)
     print(f'{ng}- Resultado: {re}')
+    print(' ')
