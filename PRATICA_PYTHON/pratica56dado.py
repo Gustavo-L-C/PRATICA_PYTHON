@@ -21,8 +21,11 @@ giros = int(input('Digite a quantidade de giros: '))
 print(' ')
 
 print(f'{dd} girando... {dd}')
-print(' ')
-sleep(5)
+
+for delay in range(3):
+    print(f'{dd}')
+    sleep(1)
+
 
 for giro in range(giros):
 
