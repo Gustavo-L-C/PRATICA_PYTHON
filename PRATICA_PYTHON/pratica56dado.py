@@ -7,8 +7,9 @@ from random import randint
 # receber quantas vezes o dado será lançado
 # por na tela os resultados do giro ou de cada giro do dado
 # 🎲
+dd = '🎲'
 
-print('🎲 Jogo de Dados 🎲')
+print(f'{dd} Jogo de Dados {dd}')
 
 tipo = int(input("Digite o tipo de dado (ex: digite 20 para dado D20): "))
 
