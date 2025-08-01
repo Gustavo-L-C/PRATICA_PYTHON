@@ -1,4 +1,4 @@
-#
+#01.08.25
 
 #Em D&D, o dado D20 é usado para determinar o sucesso ou fracasso de ações e ataques, com resultados críticos (20) e falhas críticas (1).
 
