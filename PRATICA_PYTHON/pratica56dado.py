@@ -1,4 +1,5 @@
-# DADO - 31/07/2025
+#31.07.25
+# DADO
 
 from random import randint
 from time import sleep
