@@ -30,7 +30,7 @@ from time import sleep
 
 LE = ['🐲', '💀', '🍀', '☠️']
 
-
+print(f'{LE[0]} Rolamento D20 D&D {LE[0]}')
 
 CD = int(input('Qual é Classe de Dificuldade do momento: '))
 
