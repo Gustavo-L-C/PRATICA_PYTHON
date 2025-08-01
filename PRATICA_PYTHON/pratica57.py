@@ -1,3 +1,5 @@
+#
+
 #Em D&D, o dado D20 é usado para determinar o sucesso ou fracasso de ações e ataques, com resultados críticos (20) e falhas críticas (1).
 
 # Ao rolar um D20, um número entre 1 e 20 é obtido, e esse resultado, comparado com uma dificuldade (CD) definida pelo mestre, determina o resultado da ação.
