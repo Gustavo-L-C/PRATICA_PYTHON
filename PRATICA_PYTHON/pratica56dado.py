@@ -18,6 +18,7 @@ tipo = int(input('Digite o tipo de dado (ex: digite 20 para dado D20): '))
 print(f'Tipo de Dado escolhido: D{tipo}\n')
 
 giros = int(input('Digite a quantidade de rolamentos: '))
+
 print(' ')
 
 for giro in range(giros):
