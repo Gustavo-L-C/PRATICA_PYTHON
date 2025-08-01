@@ -45,12 +45,10 @@ for rolamentos in range(RO):
 
     if RDD >= CD:
         if RDD == 20:
-
             print(f'{RDD} SUCESSO CRÍTICO {LE[2]*3}')
             sleep(1)
 
         else:
-
             print(f'{RDD} SUCESSO {LE[0]*3}')
             sleep(1)
 
