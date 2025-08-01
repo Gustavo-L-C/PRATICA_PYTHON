@@ -30,6 +30,8 @@ from time import sleep
 
 LE = ['🐲', '💀', '🍀', '☠️']
 
+
+
 CD = int(input('Qual é Classe de Dificuldade do momento: '))
 
 RO = int(input('Digite o numero de rolamentos: '))
@@ -44,18 +46,18 @@ for rolamentos in range(RO):
     if RDD >= CD:
         if RDD == 20:
 
-            print(f'{RDD} SUCESSO CRÍTICO!!!{LE[0]}')
+            print(f'{RDD} SUCESSO CRÍTICO {LE[2]*3}')
             sleep(1)
 
         else:
 
-            print(f'{RDD} SUCESSO!!!')
+            print(f'{RDD} SUCESSO {LE[0]*3}')
             sleep(1)
 
     elif RDD == 1:
-        print(f'{RDD} FALHA CRITICA')
+        print(f'{RDD} FALHA CRITICA {LE[3]*3}')
         sleep(1)
 
     else:
-        print(f'{RDD} FALHO')
+        print(f'{RDD} FALHO {LE[1]*3}')
         sleep(1)
