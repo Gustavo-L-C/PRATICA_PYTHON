@@ -1,4 +1,5 @@
-# CARA OU COROA - 23/07/2025
+#23.07.25
+# CARA OU COROA
 
 from random import randint
 
