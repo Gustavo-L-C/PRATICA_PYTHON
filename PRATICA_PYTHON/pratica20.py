@@ -10,6 +10,6 @@ a = float(input('Qual a altura da sua parede: '))
 ar = l * a
 t = ar / 2
 
-print(f'Sua parede tem as dimensões de {l:.2f}x{a:.2f} e área de {ar}m².', end=' ')
+print(f'Sua parede tem as dimensões de {l:.2f}x{a:.2f} e área de {ar}m²', end=' ')
 print(f'e será necessário {t:.1f}L de tinta.')
 
