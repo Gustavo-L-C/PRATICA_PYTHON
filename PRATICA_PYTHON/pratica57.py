@@ -40,7 +40,7 @@ CD = int(input('Qual é Classe de Dificuldade do momento: '))
 
 RO = int(input('Digite o numero de rolamentos: '))
 
-sleep(1)
+sleep(0.5)
 print('\n.', end='')
 sleep(0.5)
 print('.', end='')
@@ -49,7 +49,7 @@ print('.', end='')
 sleep(0.5)
 print('.', end='')
 sleep(0.5)
-print('.\n', end='')
+print('.\n')
 sleep(0.5)
 
 for rolamentos in range(RO):
