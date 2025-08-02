@@ -46,7 +46,7 @@ print(' ')
 for rolamentos in range(RO):
 
     RDD = randint(1, 20)
-    N =+ 1
+    N += 1
 
     if RDD >= CD:
         if RDD == 20:
@@ -54,13 +54,13 @@ for rolamentos in range(RO):
             sleep(1)
 
         else:
-            print(f'{RDD} SUCESSO {LE[0]*3}')
+            print(f'{N}- {RDD} SUCESSO {LE[0]*3}')
             sleep(1)
 
     elif RDD == 1:
-        print(f'{RDD} FALHA CRITICA {LE[3]*3}')
+        print(f'{N}- {RDD} FALHA CRITICA {LE[3]*3}')
         sleep(1)
 
     else:
-        print(f'{RDD} FALHO {LE[1]*3}')
+        print(f'{N}- {RDD} FALHO {LE[1]*3}')
         sleep(1)
