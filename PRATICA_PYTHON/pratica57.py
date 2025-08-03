@@ -43,8 +43,13 @@ RO = int(input('Digite o numero de rolamentos: '))
 print(' ')
 
 for pontos in range(RO):
-    sleep(0.5)
-    print('.', end='')
+
+    if RO <= 10:
+        sleep(0.5)
+        print('.', end='')
+    else:
+        sleep(0.2)
+        print('.', end='')
 
 print('\n')
 
