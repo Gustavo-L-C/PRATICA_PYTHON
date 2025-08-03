@@ -12,17 +12,17 @@ print(f'{LE[0]} Rolamento D20 D&D {LE[0]}\n')
 
 CD = int(input('Qual é Classe de Dificuldade do momento: '))
 
-RO = int(input('Digite o numero de rolamentos: '))
+NR = int(input('Digite o numero de rolamentos: '))
 
 print(' ')
 
-for pontos in range(RO):
+for pontos in range(NR):
 
-    if RO <= 10:
+    if NR <= 10:
         sleep(0.5)
         print(f'{LE[4]}', end='')
 
-    elif RO >= 50:
+    elif NR >= 50:
         sleep(0.12)
         print(f'{LE[4]}', end='')
 
@@ -32,7 +32,7 @@ for pontos in range(RO):
 
 print('\n')
 
-for rolamentos in range(RO):
+for rolamentos in range(NR):
 
     RDD = randint(1, 20)
     N += 1
