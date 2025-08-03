@@ -43,12 +43,12 @@ RO = int(input('Digite o numero de rolamentos: '))
 
 for pontos in range(RO):
     sleep(0.5)
-    print('\n.', end='')
-
+    print('.', end='')
 
 print(' ')
 
 for rolamentos in range(RO):
+
 
     RDD = randint(1, 20)
     N += 1
