@@ -12,7 +12,7 @@ print(f'{LE[0]} Rolamento D20 D&D {LE[0]}\n')
 
 CD = int(input('Qual é Classe de Dificuldade do momento: '))
 
-NR = int(input('Digite o numero de rolamentos: '))
+NR = int(input('Digite o Número de Rolamentos: '))
 
 print(' ')
 
