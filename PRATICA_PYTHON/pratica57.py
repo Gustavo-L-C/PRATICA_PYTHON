@@ -47,9 +47,11 @@ for pontos in range(RO):
     if RO <= 10:
         sleep(0.5)
         print(f'{LE[4]}', end='')
+
     elif RO <= 50:
         sleep(0.15)
         print(f'{LE[4]}', end='')
+        
     else:
         sleep(0.25)
         print(f'{LE[4]}', end='')
