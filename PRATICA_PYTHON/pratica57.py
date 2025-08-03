@@ -48,7 +48,7 @@ for pontos in range(RO):
         sleep(0.5)
         print('.', end='')
     else:
-        sleep(0.2)
+        sleep(0.25)
         print('.', end='')
 
 print('\n')
