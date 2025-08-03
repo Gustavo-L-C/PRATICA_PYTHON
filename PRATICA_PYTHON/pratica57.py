@@ -46,7 +46,7 @@ for pontos in range(RO):
     sleep(0.5)
     print('.', end='')
 
-print(' ')
+print('\n')
 
 for rolamentos in range(RO):
 
