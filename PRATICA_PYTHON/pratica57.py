@@ -25,7 +25,7 @@
 
 #CD significa Classe de Dificuldade
 
-#🐲💀☠️🍀
+#🐲💀☠️🍀🎲
 
 from random import randint
 from time import sleep
@@ -51,7 +51,7 @@ for pontos in range(RO):
     elif RO <= 50:
         sleep(0.15)
         print(f'{LE[4]}', end='')
-        
+
     else:
         sleep(0.25)
         print(f'{LE[4]}', end='')
