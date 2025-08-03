@@ -30,7 +30,7 @@
 from random import randint
 from time import sleep
 
-LE = ['🐲', '💀', '🍀', '☠️']
+LE = ['🐲', '💀', '🍀', '☠️', '🎲']
 
 N = 0
 
@@ -46,7 +46,7 @@ for pontos in range(RO):
 
     if RO <= 10:
         sleep(0.5)
-        print('.', end='')
+        print(f'{LE[4]}', end='')
     else:
         sleep(0.25)
         print('.', end='')
