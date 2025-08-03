@@ -52,7 +52,7 @@ for pontos in range(RO):
         print(f'{LE[4]}', end='')
     else:
         sleep(0.25)
-        print('.', end='')
+        print(f'{LE[4]}', end='')
 
 print('\n')
 
