@@ -41,10 +41,9 @@ CD = int(input('Qual é Classe de Dificuldade do momento: '))
 RO = int(input('Digite o numero de rolamentos: '))
 
 
-
 for pontos in range(RO):
     sleep(0.5)
-    print('.', end='')
+    print('\n.', end='')
 
 
 
