@@ -40,6 +40,7 @@ CD = int(input('Qual é Classe de Dificuldade do momento: '))
 
 RO = int(input('Digite o numero de rolamentos: '))
 
+print(' ')
 
 for pontos in range(RO):
     sleep(0.5)
@@ -48,7 +49,6 @@ for pontos in range(RO):
 print(' ')
 
 for rolamentos in range(RO):
-
 
     RDD = randint(1, 20)
     N += 1
