@@ -61,16 +61,16 @@ for rolamentos in range(RO):
     if RDD >= CD:
         if RDD == 20:
             print(f'{N}- {RDD} SUCESSO CRÍTICO {LE[2]*3}')
-            sleep(1)
+            sleep(0.4)
 
         else:
             print(f'{N}- {RDD} SUCESSO {LE[0]*3}')
-            sleep(1)
+            sleep(0.4)
 
     elif RDD == 1:
         print(f'{N}- {RDD} FALHA CRITICA {LE[3]*3}')
-        sleep(1)
+        sleep(0.4)
 
     else:
         print(f'{N}- {RDD} FALHO {LE[1]*3}')
-        sleep(1)
+        sleep(0.4)
