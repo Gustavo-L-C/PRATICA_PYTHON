@@ -43,18 +43,18 @@ print(' ')
 
 for pontos in range(giros<=10):
     for roll in range(giros):
-            sleep(0.5)
-            print(f'{dd}', end='')
+        sleep(0.5)
+        print(f'{dd}', end='')
 
 for pontos in range(giros>=50):
     for roll in range(giros):
-            sleep(0.12)
-            print(f'{dd}', end='')
+        sleep(0.12)
+        print(f'{dd}', end='')
 
 for pontos in range(giros>=100):
     for roll in range(giros):
-           sleep(0.25)
-           print(f'{dd}', end='')
+        sleep(0.25)
+        print(f'{dd}', end='')
 
 print('\n')
 
