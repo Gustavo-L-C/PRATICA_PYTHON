@@ -43,5 +43,5 @@ for quantidade in range(melhor):
         sleep(0.25)
 
     elif cc == 2:
-        print(f'{co} Coroa', op2)
+        print(f'{LE[0]} Coroa', op2)
         sleep(0.25)
