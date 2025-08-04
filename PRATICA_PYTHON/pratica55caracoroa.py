@@ -41,9 +41,8 @@ for quantidade in range(melhor):
     cc = randint(1,2)
 
     if cc == 1:
-        print(f'\nGirando {mo * 3}')
         print(f'{ca} Cara', op1)
+        
 
     elif cc == 2:
-        print(f'\nGirando {mo * 3}')
         print(f'{co} Coroa', op2)
