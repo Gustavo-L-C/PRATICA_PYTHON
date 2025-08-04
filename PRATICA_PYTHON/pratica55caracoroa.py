@@ -18,13 +18,13 @@ op1 = input(f'{ca}- O que será Cara: ')
 op2 = input(f'{co}- O que será Coroa: ')
 
 
-for pontos in range(NR):
+for pontos in range(melhor):
 
-    if NR <= 10:
+    if melhor <= 10:
         sleep(0.5)
         print(f'{mo}', end='')
 
-    elif NR >= 50:
+    elif melhor >= 50:
         sleep(0.12)
         print(f'{mo}', end='')
 
