@@ -17,6 +17,19 @@ op1 = input(f'{ca}- O que será Cara: ')
 op2 = input(f'{co}- O que será Coroa: ')
 
 
+for pontos in range(NR):
+
+    if NR <= 10:
+        sleep(0.5)
+        print(f'{mo}', end='')
+
+    elif NR >= 50:
+        sleep(0.12)
+        print(f'{mo}', end='')
+
+    else:
+        sleep(0.25)
+        print(f'{mo}', end='')
 
 
 for quantidade in range(melhor):
