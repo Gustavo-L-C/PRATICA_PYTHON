@@ -4,9 +4,8 @@
 from random import randint
 from time import sleep
 
-co = '👑'
-ca = '😐'
-mo = '🪙'
+LE = ['👑', '😐', '🪙']
+
 
 print(f'{ca} Cara ou Coroa {co}\n')
 
