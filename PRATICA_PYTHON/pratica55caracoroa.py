@@ -14,7 +14,7 @@ melhor = int(input('Quantas Vezes quer jogar: '))
 print(' ')
 
 op1 = input(f'{LE[1]}- O que será Cara: ')
-op2 = input(f'{co}- O que será Coroa: ')
+op2 = input(f'{LE[0]}- O que será Coroa: ')
 
 print(' ')
 
