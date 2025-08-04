@@ -23,19 +23,20 @@ giros = int(input('Digite a quantidade de rolamentos: '))
 
 print(' ')
 
-for pontos in range(giros):
+for pontos in range(giros<=10):        
+    for roll in range(giros):
+            sleep(0.5)
+            print(f'{dd}', end='')
 
-    if giros <= 10:
-        sleep(0.5)
-        print(f'{dd}', end='')
+for pontos in range(giros>=50):
+    for roll in range(giros):
+            sleep(0.12)
+            print(f'{dd}', end='')
 
-    elif giros >= 50:
-        sleep(0.12)
-        print(f'{dd}', end='')
-
-    else:
-        sleep(0.25)
-        print(f'{dd}', end='')
+for pontos in range(giros>=100):
+    for roll in range(giros):
+           sleep(0.25)
+           print(f'{dd}', end='')
 
 print('\n')
 
