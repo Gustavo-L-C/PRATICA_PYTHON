@@ -17,6 +17,8 @@ print(' ')
 op1 = input(f'{ca}- O que será Cara: ')
 op2 = input(f'{co}- O que será Coroa: ')
 
+print(' ')
+
 
 for pontos in range(melhor):
 
@@ -32,6 +34,7 @@ for pontos in range(melhor):
         sleep(0.25)
         print(f'{mo}', end='')
 
+print(' ')
 
 for quantidade in range(melhor):
 
