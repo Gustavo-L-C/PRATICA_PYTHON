@@ -2,6 +2,7 @@
 # CARA OU COROA
 
 from random import randint
+from time import sleep
 
 co = '👑'
 ca = '😐'
