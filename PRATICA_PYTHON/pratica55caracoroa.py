@@ -46,3 +46,4 @@ for quantidade in range(melhor):
 
     elif cc == 2:
         print(f'{co} Coroa', op2)
+        sleep(0.25)
