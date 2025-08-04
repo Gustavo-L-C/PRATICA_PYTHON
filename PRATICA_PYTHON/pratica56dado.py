@@ -20,14 +20,29 @@ print(f'Tipo de Dado escolhido: D{tipo}\n')
 
 giros = int(input('Digite a quantidade de rolamentos: '))
 
+
 print(' ')
+
+for pontos in range(giros):
+
+    if giros <= 10:
+        sleep(0.5)
+        print(f'{dd}', end='')
+
+    elif giros >= 50:
+        sleep(0.12)
+        print(f'{dd}', end='')
+
+    else:
+        sleep(0.25)
+        print(f'{dd}', end='')
+
+print('\n')
 
 for giro in range(giros):
 
     re = randint(1,tipo)
     ng += 1
 
-    print(f'{dd}rolando o dado...{dd}')
-    sleep(1.5)
     print(f'{ng}- Resultado: {re}')
-    print(' ')
+    sleep(0.3)
