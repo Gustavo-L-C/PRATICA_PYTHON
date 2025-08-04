@@ -42,7 +42,7 @@ for quantidade in range(melhor):
 
     if cc == 1:
         print(f'{ca} Cara', op1)
-        
+        sleep(0.25)
 
     elif cc == 2:
         print(f'{co} Coroa', op2)
