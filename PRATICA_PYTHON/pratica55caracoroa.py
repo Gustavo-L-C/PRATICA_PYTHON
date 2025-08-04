@@ -16,6 +16,9 @@ print(' ')
 op1 = input(f'{ca}- O que será Cara: ')
 op2 = input(f'{co}- O que será Coroa: ')
 
+
+
+
 for quantidade in range(melhor):
 
     cc = randint(1,2)
