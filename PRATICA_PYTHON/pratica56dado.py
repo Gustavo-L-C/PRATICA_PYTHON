@@ -23,7 +23,7 @@ giros = int(input('Digite a quantidade de rolamentos: '))
 
 print(' ')
 
-# Métodos - I
+# Métodos - Carregamento I
 
 #for pontos in range(NR):
 
@@ -39,7 +39,7 @@ print(' ')
      #   sleep(0.25)
       #  print(f'{LE[4]}', end='')
 
-# Métodos - II
+# Métodos - Carregamento II
 
 for pontos in range(giros<=10):
     for roll in range(giros):
