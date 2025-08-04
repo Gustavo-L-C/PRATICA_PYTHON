@@ -34,7 +34,7 @@ for pontos in range(melhor):
         sleep(0.25)
         print(f'{mo}', end='')
 
-print(' ')
+print('\n')
 
 for quantidade in range(melhor):
 
