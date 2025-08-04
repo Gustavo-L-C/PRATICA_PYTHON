@@ -19,7 +19,6 @@ op2 = input(f'{co}- O que será Coroa: ')
 
 print(' ')
 
-
 for pontos in range(melhor):
 
     if melhor <= 10:
