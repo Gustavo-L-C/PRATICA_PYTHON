@@ -22,7 +22,7 @@ for pontos in range(melhor):
 
     if melhor <= 10:
         sleep(0.5)
-        print(f'{mo}', end='')
+        print(f'{LE[2]}', end='')
 
     elif melhor >= 50:
         sleep(0.12)
