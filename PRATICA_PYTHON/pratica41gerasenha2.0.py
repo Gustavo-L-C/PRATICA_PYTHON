@@ -1,6 +1,5 @@
 #02.06.25
 #Atualizando
-
 #gerador de senhas 2.0
 
 from random import randint # importando o radint
