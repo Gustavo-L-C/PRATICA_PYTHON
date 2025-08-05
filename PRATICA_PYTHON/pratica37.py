@@ -1,9 +1,9 @@
 #01.06.25
 #ESTRUTURAS DE REPETIÇÂO - 03
+
 from random import randint
 
 #FOR - 02
-
 #for i in range(x):
 #para cada "i" dentro do "range(quantidade de repetições)":
 
