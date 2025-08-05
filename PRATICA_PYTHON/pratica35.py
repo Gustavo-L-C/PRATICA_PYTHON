@@ -1,8 +1,10 @@
 #30.05.25
 #ESTRUTURAS DE REPETIÇÂO - 01
+
 from random import randint
 
 #FOR - 01
+
 l1 = 1
 l2 = 100
 
