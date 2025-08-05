@@ -1,6 +1,5 @@
 #03.06.25
 #ESTRUTURAS DE REPETIÇÃO - 05
-
 #WHILE - 02
 
 n1 = int(input('digite um numero: ')) # escolhe a quantidade de repetições
