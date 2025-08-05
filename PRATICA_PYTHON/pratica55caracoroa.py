@@ -6,7 +6,6 @@ from time import sleep
 
 LE = ['👑', '😐', '🪙']
 
-
 print(f'{LE[1]} Cara ou Coroa {LE[0]}\n')
 
 melhor = int(input('Quantas Vezes quer jogar: '))
