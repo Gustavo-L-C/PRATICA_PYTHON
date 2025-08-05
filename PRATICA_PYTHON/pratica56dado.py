@@ -20,7 +20,6 @@ print(f'Tipo de Dado escolhido: D{tipo}\n')
 
 giros = int(input('Digite a quantidade de rolamentos: '))
 
-
 print(' ')
 
 # Métodos - Carregamento I
