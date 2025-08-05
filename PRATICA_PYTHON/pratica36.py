@@ -1,6 +1,5 @@
 #30.05.25
 #ESTRUTURAS DE REPETIÇÂO - 02
-
 #WHILE - 01
 
 n1 = 10
