@@ -1,5 +1,4 @@
 #17.06.25
-
 #PRATICA
 
 from bancodenomes import bancos_nomes # banco de nomes
