@@ -16,7 +16,7 @@ Num_Rolamentos = int(input('Digite o Número de Rolamentos: '))
 
 print(' ')
 
-for carregamento_quantidade_rolamentos in range(Num_Rolamentos):
+for carregamento_quantidade_rolamentos in range(Num_Rolamentos): # carregamento para rolar os dados
 
     if Num_Rolamentos <= 10:
         sleep(0.5)
@@ -32,7 +32,7 @@ for carregamento_quantidade_rolamentos in range(Num_Rolamentos):
 
 print('\n')
 
-for quantidade_rolamentos in range(Num_Rolamentos):
+for quantidade_rolamentos in range(Num_Rolamentos): # rolamento dos dados
 
     Rolamento_Dados = randint(1, 20)
     Num_Tentativas += 1
