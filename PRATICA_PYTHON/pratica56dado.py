@@ -62,5 +62,5 @@ for giro in range(giros):
     re = randint(1,tipo)
     num_jogadas += 1
 
-    print(f'{ng}- Resultado: {re}')
+    print(f'{num_jogadas}- Resultado: {re}')
     sleep(0.3)
