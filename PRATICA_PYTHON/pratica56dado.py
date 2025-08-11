@@ -10,7 +10,7 @@ from time import sleep
 #Por na tela os resultados do giro ou de cada giro do dado
 #🎲
 
-dd = '🎲'
+emoji_dado = '🎲'
 ng = 0
 
 print(f'{dd} Rolando os Dados {dd}\n')
