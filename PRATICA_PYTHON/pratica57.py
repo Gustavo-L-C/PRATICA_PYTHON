@@ -16,7 +16,7 @@ Num_Rolamentos = int(input('Digite o Número de Rolamentos: '))
 
 print(' ')
 
-for pontos in range(Num_Rolamentos):
+for carregamento_quantidade_rolamentos in range(Num_Rolamentos):
 
     if Num_Rolamentos <= 10:
         sleep(0.5)
@@ -32,7 +32,7 @@ for pontos in range(Num_Rolamentos):
 
 print('\n')
 
-for rolamentos in range(Num_Rolamentos):
+for quantidade_rolamentos in range(Num_Rolamentos):
 
     Rolamento_Dados = randint(1, 20)
     Num_Tentativas += 1
