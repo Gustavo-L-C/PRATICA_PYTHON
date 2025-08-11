@@ -11,7 +11,7 @@ from time import sleep
 #🎲
 
 emoji_dado = '🎲'
-ng = 0
+num_jogadas = 0
 
 print(f'{emoji_dado} Rolando os Dados {emoji_dado}\n')
 
