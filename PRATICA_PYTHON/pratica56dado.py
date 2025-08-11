@@ -13,7 +13,7 @@ from time import sleep
 emoji_dado = '🎲'
 ng = 0
 
-print(f'{dd} Rolando os Dados {dd}\n')
+print(f'{emoji_dado} Rolando os Dados {emoji_dado}\n')
 
 tipo = int(input('Digite o tipo de dado (ex: digite 20 para dado D20): '))
 print(f'Tipo de Dado escolhido: D{tipo}\n')
