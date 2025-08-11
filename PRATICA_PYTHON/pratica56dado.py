@@ -43,7 +43,7 @@ print(' ')
 for pontos in range(giros<=10):
     for roll in range(giros):
         sleep(0.5)
-        print(f'{dd}', end='')
+        print(f'{emoji_dado}', end='')
 
 for pontos in range(giros>=50):
     for roll in range(giros):
