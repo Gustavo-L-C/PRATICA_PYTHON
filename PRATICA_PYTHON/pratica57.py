@@ -23,7 +23,7 @@ for carregamento_quantidade_rolamentos in range(Num_Rolamentos): # carregamento 
         print(f'{Lista_Emoji[4]}', end='')
 
     elif Num_Rolamentos >= 50:
-        sleep(0.12)
+        sleep(0.10)
         print(f'{Lista_Emoji[4]}', end='')
 
     else:
