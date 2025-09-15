@@ -3,6 +3,9 @@
 #hora = float(input('Horas:'))
 #anos = int(input('Anos:'))
 
+eR = '🕐'
+eC= '📅'
+
 print('Conversor horas em anos e anos em horas')
 
 um_ano = 365
@@ -12,5 +15,7 @@ ano_hora = 8766
 #ano_p_hora = anos * ano_hora
 
 #print(hora_p_ano)
+
 #print(ano_p_hora)
+
 
