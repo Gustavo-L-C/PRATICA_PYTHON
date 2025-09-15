@@ -1,6 +1,7 @@
 #08.08.25
 
 from bancodenomes import sim_sim
+
 #hora = float(input('Horas:'))
 #anos = int(input('Anos:'))
 
@@ -30,8 +31,11 @@ else:
 
         print(f'{horas} horas são {hora_p_ano:.5f} anos.')
 
-        input('Precisa do numero mais exato?(s/n)')
+        ex = input('Precisa do numero mais exato?(s/n)')
 
+        if ex in sim_sim:
+
+            print(f'{horas} horas são {hora_p_ano} anos.')
 #hora_p_ano = hora / ano_hora
 #ano_p_hora = anos * ano_hora
 
