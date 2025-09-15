@@ -20,7 +20,7 @@ if qual == 1:
     anos = int(input('Digite quantos anos: '))
 
     ano_p_hora = anos * ano_hora
-    
+
     print(' ')
     print(f'{anos} anos são {ano_p_hora} horas.')
 
@@ -33,10 +33,11 @@ else:
         print(' ')
         print(f'{horas:.0f} horas são {hora_p_ano:.5f} anos.\n')
 
-        ex = input('Precisa do numero mais exato?(s/n)')
+        ex = input('Precisa do numero mais exato(s/n)?')
 
         if ex in sim_sim:
-
+            
+            print(' ')
             print(f'{horas} horas são {hora_p_ano} anos.')
 #hora_p_ano = hora / ano_hora
 #ano_p_hora = anos * ano_hora
