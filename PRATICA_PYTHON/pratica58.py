@@ -12,6 +12,7 @@ print(f'{eR} Conversor horas em anos e anos em horas {eC}\n')
 
 print('O que você quer converter? ')
 qual = int(input('Digite (1) para anos em horas e (2) para horas em anos: '))
+print(' ')
 
 um_ano = 365
 ano_hora = 8766
@@ -36,7 +37,7 @@ else:
         ex = input('Precisa do numero mais exato(s/n)?')
 
         if ex in sim_sim:
-            
+
             print(' ')
             print(f'{horas} horas são {hora_p_ano} anos.')
 #hora_p_ano = hora / ano_hora
