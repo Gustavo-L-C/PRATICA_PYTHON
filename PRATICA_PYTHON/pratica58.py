@@ -25,7 +25,7 @@ else:
     if qual == 2:
         horas = float(input('Digite quantos horas: '))
 
-        hora_p_ano = horas * ano_hora
+        hora_p_ano = horas / ano_hora
 
         print(f'{horas} horas são {hora_p_ano} anos.')
 
