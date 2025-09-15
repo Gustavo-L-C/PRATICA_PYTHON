@@ -29,7 +29,8 @@ else:
 
         hora_p_ano = horas / ano_hora
 
-        print(f'{horas} horas são {hora_p_ano:.5f} anos.')
+        print(' ')
+        print(f'{horas:.0f} horas são {hora_p_ano:.5f} anos.\n')
 
         ex = input('Precisa do numero mais exato?(s/n)')
 
