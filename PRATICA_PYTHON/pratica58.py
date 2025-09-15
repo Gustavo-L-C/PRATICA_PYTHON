@@ -6,7 +6,7 @@
 eR = '🕐'
 eC= '📅'
 
-print(f'{eR}Conversor horas em anos e anos em horas{eC}')
+print(f'{eR} Conversor horas em anos e anos em horas {eC}')
 
 um_ano = 365
 ano_hora = 8766
