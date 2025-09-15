@@ -17,9 +17,10 @@ print(' ')
 um_ano = 365
 ano_hora = 8766
 
-def convercao_ah(ano_p_hora):
+def convercao_ah(ano_p_hora): # converter anos para horas
     return anos * ano_hora
-def convercao_ha(hora_p_ano):
+
+def convercao_ha(hora_p_ano): # converter horas para anos
     return horas / ano_hora
 
 if qual == 1:
