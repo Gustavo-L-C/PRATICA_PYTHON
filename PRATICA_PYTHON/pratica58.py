@@ -20,7 +20,8 @@ if qual == 1:
     anos = int(input('Digite quantos anos: '))
 
     ano_p_hora = anos * ano_hora
-
+    
+    print(' ')
     print(f'{anos} anos são {ano_p_hora} horas.')
 
 else:
