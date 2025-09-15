@@ -39,7 +39,7 @@ for quantidade_rolamentos in range(Num_Rolamentos): # rolamento dos dados
 
     if Rolamento_Dados >= Classe_Dificuldade:
         if Rolamento_Dados == 20:
-            print(f'{Num_Tentativas}- {Rolamento_Dados} SUCESSO CRÍTICO {Lista_Emoji[2]*3}')
+            print(f'\033[33m{Num_Tentativas}- {Rolamento_Dados} SUCESSO CRÍTICO \033[m{Lista_Emoji[2]*3}')
             sleep(0.4)
 
         else:
@@ -47,7 +47,7 @@ for quantidade_rolamentos in range(Num_Rolamentos): # rolamento dos dados
             sleep(0.4)
 
     elif Rolamento_Dados == 1:
-        print(f'{Num_Tentativas}- {Rolamento_Dados} FALHA CRITICA {Lista_Emoji[3]*3}')
+        print(f'\033[31m{Num_Tentativas}- {Rolamento_Dados} FALHA CRITICA \033[m{Lista_Emoji[3]*3}')
         sleep(0.4)
 
     else:
