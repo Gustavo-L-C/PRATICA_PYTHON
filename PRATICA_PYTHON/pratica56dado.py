@@ -12,15 +12,19 @@ from time import sleep
 
 emoji_dado = '🎲'
 num_jogadas = 0
+tipos_dados = [4,6,10,12,20]
+
 
 print(f'{emoji_dado} Rolando os Dados {emoji_dado}\n')
 
 tipo = int(input('Digite o tipo de dado (ex: digite 20 para dado D20): '))
-print(f'Tipo de Dado escolhido: D{tipo}\n')
 
-giros = int(input('Digite a quantidade de rolamentos: '))
+if tipo in tipos_dados:
+    print(f'Tipo de Dado escolhido: D{tipo}\n')
 
-print(' ')
+    giros = int(input('Digite a quantidade de rolamentos: '))
+
+    print(' ')
 
 # Métodos - Carregamento I
 
@@ -40,27 +44,27 @@ print(' ')
 
 # Métodos - Carregamento II
 
-for pontos in range(giros<=10):
-    for roll in range(giros):
-        sleep(0.5)
-        print(f'{emoji_dado}', end='')
+    for pontos in range(giros<=10):
+        for roll in range(giros):
+            sleep(0.5)
+            print(f'{emoji_dado}', end='')
 
-for pontos in range(giros>=50):
-    for roll in range(giros):
-        sleep(0.12)
-        print(f'{emoji_dado}', end='')
+    for pontos in range(giros>=50):
+        for roll in range(giros):
+            sleep(0.12)
+            print(f'{emoji_dado}', end='')
 
-for pontos in range(giros>=100):
-    for roll in range(giros):
-        sleep(0.25)
-        print(f'{emoji_dado}', end='')
+    for pontos in range(giros>=100):
+        for roll in range(giros):
+            sleep(0.25)
+            print(f'{emoji_dado}', end='')
 
-print('\n')
+    print('\n')
 
-for giro in range(giros):
+    for giro in range(giros):
 
-    re = randint(1,tipo)
-    num_jogadas += 1
+        re = randint(1,tipo)
+        num_jogadas += 1
 
-    print(f'{num_jogadas}- Resultado: {re}')
-    sleep(0.3)
+        print(f'{num_jogadas}- Resultado: {re}')
+        sleep(0.3)
