@@ -24,6 +24,7 @@ def convercao_ha(hora_p_ano): # converter horas para anos
     return horas / ano_hora
 
 if qual == 1:
+
     anos = int(input('Digite quantos anos: '))
 
     convAH = convercao_ah(ano_hora)
@@ -33,7 +34,9 @@ if qual == 1:
     print(f'{anos} anos são {convAH} horas.')
 
 else:
+
     if qual == 2:
+        
         horas = float(input('Digite quantos horas: '))
 
         convHA = convercao_ha(horas)
