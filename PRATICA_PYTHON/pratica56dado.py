@@ -68,3 +68,6 @@ if tipo in tipos_dados:
 
         print(f'{num_jogadas}- Resultado: {re}')
         sleep(0.3)
+
+else:
+    print('Esse tipo de dado não esta disponível, escolha entre os dados de 4, 6, 10, 12 e 20 lados na próxima...')
