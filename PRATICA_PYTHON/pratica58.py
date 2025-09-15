@@ -16,10 +16,10 @@ anos = int(input('Digite quantos anos: '))
 um_ano = 365
 ano_hora = 8766
 
-
-
 if qual == 1:
+
     ano_p_hora = anos * ano_hora
+    
     print(f'{anos} anos são {ano_p_hora} horas.')
 
 #hora_p_ano = hora / ano_hora
