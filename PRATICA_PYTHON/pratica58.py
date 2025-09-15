@@ -1,4 +1,4 @@
-#08.08.25 - at: 15.09.25
+#08.08.25 - 15.09.25
 
 from bancodenomes import sim_sim
 
