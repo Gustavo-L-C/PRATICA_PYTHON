@@ -40,7 +40,7 @@ else:
 
             print(' ')
             print(f'{horas} horas são {hora_p_ano} anos.')
-            
+
 #hora_p_ano = hora / ano_hora
 #ano_p_hora = anos * ano_hora
 #print(hora_p_ano)
