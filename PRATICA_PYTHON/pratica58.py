@@ -53,5 +53,3 @@ else:
 #ano_p_hora = anos * ano_hora
 #print(hora_p_ano)
 #print(ano_p_hora)
-
-
