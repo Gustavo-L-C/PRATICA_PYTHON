@@ -1,4 +1,4 @@
-#08.08.25
+#08.08.25 - at: 15.09.25
 
 from bancodenomes import sim_sim
 
@@ -36,7 +36,7 @@ if qual == 1:
 else:
 
     if qual == 2:
-        
+
         horas = float(input('Digite quantos horas: '))
 
         convHA = convercao_ha(horas)
