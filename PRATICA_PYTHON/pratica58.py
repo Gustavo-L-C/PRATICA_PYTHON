@@ -17,13 +17,17 @@ print(' ')
 um_ano = 365
 ano_hora = 8766
 
+def convercao_ah(ano_p_hora):
+    return anos * ano_hora
+
 if qual == 1:
     anos = int(input('Digite quantos anos: '))
 
-    ano_p_hora = anos * ano_hora
+    convAH = convercao_ah(ano_hora)
+    #convAH = anos * ano_hora
 
     print(' ')
-    print(f'{anos} anos são {ano_p_hora} horas.')
+    print(f'{anos} anos são {convAH} horas.')
 
 else:
     if qual == 2:
