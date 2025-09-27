@@ -73,7 +73,7 @@ if qual == 3:
         convHD = convercao_hd(horas)
 
         print(' ')
-        print(f'{horas:.0f} horas são {convHD} dia/as.')
+        print(f'{horas} horas são {convHD:.5f} dia/as.')
         print(' ')
 
         ex = input('Precisa do numero mais exato(s/n)? ')
