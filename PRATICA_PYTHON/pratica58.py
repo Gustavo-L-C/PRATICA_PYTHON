@@ -62,6 +62,7 @@ else:
 
 if qual == 3:
     qual2 = int(input('Ok. Aqui você pode converter hora em dias (4) e dias em horas(5). Digite qual: '))
+    print(' ')
 
     if qual2 == 4:
 
