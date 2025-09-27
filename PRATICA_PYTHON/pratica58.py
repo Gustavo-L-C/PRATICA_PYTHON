@@ -7,11 +7,13 @@ from bancodenomes import sim_sim
 
 eR = '🕐'
 eC= '📅'
+dia = 24
+hora = 24
 
 print(f'{eR} Conversor horas em anos e anos em horas {eC}\n')
 
 print('O que você quer converter? ')
-qual = int(input('Digite (1) para anos em horas e (2) para horas em anos: '))
+qual = int(input('Digite (1) para anos em horas e (2) para horas em anos. E para outra conversão (3): '))
 print(' ')
 
 um_ano = 365
@@ -22,6 +24,12 @@ def convercao_ah(ano_p_hora): # converter anos para horas
 
 def convercao_ha(hora_p_ano): # converter horas para anos
     return horas / ano_hora
+
+def convercao_hd(hora_p_dia):
+    return horas / dia
+
+def convercao_dh(dia_p_hora):
+    return dias * hora
 
 if qual == 1:
 
@@ -51,6 +59,11 @@ else:
 
             print(' ')
             print(f'{horas} horas são {convHA} anos.')
+
+
+if qual == 3:
+    qual2 = int(input)
+
 
 #hora_p_ano = hora / ano_hora
 #ano_p_hora = anos * ano_hora
