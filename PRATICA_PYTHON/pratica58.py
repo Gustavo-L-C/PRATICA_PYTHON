@@ -62,7 +62,11 @@ else:
 
 
 if qual == 3:
-    qual2 = int(input)
+    qual2 = int(input('Ok. Aqui você pode converter hora em dias (4) e dias em horas(5). Digite qual: '))
+
+    if qual2 == 4:
+
+        
 
 
 #hora_p_ano = hora / ano_hora
