@@ -52,6 +52,7 @@ else:
 
         print(' ')
         print(f'{horas:.0f} horas são {convHA:.5f} anos.\n')
+        print(' ')
 
         ex = input('Precisa do numero mais exato(s/n)? ')
 
@@ -72,6 +73,7 @@ if qual == 3:
 
         print(' ')
         print(f'{horas:.0f} horas são {convHD} dia/as.')
+        print(' ')
 
         ex = input('Precisa do numero mais exato(s/n)? ')
 
