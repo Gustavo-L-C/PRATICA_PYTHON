@@ -80,6 +80,15 @@ if qual == 3:
             print(' ')
             print(f'{horas} horas são {convHD} dia/as.')
 
+    elif qual2 == 5:
+
+        dias = int(input('Digite quantos dias: '))
+
+        convDH = convercao_dh(dias)
+
+        print(' ')
+        print(f'{dias:.0f} dia/as são {convDH} hora/as.')
+
 
 #hora_p_ano = hora / ano_hora
 #ano_p_hora = anos * ano_hora
