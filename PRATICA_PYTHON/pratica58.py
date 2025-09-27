@@ -39,7 +39,7 @@ if qual == 1:
     #convAH = anos * ano_hora
 
     print(' ')
-    print(f'{anos} anos são {convAH} horas.')
+    print(f'{anos} anos são {convAH} hora/as.')
 
 else:
 
@@ -58,7 +58,7 @@ else:
         if ex in sim_sim:
 
             print(' ')
-            print(f'{horas} horas são {convHA} anos.')
+            print(f'{horas} horas são {convHA} ano/os.')
 
 
 if qual == 3:
@@ -66,7 +66,19 @@ if qual == 3:
 
     if qual2 == 4:
 
-        
+        horas = float(input('Digite quantos horas: '))
+
+        convHD = convercao_hd(horas)
+
+        print(' ')
+        print(f'{horas:.0f} horas são {convHD} dia/as.')
+
+        ex = input('Precisa do numero mais exato(s/n)? ')
+
+        if ex in sim_sim:
+
+            print(' ')
+            print(f'{horas} horas são {convHD} dia/as.')
 
 
 #hora_p_ano = hora / ano_hora
