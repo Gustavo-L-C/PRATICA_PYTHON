@@ -88,6 +88,10 @@ elif qual == 4:
     print(' ')
     print(f'{dias:.0f} dia/as são {convDH} hora/as.')
 
+else:
+    print(' ')
+    print('Entrada Invalida!')
+
 #hora_p_ano = hora / ano_hora
 #ano_p_hora = anos * ano_hora
 #print(hora_p_ano)
