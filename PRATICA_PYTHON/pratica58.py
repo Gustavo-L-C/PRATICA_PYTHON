@@ -11,7 +11,7 @@ eC= '📅'
 print(f'{eR} Conversor horas em anos e anos em horas {eC}\n')
 
 print('O que você quer converter?')
-qual = int(input('Para: \n(1) anos em horas  \n(2) horas em anos \n(3) horas em dias \n(4) dias em horas \nDigite aqui: '))
+qual = int(input('Para: \n(1) anos em horas  \n(2) horas em anos \n(3) horas em dias \n(4) dias em horas \n\nDigite aqui: '))
 print(' ')
 
 um_ano = 365
