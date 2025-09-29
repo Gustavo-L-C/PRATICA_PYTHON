@@ -11,7 +11,8 @@ eC= '📅'
 print(f'{eR} Conversor horas em anos e anos em horas {eC}\n')
 
 print('O que você quer converter?')
-qual = int(input('Digite (1) para anos em horas e (2) para horas em anos. E para outra conversão (3): '))
+qual = int(input('Para: \n(1) anos em horas  \n(2) horas em anos \n(3) horas em dias \n(4) dias em horas \nDigite aqui: '))
+if qual == 1:
 print(' ')
 
 um_ano = 365
@@ -41,25 +42,23 @@ if qual == 1:
     print(' ')
     print(f'{anos} anos são {convAH} hora/as.')
 
-else:
+elif qual == 2:
 
-    if qual == 2:
+    horas = float(input('Digite quantos horas: '))
 
-        horas = float(input('Digite quantos horas: '))
-
-        convHA = convercao_ha(horas)
+    convHA = convercao_ha(horas)
         #convHA = horas / ano_hora
 
+    print(' ')
+    print(f'{horas:.0f} horas são {convHA:.5f} anos.\n')
+    print(' ')
+
+    ex = input('Precisa do numero mais exato(s/n)? ')
+
+    if ex in sim_sim:
+
         print(' ')
-        print(f'{horas:.0f} horas são {convHA:.5f} anos.\n')
-        print(' ')
-
-        ex = input('Precisa do numero mais exato(s/n)? ')
-
-        if ex in sim_sim:
-
-            print(' ')
-            print(f'{horas} horas são {convHA} ano/os.')
+        print(f'{horas} horas são {convHA} ano/os.')
 
 #___________________________________________________________________________________________________________________________
 
