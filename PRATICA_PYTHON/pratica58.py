@@ -62,27 +62,22 @@ elif qual == 2:
 
 #___________________________________________________________________________________________________________________________
 
-if qual == 3:
+elif qual == 3:
 
-    qual2 = int(input('Ok. Aqui você pode converter hora em dias (4) e dias em horas(5). Digite qual: '))
+    horas = float(input('Digite quantos horas: '))
+
+    convHD = convercao_hd(horas)
+
+    print(' ')
+    print(f'{horas} horas são {convHD:.5f} dia/as.')
     print(' ')
 
-    if qual2 == 4:
+    ex = input('Precisa do numero mais exato(s/n)? ')
 
-        horas = float(input('Digite quantos horas: '))
-
-        convHD = convercao_hd(horas)
+    if ex in sim_sim:
 
         print(' ')
-        print(f'{horas} horas são {convHD:.5f} dia/as.')
-        print(' ')
-
-        ex = input('Precisa do numero mais exato(s/n)? ')
-
-        if ex in sim_sim:
-
-            print(' ')
-            print(f'{horas} horas são {convHD} dia/as.')
+        print(f'{horas} horas são {convHD} dia/as.')
 
     elif qual2 == 5:
 
