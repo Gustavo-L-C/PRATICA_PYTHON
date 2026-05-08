@@ -33,6 +33,8 @@ print('')
 
 qclasse = input(f'Quer escolher uma classe para os {rc} ?')
 
+print('')
+
 if qclasse in sim_sim:
     classes = random.choice(classe)
 
