@@ -1,4 +1,4 @@
-#WARHAMMER 40K CHAPTER SELECTOR RANDOM - 20.01.26
+#WARHAMMER 40K CHAPTER SELECTOR RANDOM - 08.05.26
 
 import random
 from chapters40k import lista_chapters_D
