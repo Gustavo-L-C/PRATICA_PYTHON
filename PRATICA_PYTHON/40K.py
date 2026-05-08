@@ -29,4 +29,12 @@ if r in sim_sim:
 else:
     print('Ok')
 
-input('')
+qclasse = input(f'Quer escolher uma classe para os {rc} ?')
+
+    if qclasse in sim_sim:
+        classes = random.choice(classe)
+
+        print(f'A classe para o Capitulo dos {rc} é {classes}.')
+
+    else:
+        print('Ok')
