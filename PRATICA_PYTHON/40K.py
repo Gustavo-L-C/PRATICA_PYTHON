@@ -29,12 +29,14 @@ if r in sim_sim:
 else:
     print('Ok')
 
+print('')
+
 qclasse = input(f'Quer escolher uma classe para os {rc} ?')
 
-    if qclasse in sim_sim:
-        classes = random.choice(classe)
+if qclasse in sim_sim:
+    classes = random.choice(classe)
 
-        print(f'A classe para o Capitulo dos {rc} é {classes}.')
+    print(f'A classe para o Capitulo dos {rc} é {classes}.')
 
-    else:
-        print('Ok')
+else:
+    print('Ok')
