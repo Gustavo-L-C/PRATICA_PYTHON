@@ -10,7 +10,7 @@ classe = ['TATICO','ASSALTO','VANGUARDA','BALUARTE','SNIPER','PESADO','TECHMARIN
 
 print(f'\n', '-'*80) #só enfeite
 
-print('\nSeletor de Capitulo aleatorio para Space Marines 2\n')
+print('\nSeletor de Capitulo e Classe aleatorio para Space Marines 2\n')
 r = input('Pronto?')
 print('')
 
@@ -45,5 +45,5 @@ if qclasse in sim_sim:
 
 else:
     print('Ok')
-    
+
 print(f'\n', '-'*80) #só enfeite
