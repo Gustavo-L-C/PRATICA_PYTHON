@@ -6,7 +6,7 @@ from chapters40k import lista_chapters
 from bancodenomes import sim_sim
 #from bancodenomes import nao_nao
 
-classe = ['Tatico🔫','Assalto🚀','Vanguarda🗡️','Baluarte🏳️','Sniper🎯','PESADO🛡️','TECHMARINE⚙️']
+classe = ['Tatico🔫','Assalto🚀','Vanguarda🗡️','Baluarte🏳️','Sniper🎯','Pesado🛡️','TECHMARINE⚙️']
 
 print(f'\n', '-'*80) #só enfeite
 
