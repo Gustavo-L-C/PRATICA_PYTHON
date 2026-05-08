@@ -7,7 +7,8 @@ from bancodenomes import sim_sim
 #from bancodenomes import nao_nao
 
 classe = ['TATICO','ASSALTO','VANGUARDA','BALUARTE','SNIPER','PESADO','TECHMARINE']
-print('Seletor de Capitulo aleatorio para Space Marines 2\n')
+
+print('\nSeletor de Capitulo aleatorio para Space Marines 2\n')
 r = input('Pronto?')
 print('')
 
@@ -31,7 +32,7 @@ else:
 
 print('')
 
-qclasse = input(f'Quer escolher uma classe para os {rc} ?')
+qclasse = input(f'Quer escolher uma classe para os {rc}?')
 
 print('')
 
