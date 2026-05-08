@@ -45,3 +45,5 @@ if qclasse in sim_sim:
 
 else:
     print('Ok')
+    
+print(f'\n', '-'*80) #só enfeite
