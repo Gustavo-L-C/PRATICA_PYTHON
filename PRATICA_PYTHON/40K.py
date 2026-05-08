@@ -8,7 +8,7 @@ from bancodenomes import sim_sim
 
 classe = ['TATICO','ASSALTO','VANGUARDA','BALUARTE','SNIPER','PESADO','TECHMARINE']
 
-
+print(f'\n', '-'*80) #só enfeite
 
 print('\nSeletor de Capitulo aleatorio para Space Marines 2\n')
 r = input('Pronto?')
