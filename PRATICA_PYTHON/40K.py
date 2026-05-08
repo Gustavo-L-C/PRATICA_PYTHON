@@ -14,12 +14,6 @@ print('\nSeletor de Capitulo e Classe aleatorio para Space Marines 2\n')
 r = input('Pronto?')
 print('')
 
-#eclasse = input('Quer escolher a classe radom ou manual?')
-#manu = ['MANUAL','manual','Manual']
-
-#if eclasse in manu:
- #   ec = input('\nOk, qual classe: ')
-  #  print(f'\nClasse: {ec}')
 
 if r in sim_sim:
     rc = random.choice(lista_chapters_D)
@@ -43,8 +37,13 @@ print('')
 qclasse = input(f'Quer escolher uma classe para {rc}?')
 print('')
 
-#elif eclasse = 'random':
 if qclasse in sim_sim:
+    #eclasse = input('Quer escolher a classe radom ou manual?')
+    #manu = ['MANUAL','manual','Manual']
+
+    #if eclasse in manu:
+    #   ec = input('\nOk, qual classe: ')
+    #   print(f'\nClasse: {ec}')
         classes = random.choice(classe)
         print(f'A classe para {rc} é {classes}.')
 
