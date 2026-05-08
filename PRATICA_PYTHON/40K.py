@@ -38,7 +38,7 @@ print('')
 
 if qclasse in sim_sim:
     classes = random.choice(classe)
-    print(f'A classe para o Capitulo dos {rc} é {classes}.')
+    print(f'A classe para {rc} é {classes}.')
 
 else:
     print('Ok')
