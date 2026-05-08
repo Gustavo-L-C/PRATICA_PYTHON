@@ -10,7 +10,7 @@ classe = ['Tatico🔫','Assalto🚀','Vanguarda🗡️','Baluarte🏳️','Snipe
 
 print(f'\n', '-'*80) #só enfeite
 
-print('\nSeletor de Capitulo e Classe aleatorio para Space Marines 2\n')
+print('\nSeletor Randomico de Capitulo e Classe aleatorio para Space Marines 2\n')
 r = input('Pronto?')
 print('')
 
