@@ -8,9 +8,9 @@ from bancodenomes import sim_sim
 classe = ['Tatico🔫','Assalto🚀','Vanguarda🗡️','Baluarte🏳️','Sniper🎯','Pesado🛡️','Techmarine⚙️']
 rc = random.choice(lista_chapters_D)
 
-print('-'*75) #só enfeite
+print('-'*60) #só enfeite
 
-print('\nSeletor de Capitulo e Classe aleatorio para Space Marines 2\n')
+print('Seletor de Capitulo e Classe aleatorio para Space Marines 2\n')
 r = input('Pronto? ')
 print('')
 
