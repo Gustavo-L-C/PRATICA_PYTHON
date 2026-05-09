@@ -34,21 +34,29 @@ else:
     print('Ok')
 
 print('')
-qclasse = input(f'Quer escolher uma classe para {rc}?')
+qclasse = input(f'Quer uma classe aleatória para {rc}?')
 print('')
 
 if qclasse in sim_sim:
-    #eclasse = input('Quer escolher a classe radom ou manual?')
-    #manu = ['MANUAL','manual','Manual']
+    eclasse = input('Quer escolher a classe radom ou manual?')
+    manu = ['MANUAL','manual','Manual']
 
-    #if eclasse in manu:
-    #   ec = input('\nOk, qual classe: ')
-    #   print(f'\nClasse: {ec}')
-        classes = random.choice(classe)
-        print(f'A classe para {rc} é {classes}.')
+    if eclasse in manu:
+       ec = input('\nOk, qual classe: ')
+       print(f'\nClasse: {ec}')
+
+       classes = random.choice(classe)
+       print(f'A classe para {rc} é {classes}.')
 
 else:
-        print('Ok')
 
+    eclasse = input('Quer escolher a classe radom ou manual?')
+    manu = ['MANUAL', 'manual', 'Manual']
+
+    if eclasse in manu:
+        ec = input('\nOk, qual classe: ')
+        print(f'\nClasse: {ec}')
+
+print('Ok')
 
 print(f'\n', '-'*80) #só enfeite
