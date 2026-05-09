@@ -28,7 +28,7 @@ else:
     print(f'\nClasse escolhida: {ec}')
 
 #if r in sim_sim:
-print(f'Capitulo {rc}')
+print(f'Capitulo: {rc}')
 
 if rc == 'DeathWatch':
    print(rc)
@@ -36,7 +36,7 @@ if rc == 'DeathWatch':
 
    if dw in sim_sim:
     dc = random.choice(lista_chapters)
-    print(f'Capitulo {dc}')
+    print(f'Capitulo: {dc}')
 
    else:
     print(f'Então agora voce e um Black Shield da {rc}.')
