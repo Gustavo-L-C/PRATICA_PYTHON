@@ -36,7 +36,7 @@ if rc == 'DeathWatch':
 
    if dw in sim_sim:
     dc = random.choice(lista_chapters)
-    print(f'Capitulo: \33{dc}')
+    print(f'Capitulo: {dc}')
 
    else:
     print(f'Então agora voce e um Black Shield da {rc}.')
