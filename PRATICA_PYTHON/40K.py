@@ -39,7 +39,7 @@ if rc == 'DeathWatch':
     print(f'Capitulo {dc}')
 
    else:
-    print(f'Então agora voce e um {ec or classes} Black Shield da {rc}.')
+    print(f'Então agora voce e um Black Shield da {rc}.')
 
 else:
     print('Ok')
