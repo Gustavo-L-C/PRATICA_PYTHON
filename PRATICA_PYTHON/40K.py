@@ -22,7 +22,7 @@ if qclasse in sim_sim:
        print(f'Classe aleatoria: {classes}.')
 
 else:
-    ec = input('Qual classe?')
+    ec = input('Qual classe? ')
     print(f'\nClasse escolhida: {ec}')
 
 print(f'Capitulo: {rc}')
