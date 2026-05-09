@@ -1,7 +1,7 @@
 #WARHAMMER 40K | SPACE MARINE 2 | CHAPTER SELECTOR RANDOM - 09.05.26
 
 import random
-import time
+from time import sleep
 from chapters40k import lista_chapters_D
 from chapters40k import lista_chapters
 from bancodenomes import sim_sim
@@ -18,7 +18,7 @@ print('')
 qclasse = input(f'Quer uma classe aleatória? ')
 print('')
 
-time.sleep(2)
+sleep(2)
 
 if qclasse in sim_sim:
        classes = random.choice(classe)
@@ -36,7 +36,7 @@ if rc == 'DeathWatch':
 
    if dw in sim_sim:
     dc = random.choice(lista_chapters)
-    print(f'Capitulo: {dc}')
+    print(f'Capitulo: \33{dc}')
 
    else:
     print(f'Então agora voce e um Black Shield da {rc}.')
