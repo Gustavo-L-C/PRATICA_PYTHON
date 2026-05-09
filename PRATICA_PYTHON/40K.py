@@ -28,7 +28,6 @@ else:
     print(f'\nClasse escolhida: {ec}')
 
 if r in sim_sim:
-    
     print(f'Capitulo {rc}')
 
     if rc == 'DeathWatch':
