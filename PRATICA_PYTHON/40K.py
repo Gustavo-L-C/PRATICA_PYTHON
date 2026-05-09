@@ -27,19 +27,19 @@ else:
     ec = input('Qual classe?')
     print(f'\nClasse escolhida: {ec}')
 
-if r in sim_sim:
-    print(f'Capitulo {rc}')
+#if r in sim_sim:
+print(f'Capitulo {rc}')
 
-    if rc == 'DeathWatch':
-        print(rc)
-        dw = input('Agora na DeathWatch, pronto para saber seu capitulo?')
+if rc == 'DeathWatch':
+   print(rc)
+   dw = input('Agora na DeathWatch, pronto para saber seu capitulo de origem?')
 
-        if dw in sim_sim:
-            dc = random.choice(lista_chapters)
-            print(f'Capitulo {dc}')
+   if dw in sim_sim:
+    dc = random.choice(lista_chapters)
+    print(f'Capitulo {dc}')
 
-        else:
-            print(f'Então agora voce e um {ec} Black Shield da {rc}.')
+   else:
+    print(f'Então agora voce e um {ec or classes} Black Shield da {rc}.')
 
 else:
     print('Ok')
