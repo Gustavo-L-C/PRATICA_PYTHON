@@ -4,7 +4,6 @@ import random
 from chapters40k import lista_chapters_D
 from chapters40k import lista_chapters
 from bancodenomes import sim_sim
-#from bancodenomes import nao_nao
 
 classe = ['Tatico🔫','Assalto🚀','Vanguarda🗡️','Baluarte🏳️','Sniper🎯','Pesado🛡️','Techmarine⚙️']
 rc = random.choice(lista_chapters_D)
