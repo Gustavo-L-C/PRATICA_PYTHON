@@ -7,14 +7,13 @@ from bancodenomes import sim_sim
 #from bancodenomes import nao_nao
 
 classe = ['Tatico🔫','Assalto🚀','Vanguarda🗡️','Baluarte🏳️','Sniper🎯','Pesado🛡️','Techmarine⚙️']
+rc = random.choice(lista_chapters_D)
 
 print(f'\n', '-'*80) #só enfeite
 
 print('\nSeletor de Capitulo e Classe aleatorio para Space Marines 2\n')
 r = input('Pronto?')
 print('')
-
-rc = random.choice(lista_chapters_D)
 
 qclasse = input(f'Quer uma classe aleatória?')
 print('')
