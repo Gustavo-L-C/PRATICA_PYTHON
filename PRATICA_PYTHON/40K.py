@@ -43,7 +43,6 @@ if qclasse in sim_sim:
 
 else:
     ec = input('Qual classe?')
-    print(f'\nClasse: {ec}')
-
+    print(f'\nClasse escolhida: {ec}')
 
 print(f'\n', '-'*80) #só enfeite
