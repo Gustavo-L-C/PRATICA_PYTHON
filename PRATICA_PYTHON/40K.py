@@ -14,9 +14,21 @@ print('\nSeletor de Capitulo e Classe aleatorio para Space Marines 2\n')
 r = input('Pronto?')
 print('')
 
+rc = random.choice(lista_chapters_D)
+
+qclasse = input(f'Quer uma classe aleatória?')
+print('')
+
+if qclasse in sim_sim:
+       classes = random.choice(classe)
+       print(f'A classe para {rc} é {classes}.')
+
+else:
+    ec = input('Qual classe?')
+    print(f'\nClasse escolhida: {ec}')
 
 if r in sim_sim:
-    rc = random.choice(lista_chapters_D)
+    
     print(f'Capitulo {rc}')
 
     if rc == 'DeathWatch':
@@ -34,15 +46,5 @@ else:
     print('Ok')
 
 print('')
-qclasse = input(f'Quer uma classe aleatória para {rc}?')
-print('')
-
-if qclasse in sim_sim:
-       classes = random.choice(classe)
-       print(f'A classe para {rc} é {classes}.')
-
-else:
-    ec = input('Qual classe?')
-    print(f'\nClasse escolhida: {ec}')
 
 print(f'\n', '-'*80) #só enfeite
