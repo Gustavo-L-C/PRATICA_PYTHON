@@ -38,4 +38,4 @@ if rc == 'DeathWatch':
    else:
     print(f'Então agora voce e um Black Shield da {rc}.')
 
-print('-'*75) #só enfeite
+print('-'*60) #só enfeite
