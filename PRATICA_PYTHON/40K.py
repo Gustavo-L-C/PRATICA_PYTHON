@@ -20,12 +20,12 @@ print('')
 
 if qclasse in sim_sim:
        classes = random.choice(classe)
-       sleep(2)
+       sleep(1)
        print(f'Classe aleatoria: {classes}.')
 
 else:
     ec = input('Qual classe? ')
-    sleep(2)
+    sleep(1)
     print(f'\nClasse escolhida: {ec}')
 
 print(f'Capitulo: {rc}')
