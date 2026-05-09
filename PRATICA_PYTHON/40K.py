@@ -18,8 +18,6 @@ print('')
 qclasse = input(f'Quer uma classe aleatória? ')
 print('')
 
-sleep(2)
-
 if qclasse in sim_sim:
        classes = random.choice(classe)
        print(f'Classe aleatoria: {classes}.')
@@ -29,6 +27,7 @@ else:
     print(f'\nClasse escolhida: {ec}')
 
 print(f'Capitulo: {rc}')
+sleep(2)
 
 if rc == 'DeathWatch':
    print(rc)
