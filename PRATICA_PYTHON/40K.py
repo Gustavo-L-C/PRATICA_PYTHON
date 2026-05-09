@@ -1,6 +1,7 @@
 #WARHAMMER 40K | SPACE MARINE 2 | CHAPTER SELECTOR RANDOM - 09.05.26
 
 import random
+import time
 from chapters40k import lista_chapters_D
 from chapters40k import lista_chapters
 from bancodenomes import sim_sim
@@ -16,6 +17,8 @@ print('')
 
 qclasse = input(f'Quer uma classe aleatória? ')
 print('')
+
+time.sleep(2)
 
 if qclasse in sim_sim:
        classes = random.choice(classe)
