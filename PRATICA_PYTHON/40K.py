@@ -42,11 +42,8 @@ if qclasse in sim_sim:
        print(f'A classe para {rc} é {classes}.')
 
 else:
-
     ec = input('Qual classe?')
-
-    if ec in manu:
-        print(f'\nClasse: {ec}')
+    print(f'\nClasse: {ec}')
 
 
 print(f'\n', '-'*80) #só enfeite
