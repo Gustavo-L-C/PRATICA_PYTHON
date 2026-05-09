@@ -11,15 +11,15 @@ rc = random.choice(lista_chapters_D)
 print(f'\n', '-'*80) #só enfeite
 
 print('\nSeletor de Capitulo e Classe aleatorio para Space Marines 2\n')
-r = input('Pronto?')
+r = input('Pronto? ')
 print('')
 
-qclasse = input(f'Quer uma classe aleatória?')
+qclasse = input(f'Quer uma classe aleatória? ')
 print('')
 
 if qclasse in sim_sim:
        classes = random.choice(classe)
-       print(f'A classe aleatoria é {classes}.')
+       print(f'Classe aleatoria: {classes}.')
 
 else:
     ec = input('Qual classe?')
