@@ -3,6 +3,12 @@
 
 import time
 
+#___________________________________________________________
+def executar_com_delay(funcao, segundos, *args, **kwargs):
+    time.sleep(segundos)
+    return funcao(*args, **kwargs)
+#___________________________________________________________
+
 def funcao_um():
     print("Iniciando função um...")
 
