@@ -21,7 +21,7 @@ print('')
 
 if qclasse in sim_sim:
        classes = random.choice(classe)
-       print(f'A classe para {rc} é {classes}.')
+       print(f'A classe aleatoria é {classes}.')
 
 else:
     ec = input('Qual classe?')
@@ -39,7 +39,7 @@ if r in sim_sim:
             print(f'Capitulo {dc}')
 
         else:
-            print(f'Então agora voce e um Black Shield da {rc}.')
+            print(f'Então agora voce e um {ec} Black Shield da {rc}.')
 
 else:
     print('Ok')
