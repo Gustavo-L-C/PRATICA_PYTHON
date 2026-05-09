@@ -11,7 +11,7 @@ rc = random.choice(lista_chapters_D)
 
 print('-'*60) #só enfeite
 
-print('Seletor de Capitulo e Classe aleatorio para Space Marines 2\n')
+print('Seletor de Capitulo aleatorio para Space Marines 2\n')
 r = input('Pronto? ')
 print('')
 
