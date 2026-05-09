@@ -29,7 +29,7 @@ print(f'Capitulo: {rc}')
 
 if rc == 'DeathWatch':
    print(rc)
-   dw = input('Agora na DeathWatch, pronto para saber seu capitulo de origem?')
+   dw = input('Agora na DeathWatch, pronto para saber seu capitulo de origem? ')
 
    if dw in sim_sim:
     dc = random.choice(lista_chapters)
